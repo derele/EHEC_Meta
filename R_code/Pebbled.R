@@ -4,10 +4,14 @@ library(dplyr)
 library(xml2)
 library(rentrez)
 
-sqlfile <- "/data/db/SRAmetadb.sqlite"
+sqlfile <- "H:/Analysenetz/transfer/SRAmetadb.sqlite"
 sra_con <- dbConnect(RSQLite::SQLite(), sqlfile)
 
-peb <- read.delim("pebblescout-meta-summary.tsv")
+## Pebblescout was used setting "Max #subjects per query" to 1,000,000
+## "Score constant" at default value of 13,000 and "Masking threshold" at
+## default value of 5663
+
+peb <- read.delim("data/pebblescout-meta-summary_stx1a.tsv")
 
 length(peb$SubjectID)
 length(unique(peb$SubjectID))
@@ -228,3 +232,4 @@ all_biosamples <- lapply(Entrez_list, parse_biosample)
 biosample_table <- bind_rows(all_biosamples)
 
 head(biosample_table)
+

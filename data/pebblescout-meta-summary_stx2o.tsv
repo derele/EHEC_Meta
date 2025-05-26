@@ -1,0 +1,848 @@
+QueryID	SubjectID	RawScore	%coverage	PBSscore	BioSample	Title
+MZ229604.1	SRR7110579	28.73	21.97	21.87	SAMN08776114	Enriched fungal communities from goat fecal pellet, Isla Vista, California, United States - Alfalfa, Gen10, Rep 1, Penicillin and Streptomycin metagenome
+MZ229604.1	SRR11435969	18.73	14.39	14.26	SAMN14475165	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	ERR3153744	18.70	14.39	14.24	SAMEA5335518	The fecal microbiota has already altered in normoglycemic individuals who go on to have type 2 diabetes
+MZ229604.1	SRR4101309	17.73	13.64	13.50	SAMN05715935	food contamination metagenome Metagenome
+MZ229604.1	ERR525753	16.77	12.88	12.77	SAMEA2579970	Dynamics and Stabilization of the Human Gut Microbiome during the First Year of Life
+MZ229604.1	SRR4101321	16.74	12.88	12.75	SAMN05715928	food contamination metagenome Metagenome
+MZ229604.1	SRR11435987	16.74	12.88	12.75	SAMN14475173	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR14780121	16.73	12.88	12.74	SAMN15504563	Metagenomics MinION and Flongle sequencing of spiked beef
+MZ229604.1	SRR2177282	16.72	12.88	12.73	SAMN04001583	STEC-spiked spinach Metagenome
+MZ229604.1	SRR15276854	16.72	12.88	12.73	SAMN20362767	AMR target-enriched metagenomic and 16S rRNA reads from cows raised in conventional or organic setting
+MZ229604.1	SRR4101312	16.72	12.88	12.73	SAMN05715927	food contamination metagenome Metagenome
+MZ229604.1	SRR4101319	16.72	12.88	12.73	SAMN05715927	food contamination metagenome Metagenome
+MZ229604.1	SRR6869086	16.71	12.88	12.72	SAMN08738623	Bovine Fecal Metagenomics During Early Life
+MZ229604.1	SRR11941643	15.77	12.12	12.01	SAMN15156483	Multi-donor FMT to treat adolescents with severe obesity (The Gut Bugs Trial)
+MZ229604.1	SRR2177286	15.74	12.12	11.98	SAMN04001584	STEC-spiked spinach Metagenome
+MZ229604.1	SRR4101320	15.73	12.12	11.98	SAMN05715927	food contamination metagenome Metagenome
+MZ229604.1	SRR4101314	15.73	12.12	11.97	SAMN05715936	food contamination metagenome Metagenome
+MZ229604.1	SRR11435968	15.72	12.12	11.97	SAMN14475166	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR6486880	15.72	12.12	11.97	SAMN08375885	Evaluation of Enriched Background Microflora of Wheat flour Spiked with E. coli O157 and E. coli O121 through metagenomics
+MZ229604.1	SRR15276870	15.72	12.12	11.97	SAMN20362750	AMR target-enriched metagenomic and 16S rRNA reads from cows raised in conventional or organic setting
+MZ229604.1	ERR912057	14.79	11.36	11.26	SAMEA3449252	Shotgun Metagenomics of 250 Adult Twins Reveals Genetic and Environmental Impacts on the Gut Microbiome
+MZ229604.1	SRR17317416	14.79	11.36	11.26	SAMN24337964	The difference between diarrhea piglets and normal piglets
+MZ229604.1	SRR4425662	14.79	11.36	11.26	SAMN05597107	Composite fecal samples and WWTP biosolids Raw sequence reads
+MZ229604.1	SRR10098752	14.78	11.36	11.26	SAMN12727813	Characterization of antimicrobial resistance genes in the enriched Enterobacteriaceae community of suburban mesocarnivores, stray dogs and owned dogs.
+MZ229604.1	ERR3450712	14.77	11.36	11.25	SAMEA5814004	Whole shotgun metagenomic sequencing for 1,004 individuals belonging to the TwinsUK cohort.  Supporting data for: Visconti et al, Interplay between the human gut microbiome and host metabolism
+MZ229604.1	SRR17317415	14.76	11.36	11.24	SAMN24337962	The difference between diarrhea piglets and normal piglets
+MZ229604.1	SRR7532988	14.76	11.36	11.24	SAMN09641552	panda gut metagenome raw sequence reads Raw sequence reads
+MZ229604.1	ERR1992808	14.74	11.36	11.22	SAMEA103954398	Semi-synthetic marine metagenomes for metagenomic pipeline assessment
+MZ229604.1	ERR2185279	14.74	11.36	11.22	SAMEA104351855	Semi-synthetic marine metagenomes for metagenomic pipeline assessment
+MZ229604.1	ERR2270961	14.74	11.36	11.22	SAMEA104549058	Metagenomic characterization of the human intestinal microbiota in faecal samples from STEC-infected patients
+MZ229604.1	SRR12195335	14.74	11.36	11.22	SAMN15504565	STEC-spiked food
+MZ229604.1	SRR4101297	14.74	11.36	11.22	SAMN05715931	food contamination metagenome Metagenome
+MZ229604.1	SRR4101296	14.73	11.36	11.22	SAMN05715931	food contamination metagenome Metagenome
+MZ229604.1	ERR3413879	14.73	11.36	11.22	SAMEA5735804	The study compares 16S rDNA amplicon and metagenomics sequencing for Pathogen detection in Food safety
+MZ229604.1	SRR2177285	14.73	11.36	11.22	SAMN04001583	STEC-spiked spinach Metagenome
+MZ229604.1	SRR6482687	14.73	11.36	11.22	SAMN08017836	Collection of 3,087 bacterial metagenome-assembled genomes recovered from metagenomes available from the Sequence Read Archive.
+MZ229604.1	SRR4101324	14.73	11.36	11.22	SAMN05715929	food contamination metagenome Metagenome
+MZ229604.1	SRR4101289	14.73	11.36	11.21	SAMN05715926	food contamination metagenome Metagenome
+MZ229604.1	SRR4101306	14.73	11.36	11.21	SAMN05715934	food contamination metagenome Metagenome
+MZ229604.1	SRR6514656	14.72	11.36	11.21	SAMN08379451	Evaluation of Enriched Background Microflora of Raw Milk Cheese Spiked with E. coli O157:H7 and E. coli O103 using Next-Generation Sequencing Technology
+MZ229604.1	SRR4101313	14.72	11.36	11.21	SAMN05715936	food contamination metagenome Metagenome
+MZ229604.1	SRR12875514	13.79	10.61	10.50	SAMN16513441	Gut microbiome is associated with exercise tolerance of resected early-stage lung cancer patients
+MZ229604.1	ERR3004221	13.78	10.61	10.49	SAMEA4813778	KOALA cohort metagenome study
+MZ229604.1	ERR4564087	13.78	10.61	10.49	SAMEA7288503	Imidazole propionate is increased in diabetes and associated with dietary patterns and altered microbial ecology
+MZ229604.1	ERR4571477	13.78	10.61	10.49	SAMEA7294535	Genomic insights into adaptations of TMA-utilizing methanogens to diverse habitats including the human gut
+MZ229604.1	ERR4616330	13.78	10.61	10.49	SAMEA7332299	TwinUK cohort
+MZ229604.1	ERR4616331	13.78	10.61	10.49	SAMEA7332299	TwinUK cohort
+MZ229604.1	SRR11830676	13.78	10.61	10.49	SAMN14511341	Metatranscriptome of enriched fungal communities from goat fecal pellet, Isla Vista, California, United States - Bagasse, Gen6, Rep 1, Penicillin and Streptomycin
+MZ229604.1	SRR11830715	13.78	10.61	10.49	SAMN14511597	Metatranscriptome of enriched fungal communities from goat fecal pellet, Isla Vista, California, United States - Bagasse, Gen9, Rep 1, Penicillin and Streptomycin
+MZ229604.1	SRR7227920	13.78	10.61	10.49	SAMN09272168	Effect of bariatric surgery on the faecal metagenome
+MZ229604.1	SRR4101311	13.75	10.61	10.47	SAMN05715935	food contamination metagenome Metagenome
+MZ229604.1	SRR4101310	13.75	10.61	10.47	SAMN05715935	food contamination metagenome Metagenome
+MZ229604.1	ERR3413878	13.74	10.61	10.46	SAMEA5735803	The study compares 16S rDNA amplicon and metagenomics sequencing for Pathogen detection in Food safety
+MZ229604.1	SRR2177288	13.74	10.61	10.46	SAMN04001591	STEC-spiked spinach Metagenome
+MZ229604.1	SRR11435988	13.74	10.61	10.46	SAMN14475172	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR11435978	13.74	10.61	10.46	SAMN14475164	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR12326571	13.74	10.61	10.46	SAMN15637147	Cassava leaf microbiome and ions
+MZ229604.1	ERR3413876	13.74	10.61	10.46	SAMEA5735801	The study compares 16S rDNA amplicon and metagenomics sequencing for Pathogen detection in Food safety
+MZ229604.1	SRR15276868	13.74	10.61	10.46	SAMN20362769	AMR target-enriched metagenomic and 16S rRNA reads from cows raised in conventional or organic setting
+MZ229604.1	SRR4425658	13.74	10.61	10.46	SAMN05597113	Composite fecal samples and WWTP biosolids Raw sequence reads
+MZ229604.1	ERR2270960	13.74	10.61	10.46	SAMEA104549057	Metagenomic characterization of the human intestinal microbiota in faecal samples from STEC-infected patients
+MZ229604.1	ERR3413877	13.74	10.61	10.46	SAMEA5735802	The study compares 16S rDNA amplicon and metagenomics sequencing for Pathogen detection in Food safety
+MZ229604.1	SRR11435989	13.74	10.61	10.46	SAMN14475163	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR4101307	13.74	10.61	10.46	SAMN05715934	food contamination metagenome Metagenome
+MZ229604.1	SRR8354042	13.74	10.61	10.46	SAMN10615885	The relationship of fecal microbiomes and nutritional status in cystic fibrosis
+MZ229604.1	SRR11435966	13.73	10.61	10.46	SAMN14475168	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	ERR738547	13.73	10.61	10.46	SAMEA3216839	Benchmark of metagenome analysis tools
+MZ229604.1	SRR4101315	13.73	10.61	10.45	SAMN05715936	food contamination metagenome Metagenome
+MZ229604.1	SRR7030480	12.80	9.85	9.75	SAMN08778355	Goat fecal pellet enrichment culture fungal communities from Isla Vista, California, USA - Alfalfa, Gen0, Rep 3 metagenome
+MZ229604.1	ERR3451055	12.79	9.85	9.74	SAMEA5814699	Whole shotgun metagenomic sequencing for 1,004 individuals belonging to the TwinsUK cohort.  Supporting data for: Visconti et al, Interplay between the human gut microbiome and host metabolism
+MZ229604.1	ERR710432	12.79	9.85	9.74	SAMEA3178943	Gut microbiome development along the colorectal adenoma-carcinoma sequence
+MZ229604.1	SRR5866558	12.79	9.85	9.74	SAMN07414360	Whole-Grain rich diet cross-over study
+MZ229604.1	SRR5866559	12.79	9.85	9.74	SAMN07414361	Whole-Grain rich diet cross-over study
+MZ229604.1	SRR7723001	12.79	9.85	9.74	SAMN09863745	Influence of early environmental factors on the establishment and development of gut microbiome composition and function and metabolomics profiles in infants at-risk of celiac disease
+MZ229604.1	ERR4571217	12.79	9.85	9.74	SAMEA7294535	Genomic insights into adaptations of TMA-utilizing methanogens to diverse habitats including the human gut
+MZ229604.1	ERR1135379	12.79	9.85	9.74	SAMEA3663206	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR1135382	12.79	9.85	9.74	SAMEA3663209	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR1135383	12.79	9.85	9.74	SAMEA3663210	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR1135385	12.79	9.85	9.74	SAMEA3663212	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR1135386	12.79	9.85	9.74	SAMEA3663213	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR1135388	12.79	9.85	9.74	SAMEA3663215	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR3393539	12.79	9.85	9.74	SAMEA5733042	Animal gut microbiome
+MZ229604.1	SRR13826161	12.79	9.85	9.74	SAMN16925175	Metagenome study of patients with Budd-Chiari syndrome
+MZ229604.1	SRR14099373	12.79	9.85	9.74	SAMN16925175	Metagenome study of patients with Budd-Chiari syndrome
+MZ229604.1	SRR17317413	12.79	9.85	9.74	SAMN24337968	The difference between diarrhea piglets and normal piglets
+MZ229604.1	SRR17317414	12.79	9.85	9.74	SAMN24337966	The difference between diarrhea piglets and normal piglets
+MZ229604.1	SRR7532989	12.79	9.85	9.74	SAMN09641551	panda gut metagenome raw sequence reads Raw sequence reads
+MZ229604.1	SRR7031287	12.79	9.85	9.74	SAMN08779031	Goat fecal pellet enrichment culture fungal communities from Isla Vista, California, USA - Xylan, Gen0, Rep 1 metagenome
+MZ229604.1	SRR5866502	12.78	9.85	9.73	SAMN07414389	Whole-Grain rich diet cross-over study
+MZ229604.1	ERR3857638	12.77	9.85	9.73	SAMEA6512880	Mediterranean diet intervention in overweight and obese subjects leads to multiple beneficial shifts in gut microbiome and metabolome independently from energy intake
+MZ229604.1	SRR4101323	12.76	9.85	9.72	SAMN05715928	food contamination metagenome Metagenome
+MZ229604.1	SRR12711160	12.76	9.85	9.71	SAMN15871213	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR4101295	12.76	9.85	9.71	SAMN05715930	food contamination metagenome Metagenome
+MZ229604.1	SRR11391800	12.75	9.85	9.71	SAMN14418854	Metagenomic Sequencing for cattle manure and E. coli library from cattle manure
+MZ229604.1	SRR4101318	12.75	9.85	9.70	SAMN05715937	food contamination metagenome Metagenome
+MZ229604.1	SRR12326569	12.74	9.85	9.70	SAMN15637149	Cassava leaf microbiome and ions
+MZ229604.1	SRR8353651	12.74	9.85	9.70	SAMN10615590	The relationship of fecal microbiomes and nutritional status in cystic fibrosis
+MZ229604.1	ERR4083947	12.74	9.85	9.70	SAMEA6809521	Large scale metagenome assembly reveals novel animal-associated microbial diversity
+MZ229604.1	ERR738548	12.74	9.85	9.70	SAMEA3216840	Benchmark of metagenome analysis tools
+MZ229604.1	ERR2182604	12.74	9.85	9.70	SAMEA104359694	Metagenomic characterization of the human intestinal microbiota in faecal samples from STEC-infected patients
+MZ229604.1	SRR11435963	12.74	9.85	9.70	SAMN14475171	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR11435964	12.74	9.85	9.70	SAMN14475170	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR11435985	12.74	9.85	9.70	SAMN14475175	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR2164314	12.74	9.85	9.70	SAMN03983345	Fecal suspension - 2011 E coli outbreak Raw sequence reads
+MZ229604.1	SRR2177250	12.74	9.85	9.70	SAMN04001579	STEC-spiked spinach Metagenome
+MZ229604.1	SRR2177280	12.74	9.85	9.70	SAMN04001579	STEC-spiked spinach Metagenome
+MZ229604.1	SRR2177283	12.74	9.85	9.70	SAMN04001575	STEC-spiked spinach Metagenome
+MZ229604.1	SRR4101291	12.74	9.85	9.70	SAMN05715929	food contamination metagenome Metagenome
+MZ229604.1	SRR4101299	12.74	9.85	9.70	SAMN05715932	food contamination metagenome Metagenome
+MZ229604.1	SRR4101308	12.74	9.85	9.70	SAMN05715934	food contamination metagenome Metagenome
+MZ229604.1	SRR6486879	12.74	9.85	9.70	SAMN08375886	Evaluation of Enriched Background Microflora of Wheat flour Spiked with E. coli O157 and E. coli O121 through metagenomics
+MZ229604.1	ERR3085829	12.74	9.85	9.70	SAMEA104403803	RLBUHT_Cdiff
+MZ229604.1	SRR6667573	12.74	9.85	9.70	SAMN08457752	Metagenomes of produce spiked with E.coli
+MZ229604.1	SRR15276860	12.74	9.85	9.70	SAMN20362752	AMR target-enriched metagenomic and 16S rRNA reads from cows raised in conventional or organic setting
+MZ229604.1	SRR13760448	11.88	9.09	9.05	SAMN18016884	Antibiotic-driven intestinal dysbiosis in paediatric SBS alters microbiome functions and is associated with gut-derived blood stream infections throughout childhood
+MZ229604.1	ERR4571347	11.81	9.09	9.00	SAMEA7294535	Genomic insights into adaptations of TMA-utilizing methanogens to diverse habitats including the human gut
+MZ229604.1	ERR2597327	11.81	9.09	8.99	SAMEA4688841	VETII samples
+MZ229604.1	SRR16681855	11.80	9.09	8.99	SAMN22567060	Metagenomic analysis of gut microbiota of people with depression disorders for determination of the composition of the marker genes.
+MZ229604.1	SRR5273912	11.80	9.09	8.99	SAMN06350202	Mother-infant microbiome vertical transmission
+MZ229604.1	ERR1135221	11.79	9.09	8.98	SAMEA3663048	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	SRR4425697	11.79	9.09	8.98	SAMN05597123	Composite fecal samples and WWTP biosolids Raw sequence reads
+MZ229604.1	SRR3181139	11.78	9.09	8.97	SAMN04450471	Cattle feces Metagenome
+MZ229604.1	SRR11391801	11.78	9.09	8.97	SAMN14418853	Metagenomic Sequencing for cattle manure and E. coli library from cattle manure
+MZ229604.1	SRR14842352	11.78	9.09	8.97	SAMN19735668	Global Canine Shotgun Microbiomes
+MZ229604.1	SRR2177359	11.77	9.09	8.96	SAMN04001592	STEC-spiked spinach Metagenome
+MZ229604.1	SRR12710959	11.76	9.09	8.96	SAMN15870917	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR6869083	11.76	9.09	8.95	SAMN08738620	Bovine Fecal Metagenomics During Early Life
+MZ229604.1	SRR2177287	11.76	9.09	8.95	SAMN04001591	STEC-spiked spinach Metagenome
+MZ229604.1	SRR4101293	11.76	9.09	8.95	SAMN05715930	food contamination metagenome Metagenome
+MZ229604.1	SRR12326570	11.75	9.09	8.95	SAMN15637148	Cassava leaf microbiome and ions
+MZ229604.1	SRR4101317	11.75	9.09	8.95	SAMN05715937	food contamination metagenome Metagenome
+MZ229604.1	SRR12711214	11.75	9.09	8.94	SAMN15870991	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR7658622	11.75	9.09	8.94	SAMN09781734	Metagenomic sequencing of stool samples from rural communities from north-eastern Madagascar
+MZ229604.1	SRR8353652	11.75	9.09	8.94	SAMN10615591	The relationship of fecal microbiomes and nutritional status in cystic fibrosis
+MZ229604.1	ERR4298353	11.74	9.09	8.94	SAMEA7020081	Proficiency testing of metagenomics-based detection of food-borne pathogens using a complex artificial sequencing dataset
+MZ229604.1	ERR738549	11.74	9.09	8.94	SAMEA3216841	Benchmark of metagenome analysis tools
+MZ229604.1	SRR4018490	11.74	9.09	8.94	SAMN05442508	freshwater metagenome Raw sequence reads
+MZ229604.1	SRR11435965	11.74	9.09	8.94	SAMN14475169	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR11435986	11.74	9.09	8.94	SAMN14475174	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR11435990	11.74	9.09	8.94	SAMN14475162	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR12195329	11.74	9.09	8.94	SAMN15504571	STEC-spiked food
+MZ229604.1	SRR12195330	11.74	9.09	8.94	SAMN15504570	STEC-spiked food
+MZ229604.1	SRR12195331	11.74	9.09	8.94	SAMN15504569	STEC-spiked food
+MZ229604.1	SRR12195332	11.74	9.09	8.94	SAMN15504568	STEC-spiked food
+MZ229604.1	SRR12195333	11.74	9.09	8.94	SAMN15504567	STEC-spiked food
+MZ229604.1	SRR12195334	11.74	9.09	8.94	SAMN15504566	STEC-spiked food
+MZ229604.1	SRR12195343	11.74	9.09	8.94	SAMN15504564	STEC-spiked food
+MZ229604.1	SRR12195344	11.74	9.09	8.94	SAMN15504563	STEC-spiked food
+MZ229604.1	SRR12217733	11.74	9.09	8.94	SAMN15503819	Bovine fecal metagenome from dairy veal calves
+MZ229604.1	SRR1523528	11.74	9.09	8.94	SAMN02929927	Human saliva, creek water, and synthetic metagenomic samples used in selective DNA isolation using restriction enzymes
+MZ229604.1	SRR15276869	11.74	9.09	8.94	SAMN20362768	AMR target-enriched metagenomic and 16S rRNA reads from cows raised in conventional or organic setting
+MZ229604.1	SRR17241854	11.74	9.09	8.94	SAMN23969020	Gut microbiome in obese children treated with butyrate
+MZ229604.1	SRR2000383	11.74	9.09	8.94	SAMN03569081	Fecal suspension - 2011 E coli outbreak Raw sequence reads
+MZ229604.1	SRR2177357	11.74	9.09	8.94	SAMN04001591	STEC-spiked spinach Metagenome
+MZ229604.1	SRR4101290	11.74	9.09	8.94	SAMN05715926	food contamination metagenome Metagenome
+MZ229604.1	SRR4101292	11.74	9.09	8.94	SAMN05715929	food contamination metagenome Metagenome
+MZ229604.1	SRR4101298	11.74	9.09	8.94	SAMN05715931	food contamination metagenome Metagenome
+MZ229604.1	SRR4101301	11.74	9.09	8.94	SAMN05715926	food contamination metagenome Metagenome
+MZ229604.1	SRR6486883	11.74	9.09	8.94	SAMN08375884	Evaluation of Enriched Background Microflora of Wheat flour Spiked with E. coli O157 and E. coli O121 through metagenomics
+MZ229604.1	SRR6486887	11.74	9.09	8.94	SAMN08375878	Evaluation of Enriched Background Microflora of Wheat flour Spiked with E. coli O157 and E. coli O121 through metagenomics
+MZ229604.1	SRR6486889	11.74	9.09	8.94	SAMN08375880	Evaluation of Enriched Background Microflora of Wheat flour Spiked with E. coli O157 and E. coli O121 through metagenomics
+MZ229604.1	SRR6486890	11.74	9.09	8.94	SAMN08375879	Evaluation of Enriched Background Microflora of Wheat flour Spiked with E. coli O157 and E. coli O121 through metagenomics
+MZ229604.1	SRR6514655	11.74	9.09	8.94	SAMN08379452	Evaluation of Enriched Background Microflora of Raw Milk Cheese Spiked with E. coli O157:H7 and E. coli O103 using Next-Generation Sequencing Technology
+MZ229604.1	SRR6514663	11.74	9.09	8.94	SAMN08379458	Evaluation of Enriched Background Microflora of Raw Milk Cheese Spiked with E. coli O157:H7 and E. coli O103 using Next-Generation Sequencing Technology
+MZ229604.1	SRR6514664	11.74	9.09	8.94	SAMN08379457	Evaluation of Enriched Background Microflora of Raw Milk Cheese Spiked with E. coli O157:H7 and E. coli O103 using Next-Generation Sequencing Technology
+MZ229604.1	SRR7229774	11.74	9.09	8.94	SAMN09269258	Complete Genome Sequence of New Type Shiga toxin-producing Escherichia coli O157:H7 Phage vB_EcoM-Sa157w3YLVW
+MZ229604.1	SRR14346537	10.90	8.33	8.30	SAMN18880775	The role of maternal exposures on commensal microbes
+MZ229604.1	ERR4571087	10.81	8.33	8.23	SAMEA7294535	Genomic insights into adaptations of TMA-utilizing methanogens to diverse habitats including the human gut
+MZ229604.1	ERR2020037	10.81	8.33	8.23	SAMEA104144127	We studied the effect of different zinc sources on the intestinal microbiome in weaned pigs
+MZ229604.1	ERR6170276	10.81	8.33	8.23	SAMEA8945704	VEGA Human Gut Metagenomics
+MZ229604.1	SRR14780119	10.80	8.33	8.22	SAMN15504563	Metagenomics MinION and Flongle sequencing of spiked beef
+MZ229604.1	SRR13694787	10.80	8.33	8.22	SAMN17884110	Vaginal seeding in babies born by caesarean section (ECOBABe trial) - shotgun metagenomics data
+MZ229604.1	SRR13694830	10.80	8.33	8.22	SAMN17884072	Vaginal seeding in babies born by caesarean section (ECOBABe trial) - shotgun metagenomics data
+MZ229604.1	SRR4018489	10.78	8.33	8.21	SAMN05442507	freshwater metagenome Raw sequence reads
+MZ229604.1	SRR13236686	10.78	8.33	8.21	SAMN16807469	Cellulolytic microbial consortium Genome sequencing and assembly
+MZ229604.1	SRR8845319	10.77	8.33	8.20	SAMN11311500	Shotgun Metagenomics of 361 post-menopause women reveals gut microbiome change along with the bone loss
+MZ229604.1	ERR738545	10.77	8.33	8.20	SAMEA3216837	Benchmark of metagenome analysis tools
+MZ229604.1	SRR5377209	10.77	8.33	8.20	SAMN06624502	human gut metagenome Raw sequence reads
+MZ229604.1	ERR321622	10.77	8.33	8.20	SAMEA2145815	Richness of human gut microbiome correlates with metabolic markers
+MZ229604.1	SRR12711225	10.77	8.33	8.20	SAMN15870981	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR4101322	10.77	8.33	8.20	SAMN05715928	food contamination metagenome Metagenome
+MZ229604.1	SRR12711224	10.77	8.33	8.20	SAMN15870982	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR12711477	10.77	8.33	8.20	SAMN15870925	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR12710916	10.77	8.33	8.20	SAMN15870962	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR8784357	10.77	8.33	8.20	SAMN11252265	Metagenomic sequencing of stool samples from Ethiopian individuals
+MZ229604.1	SRR8856338	10.77	8.33	8.20	SAMN11345975	Breccia  Pipe U Claim Borehole WT-29A subsurface metagenome
+MZ229604.1	SRR4101302	10.77	8.33	8.20	SAMN05715932	food contamination metagenome Metagenome
+MZ229604.1	SRR15276864	10.76	8.33	8.20	SAMN20362773	AMR target-enriched metagenomic and 16S rRNA reads from cows raised in conventional or organic setting
+MZ229604.1	SRR2177360	10.76	8.33	8.20	SAMN04001593	STEC-spiked spinach Metagenome
+MZ229604.1	SRR4101294	10.76	8.33	8.20	SAMN05715930	food contamination metagenome Metagenome
+MZ229604.1	SRR6514657	10.76	8.33	8.20	SAMN08379450	Evaluation of Enriched Background Microflora of Raw Milk Cheese Spiked with E. coli O157:H7 and E. coli O103 using Next-Generation Sequencing Technology
+MZ229604.1	SRR14346583	9.85	7.58	7.50	SAMN18880782	The role of maternal exposures on commensal microbes
+MZ229604.1	ERR3451257	9.83	7.58	7.48	SAMEA5814543	Whole shotgun metagenomic sequencing for 1,004 individuals belonging to the TwinsUK cohort.  Supporting data for: Visconti et al, Interplay between the human gut microbiome and host metabolism
+MZ229604.1	ERR4616332	9.83	7.58	7.48	SAMEA7332299	TwinUK cohort
+MZ229604.1	SRR11391799	9.82	7.58	7.48	SAMN14418855	Metagenomic Sequencing for cattle manure and E. coli library from cattle manure
+MZ229604.1	SRR7533038	9.82	7.58	7.48	SAMN09641623	panda gut metagenome raw sequence reads Raw sequence reads
+MZ229604.1	SRR5371465	9.82	7.58	7.48	SAMN06117812	bovine fecal metagenome raw sequence reads
+MZ229604.1	SRR13979576	9.82	7.58	7.48	SAMN18315996	Metagenomic analysis reveals the signature of gut microbiota associated with human chronotypes
+MZ229604.1	ERR3406244	9.82	7.58	7.47	SAMEA5616932	Early_life_microbiota_colonisation
+MZ229604.1	SRR12390981	9.82	7.58	7.47	SAMN15733940	Metagenome of wastewater-derived enrichment cultures with different culture media
+MZ229604.1	SRR14812346	9.81	7.58	7.47	SAMN19686914	Piglet gut and in-barn manure from farms on Raised Without Antibiotics program display a reduced antimicrobial resistance but an increased prevalence of pathogens
+MZ229604.1	ERR3857640	9.80	7.58	7.46	SAMEA6512880	Mediterranean diet intervention in overweight and obese subjects leads to multiple beneficial shifts in gut microbiome and metabolome independently from energy intake
+MZ229604.1	SRR4018499	9.79	7.58	7.46	SAMN05442516	freshwater metagenome Raw sequence reads
+MZ229604.1	SRR12710906	9.79	7.58	7.45	SAMN15870971	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	ERR3393547	9.79	7.58	7.45	SAMEA5733050	Animal gut microbiome
+MZ229604.1	ERR1620344	9.78	7.58	7.45	SAMEA4431957	The gut microbiome in Crohn's disease and modulation by exclusive enteral nutrition
+MZ229604.1	SRR10403548	9.78	7.58	7.45	SAMN13221638	Cross-sectional study of intestinal flora in Parkinson's patients in central China
+MZ229604.1	SRR11462833	9.78	7.58	7.45	SAMN14514676	Alteration in gut microbiota composition and functional relevance in subclinical carotid atherosclerosis in the general popolation
+MZ229604.1	SRR12158991	9.78	7.58	7.45	SAMN15422813	The gut microbiome related effect of Berberine and probiotics in treating Type 2 Diabetes
+MZ229604.1	SRR13236684	9.78	7.58	7.45	SAMN16991297	Cellulolytic microbial consortium Genome sequencing and assembly
+MZ229604.1	SRR17284332	9.78	7.58	7.45	SAMN23963220	Transmission and formation of microbiota in the ealry life
+MZ229604.1	SRR7351778	9.78	7.58	7.45	SAMN09278138	Probiotics in Pregnancy study
+MZ229604.1	SRR7351897	9.78	7.58	7.45	SAMN09278319	Probiotics in Pregnancy study
+MZ229604.1	ERR589506	9.78	7.58	7.45	SAMEA2737661	Gut and Oral Microbiome Dysbiosis in Rheumatoid Arthritis
+MZ229604.1	SRR1747032	9.78	7.58	7.44	SAMN03275585	Baboon feces Metagenome
+MZ229604.1	SRR2083222	9.78	7.58	7.44	SAMN03801314	Freshwater Viruses Metagenomic assembly
+MZ229604.1	SRR2177251	9.78	7.58	7.44	SAMN04001579	STEC-spiked spinach Metagenome
+MZ229604.1	SRR10692160	9.77	7.58	7.44	SAMN13246266	human gut metagenome Metagenome
+MZ229604.1	SRR15276862	9.77	7.58	7.44	SAMN20362775	AMR target-enriched metagenomic and 16S rRNA reads from cows raised in conventional or organic setting
+MZ229604.1	SRR10098751	8.92	6.82	6.79	SAMN12727814	Characterization of antimicrobial resistance genes in the enriched Enterobacteriaceae community of suburban mesocarnivores, stray dogs and owned dogs.
+MZ229604.1	SRR15686320	8.91	6.82	6.79	SAMN21160204	Metagenomics - Survival E. coli in beach sand
+MZ229604.1	SRR15686321	8.91	6.82	6.79	SAMN21160203	Metagenomics - Survival E. coli in beach sand
+MZ229604.1	SRR15686322	8.91	6.82	6.79	SAMN21160202	Metagenomics - Survival E. coli in beach sand
+MZ229604.1	SRR15686333	8.91	6.82	6.79	SAMN21160207	Metagenomics - Survival E. coli in beach sand
+MZ229604.1	SRR7031257	8.89	6.82	6.77	SAMN08777589	Goat fecal pellet enrichment culture fungal communities from Isla Vista, California, USA - Xylan, Gen0, Rep 2 metagenome
+MZ229604.1	ERR4564517	8.89	6.82	6.77	SAMEA7288884	Imidazole propionate is increased in diabetes and associated with dietary patterns and altered microbial ecology
+MZ229604.1	ERR3857613	8.87	6.82	6.75	SAMEA6512902	Mediterranean diet intervention in overweight and obese subjects leads to multiple beneficial shifts in gut microbiome and metabolome independently from energy intake
+MZ229604.1	ERR3393526	8.87	6.82	6.75	SAMEA5733029	Animal gut microbiome
+MZ229604.1	SRR7030503	8.86	6.82	6.75	SAMN08778356	Goat fecal pellet enrichment culture fungal communities from Isla Vista, California, USA - Reed Canary Grass, Gen0, Rep 3 metagenome
+MZ229604.1	SRR11412775	8.86	6.82	6.75	SAMN14445732	human gut metagenome Metagenome
+MZ229604.1	SRR13517648	8.84	6.82	6.73	SAMN17521793	Metagenomics of antimicrobial and heavy metal resistance in the cecal microbiome of fattening pigs raised without antibiotics
+MZ229604.1	SRR11236200	8.83	6.82	6.72	SAMN14270949	Human gut microbiome Raw sequence reads
+MZ229604.1	ERR738544	8.83	6.82	6.72	SAMEA3216836	Benchmark of metagenome analysis tools
+MZ229604.1	ERR3502022	8.82	6.82	6.72	SAMEA5925635	A cross-sectional study of compositional and functional profiles of gut microbiota in Sardinian centenarians
+MZ229604.1	SRR12529378	8.82	6.82	6.72	SAMN15829943	An integrated gene catalog and over 10,000 metagenome-assembled genomes from the gastrointestinal microbiome of ruminants
+MZ229604.1	SRR2177361	8.82	6.82	6.71	SAMN04001593	STEC-spiked spinach Metagenome
+MZ229604.1	SRR2177281	8.82	6.82	6.71	SAMN04001575	STEC-spiked spinach Metagenome
+MZ229604.1	ERR1135389	8.81	6.82	6.71	SAMEA3663216	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	SRR11185243	8.81	6.82	6.71	SAMN11098509	Pig microbiome
+MZ229604.1	SRR12159420	8.81	6.82	6.71	SAMN15422427	The gut microbiome related effect of Berberine and probiotics in treating Type 2 Diabetes
+MZ229604.1	SRR2177358	8.80	6.82	6.70	SAMN04001592	STEC-spiked spinach Metagenome
+MZ229604.1	SRR13355226	8.80	6.82	6.70	SAMN17091845	Mock community containing 99% human DNA and 1% E. coli DNA.
+MZ229604.1	SRR11435967	8.80	6.82	6.70	SAMN14475167	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR4018491	8.80	6.82	6.70	SAMN05442509	freshwater metagenome Raw sequence reads
+MZ229604.1	SRR12711466	8.80	6.82	6.70	SAMN15870926	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR10692116	8.80	6.82	6.70	SAMN13246425	human gut metagenome Metagenome
+MZ229604.1	SRR3169810	7.92	6.06	6.03	SAMN04448868	gut microbe Metagenome
+MZ229604.1	SRR2566049	7.91	6.06	6.03	SAMN04126100	Intestinal microbiota dynamics in hospitalized patients
+MZ229604.1	ERR1135378	7.86	6.06	5.98	SAMEA3663205	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR1600642	7.86	6.06	5.98	SAMEA4385500	Using WTP diet to modulate gut microbiota to alleviate human type 2 diabetes
+MZ229604.1	ERR5310767	7.85	6.06	5.98	SAMEA8082447	The TrackCattle Study
+MZ229604.1	ERR1135387	7.85	6.06	5.98	SAMEA3663214	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR3211920	7.85	6.06	5.98	SAMEA5414565	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR912002	7.84	6.06	5.97	SAMEA3449197	Shotgun Metagenomics of 250 Adult Twins Reveals Genetic and Environmental Impacts on the Gut Microbiome
+MZ229604.1	ERR3857610	7.84	6.06	5.97	SAMEA6512902	Mediterranean diet intervention in overweight and obese subjects leads to multiple beneficial shifts in gut microbiome and metabolome independently from energy intake
+MZ229604.1	ERR3211921	7.83	6.06	5.96	SAMEA5414566	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	SRR6869094	7.83	6.06	5.96	SAMN08738635	Bovine Fecal Metagenomics During Early Life
+MZ229604.1	SRR8289515	7.83	6.06	5.96	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR3525309	7.82	6.06	5.96	SAMEA5961686	Metagenomic sequencing of the rumen of cattle (Bos Taurus), sheep (Ovis aries), reindeer (Rangifer tarandus) and red deer (Cervus elaphus)
+MZ229604.1	SRR11435977	7.82	6.06	5.95	SAMN14475182	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	ERR1600724	7.82	6.06	5.95	SAMEA4385582	Using WTP diet to modulate gut microbiota to alleviate human type 2 diabetes
+MZ229604.1	ERR3656893	7.82	6.06	5.95	SAMEA6168775	Analysis of freeze-dried faecal samples collected from individuals between 1974 and 1980
+MZ229604.1	SRR11650009	7.82	6.06	5.95	SAMN14582974	Shotgun metagenomics of human gut microbiota in China high longevity area
+MZ229604.1	SRR5270854	7.82	6.06	5.95	SAMN06267770	Arabidopsis thaliana rhizosphere microbial communities from the Joint Genome Institute, USA, that affect carbon cycling - Inoculated plant M1 S PM metagenome
+MZ229604.1	SRR6877525	7.82	6.06	5.95	SAMN08765503	Healthy human bile Metagenome
+MZ229604.1	SRR7287333	7.82	6.06	5.95	SAMN09223217	Viral metagenome in feces from yaks in China
+MZ229604.1	SRR8925792	6.92	5.30	5.27	SAMN11458256	Metagenome of feedstock samples for 56 full-scale biogas plants in China
+MZ229604.1	ERR3857641	6.91	5.30	5.26	SAMEA6512880	Mediterranean diet intervention in overweight and obese subjects leads to multiple beneficial shifts in gut microbiome and metabolome independently from energy intake
+MZ229604.1	ERR2596699	6.88	5.30	5.24	SAMEA4527656	COMPARE global sewage snapshot virome sequencing part
+MZ229604.1	ERR3525314	6.88	5.30	5.24	SAMEA5961691	Metagenomic sequencing of the rumen of cattle (Bos Taurus), sheep (Ovis aries), reindeer (Rangifer tarandus) and red deer (Cervus elaphus)
+MZ229604.1	ERR321065	6.88	5.30	5.24	SAMEA2155030	Richness of human gut microbiome correlates with metabolic markers
+MZ229604.1	ERR738546	6.86	5.30	5.22	SAMEA3216838	Benchmark of metagenome analysis tools
+MZ229604.1	ERR3003428	6.86	5.30	5.22	SAMEA4813845	KOALA cohort metagenome study
+MZ229604.1	ERR3097525	6.86	5.30	5.22	SAMEA5245488	Human fecal metagenomes of individuals sampled along a small-scale urbanization gradient in Cameroon
+MZ229604.1	SRR10692023	6.86	5.30	5.22	SAMN13246444	human gut metagenome Metagenome
+MZ229604.1	ERR4290620	6.85	5.30	5.22	SAMEA7014618	Microbiome signature in post-treatment Lyme disease syndrome patients
+MZ229604.1	SRR13855170	6.85	5.30	5.22	SAMN18090719	Development of standard protocols for shotgun metagenomics analyses of human fecal microbiota (raw sequencing reads)
+MZ229604.1	ERR2597391	6.85	5.30	5.22	SAMEA4688905	VETII samples
+MZ229604.1	SRR6514659	6.85	5.30	5.21	SAMN08379456	Evaluation of Enriched Background Microflora of Raw Milk Cheese Spiked with E. coli O157:H7 and E. coli O103 using Next-Generation Sequencing Technology
+MZ229604.1	ERR4398810	6.85	5.30	5.21	SAMEA7112149	Gut Microbiomes of European Turkey and Veal Calf Herds
+MZ229604.1	SRR13180940	6.85	5.30	5.21	SAMN16976311	Fecogenome
+MZ229604.1	ERR3451502	6.84	5.30	5.21	SAMEA5814182	Whole shotgun metagenomic sequencing for 1,004 individuals belonging to the TwinsUK cohort.  Supporting data for: Visconti et al, Interplay between the human gut microbiome and host metabolism
+MZ229604.1	SRR8289526	6.84	5.30	5.21	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR5371471	6.84	5.30	5.21	SAMN06117809	bovine fecal metagenome raw sequence reads
+MZ229604.1	SRR7428413	6.84	5.30	5.21	SAMN09355640	Human Fecal Metagenome Metagenome
+MZ229604.1	SRR4018502	6.83	5.30	5.20	SAMN05442519	freshwater metagenome Raw sequence reads
+MZ229604.1	SRR10499620	5.95	4.55	4.53	SAMN13292787	human gut metagenome Metagenome
+MZ229604.1	SRR15725430	5.94	4.55	4.52	SAMN21220124	Exploring the possible link between the gut microbiome and fat deposition in pigs
+MZ229604.1	ERR2245477	5.94	4.55	4.52	SAMEA104467343	As part of the EFFORT project, we sampled feces from pig and poultry livestock in nine European countries (BE, BG, DK, FR, ES, GE, NL, PL, SP). More than 9000 animals were sampled, across 181 pig and 178 poultry herds to generate herd-level composite fecal samples. Using shotgun metagenomics, we have quantified and characterized the antimicrobial resistance gene pools (resistomes) in Europe's two most intensively raised livestock species.
+MZ229604.1	SRR8925818	5.93	4.55	4.52	SAMN11458198	Metagenomic analysis of 56 full-scale biogas plants in China
+MZ229604.1	SRR14800553	5.93	4.55	4.52	SAMN19685510	Metagenomic raw data of wastewater treatment plants in Xinjiang Uyghur Autonomous Region
+MZ229604.1	SRR6325481	5.93	4.55	4.51	SAMN08097993	iron plaque metagenome Raw sequence reads
+MZ229604.1	SRR8925784	5.92	4.55	4.51	SAMN11458266	Metagenome of feedstock samples for 56 full-scale biogas plants in China
+MZ229604.1	ERR2243490	5.92	4.55	4.51	SAMEA3932918	Effects of preservation and storage conditions on the fecal microbiome
+MZ229604.1	ERR4398788	5.91	4.55	4.50	SAMEA7112127	Gut Microbiomes of European Turkey and Veal Calf Herds
+MZ229604.1	SRR6514658	5.91	4.55	4.50	SAMN08379449	Evaluation of Enriched Background Microflora of Raw Milk Cheese Spiked with E. coli O157:H7 and E. coli O103 using Next-Generation Sequencing Technology
+MZ229604.1	ERR1137262	5.91	4.55	4.50	SAMEA3664936	Towards personalized nutrition by prediction of glycemic responses
+MZ229604.1	ERR3574525	5.91	4.55	4.50	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	ERR209058	5.90	4.55	4.49	SAMEA2042281	A method for identifying metagenomic species and variable genetic elements by exhaustive co-abundance binning
+MZ229604.1	SRR7228016	5.90	4.55	4.49	SAMN09272179	Effect of bariatric surgery on the faecal metagenome
+MZ229604.1	ERR4682857	5.89	4.55	4.48	SAMEA7428499	Global surveillance of antimicrobial resistance - batch June 2018
+MZ229604.1	SRR10692766	5.89	4.55	4.48	SAMN13247019	human gut metagenome Metagenome
+MZ229604.1	SRR14842407	5.89	4.55	4.48	SAMN19735663	Global Canine Shotgun Microbiomes
+MZ229604.1	ERR2241683	5.88	4.55	4.48	SAMEA104467186	As part of the EFFORT project, we sampled feces from pig and poultry livestock in nine European countries (BE, BG, DK, FR, ES, GE, NL, PL, SP). More than 9000 animals were sampled, across 181 pig and 178 poultry herds to generate herd-level composite fecal samples. Using shotgun metagenomics, we have quantified and characterized the antimicrobial resistance gene pools (resistomes) in Europe's two most intensively raised livestock species.
+MZ229604.1	SRR13217252	5.88	4.55	4.48	SAMN17026885	Manure metagenome from Ceftiofur-treated dairy cow
+MZ229604.1	SRR6869091	5.88	4.55	4.47	SAMN08738632	Bovine Fecal Metagenomics During Early Life
+MZ229604.1	SRR10499594	5.87	4.55	4.47	SAMN13292994	human gut metagenome Metagenome
+MZ229604.1	SRR7193049	5.87	4.55	4.47	SAMN09235249	Evaluation of porcine fecal microbiomes after exposure to ceftriaxone
+MZ229604.1	SRR9866666	5.87	4.55	4.47	SAMN12283821	Metagenomic sequencing of Lawsonia intracellularis
+MZ229604.1	SRR12619562	5.87	4.55	4.47	SAMN16091599	Manure-associated resistomes in soil column experiment
+MZ229604.1	SRR6202091	5.87	4.55	4.47	SAMN07811858	Metagenomic sequencing of the gut microbiomes of bats with different diets
+MZ229604.1	SRR10692252	5.87	4.55	4.47	SAMN13246551	human gut metagenome Metagenome
+MZ229604.1	SRR15276865	5.87	4.55	4.47	SAMN20362772	AMR target-enriched metagenomic and 16S rRNA reads from cows raised in conventional or organic setting
+MZ229604.1	ERR3211898	5.86	4.55	4.47	SAMEA5414543	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	SRR16178815	5.86	4.55	4.47	SAMN22025967	Metagenomic analysis towards biomarkers and prediction models between intestinal polyp patients and colorectal cancer patients
+MZ229604.1	SRR14474040	5.86	4.55	4.46	SAMN19078916	Metagenome of pig fecal bacteria
+MZ229604.1	SRR11435981	5.86	4.55	4.46	SAMN14475179	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR3181138	5.86	4.55	4.46	SAMN04450470	Cattle feces Metagenome
+MZ229604.1	ERR4083577	5.86	4.55	4.46	SAMEA6809531	Large scale metagenome assembly reveals novel animal-associated microbial diversity
+MZ229604.1	SRR10692412	5.86	4.55	4.46	SAMN13246275	human gut metagenome Metagenome
+MZ229604.1	SRR6869085	5.85	4.55	4.46	SAMN08738622	Bovine Fecal Metagenomics During Early Life
+MZ229604.1	SRR8925809	4.95	3.79	3.77	SAMN11458246	Metagenome of feedstock samples for 56 full-scale biogas plants in China
+MZ229604.1	SRR13271677	4.95	3.79	3.77	SAMN17112131	The Influence of the gut microbiome on BCG-induced trained immunity
+MZ229604.1	ERR1223839	4.95	3.79	3.77	SAMEA3730548	A sampling and metagenomic sequencing-based methodology for monitoring antimicrobial resistance in swine herds
+MZ229604.1	ERR2816258	4.95	3.79	3.77	SAMEA4947584	The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy
+MZ229604.1	SRR2566060	4.95	3.79	3.77	SAMN04126101	Intestinal microbiota dynamics in hospitalized patients
+MZ229604.1	ERR3404907	4.94	3.79	3.76	SAMEA5616681	Early_life_microbiota_colonisation
+MZ229604.1	SRR6714210	4.93	3.79	3.75	SAMN04382203	Human feces metagenome 16s rDNA sequencing
+MZ229604.1	SRR6059975	4.92	3.79	3.74	SAMN07632032	Fecal eukaryotic communites from dung pellets of Tule Elk in California, USA - Elk Dung F16 Day 16 Metagenome metagenome
+MZ229604.1	ERR3574523	4.91	3.79	3.74	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	SRR15276861	4.91	3.79	3.74	SAMN20362751	AMR target-enriched metagenomic and 16S rRNA reads from cows raised in conventional or organic setting
+MZ229604.1	SRR3053183	4.91	3.79	3.74	SAMN04362349	Beef Production Metagenome Raw sequence reads
+MZ229604.1	SRR4444801	4.90	3.79	3.73	SAMN05545021	Human gut microbiome with bacterial pathogen challenge
+MZ229604.1	ERR3218128	4.90	3.79	3.73	SAMEA104500607	PATCH_MICROBIOME
+MZ229604.1	SRR2083213	4.89	3.79	3.73	SAMN03801324	Freshwater Viruses Metagenomic assembly
+MZ229604.1	SRR12711219	4.89	3.79	3.73	SAMN15870986	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR8925811	4.89	3.79	3.73	SAMN11458248	Metagenome of feedstock samples for 56 full-scale biogas plants in China
+MZ229604.1	SRR8289130	4.89	3.79	3.73	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8288596	4.89	3.79	3.72	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR3153848	4.89	3.79	3.72	SAMEA5335622	The fecal microbiota has already altered in normoglycemic individuals who go on to have type 2 diabetes
+MZ229604.1	ERR3574516	4.89	3.79	3.72	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	SRR12459394	4.89	3.79	3.72	SAMN15824809	PROMISE Cohort Metagenome sequence data
+MZ229604.1	SRR13517650	4.89	3.79	3.72	SAMN17521793	Metagenomics of antimicrobial and heavy metal resistance in the cecal microbiome of fattening pigs raised without antibiotics
+MZ229604.1	SRR10499466	4.89	3.79	3.72	SAMN13292914	human gut metagenome Metagenome
+MZ229604.1	ERR1711743	4.89	3.79	3.72	SAMEA4525165	KCL_twins2
+MZ229604.1	SRR8289462	4.88	3.79	3.72	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR12710909	4.88	3.79	3.72	SAMN15870968	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	ERR4682411	4.88	3.79	3.71	SAMEA7428318	Global surveillance of antimicrobial resistance - batch November 2017
+MZ229604.1	SRR5371469	4.88	3.79	3.71	SAMN06117810	bovine fecal metagenome raw sequence reads
+MZ229604.1	SRR4101316	4.88	3.79	3.71	SAMN05715937	food contamination metagenome Metagenome
+MZ229604.1	ERR2241648	4.87	3.79	3.71	SAMEA104467151	As part of the EFFORT project, we sampled feces from pig and poultry livestock in nine European countries (BE, BG, DK, FR, ES, GE, NL, PL, SP). More than 9000 animals were sampled, across 181 pig and 178 poultry herds to generate herd-level composite fecal samples. Using shotgun metagenomics, we have quantified and characterized the antimicrobial resistance gene pools (resistomes) in Europe's two most intensively raised livestock species.
+MZ229604.1	ERR3212041	4.87	3.79	3.71	SAMEA5414687	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR3941303	4.87	3.79	3.71	SAMEA6577303	Using metabolomics and microbiome analysis as tools to investigate cheetah liver necrosis syndrome a pilot study
+MZ229604.1	ERR4564347	4.87	3.79	3.71	SAMEA7288568	Imidazole propionate is increased in diabetes and associated with dietary patterns and altered microbial ecology
+MZ229604.1	ERR4564349	4.87	3.79	3.71	SAMEA7288568	Imidazole propionate is increased in diabetes and associated with dietary patterns and altered microbial ecology
+MZ229604.1	SRR12447099	4.87	3.79	3.71	SAMN15805260	Swine Feedlot Wastewater metagenome (bacterial and phages)
+MZ229604.1	SRR12459598	4.87	3.79	3.71	SAMN15824768	PROMISE Cohort Metagenome sequence data
+MZ229604.1	SRR13855169	4.87	3.79	3.71	SAMN18090719	Development of standard protocols for shotgun metagenomics analyses of human fecal microbiota (raw sequencing reads)
+MZ229604.1	SRR14780120	4.87	3.79	3.71	SAMN15504563	Metagenomics MinION and Flongle sequencing of spiked beef
+MZ229604.1	SRR15511266	4.87	3.79	3.71	SAMN20837616	Differential effects of western and mediterranean-type diets on gut microbiota: a metagenomics and metabolomics approach
+MZ229604.1	SRR7521185	4.87	3.79	3.71	SAMN09572438	bird metagenome Metagenome
+MZ229604.1	SRR7755066	4.87	3.79	3.71	SAMN09908174	Water meter biofilm Raw sequence reads
+MZ229604.1	ERR4571535	3.97	3.03	3.02	SAMEA7294522	Genomic insights into adaptations of TMA-utilizing methanogens to diverse habitats including the human gut
+MZ229604.1	ERR3574545	3.96	3.03	3.02	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	ERR4066028	3.96	3.03	3.02	SAMEA6801862	Strain-level analysis of Bifidobacterium spp. from human gut metagenomes of individuals with different lactase persistence genotypes
+MZ229604.1	ERR4682792	3.96	3.03	3.02	SAMEA7428434	Global surveillance of antimicrobial resistance - batch June 2018
+MZ229604.1	SRR11851393	3.96	3.03	3.01	SAMN14986072	human metagenome Raw sequence reads
+MZ229604.1	ERR321066	3.96	3.03	3.01	SAMEA2155030	Richness of human gut microbiome correlates with metabolic markers
+MZ229604.1	ERR6996584	3.96	3.03	3.01	SAMEA10314797	iMSMS Baranzini data
+MZ229604.1	SRR7109575	3.96	3.03	3.01	SAMN08776111	Enriched fungal communities from goat fecal pellet, Isla Vista, California, United States - Alfalfa, Gen5, Rep 3 metagenome
+MZ229604.1	ERR2597350	3.95	3.03	3.01	SAMEA4688864	VETII samples
+MZ229604.1	ERR2009463	3.95	3.03	3.01	SAMEA104112267	Human fecal metagenome spiked with Campylobacter jejuni
+MZ229604.1	ERR2241880	3.95	3.03	3.01	SAMEA104467383	As part of the EFFORT project, we sampled feces from pig and poultry livestock in nine European countries (BE, BG, DK, FR, ES, GE, NL, PL, SP). More than 9000 animals were sampled, across 181 pig and 178 poultry herds to generate herd-level composite fecal samples. Using shotgun metagenomics, we have quantified and characterized the antimicrobial resistance gene pools (resistomes) in Europe's two most intensively raised livestock species.
+MZ229604.1	ERR3212053	3.95	3.03	3.01	SAMEA5414699	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	SRR13517631	3.95	3.03	3.01	SAMN17521794	Metagenomics of antimicrobial and heavy metal resistance in the cecal microbiome of fattening pigs raised without antibiotics
+MZ229604.1	SRR1611553	3.95	3.03	3.01	SAMN03068415	Wake Forest Vervet Microbiome Project
+MZ229604.1	SRR8925825	3.95	3.03	3.01	SAMN11458263	Metagenome of feedstock samples for 56 full-scale biogas plants in China
+MZ229604.1	ERR912028	3.95	3.03	3.01	SAMEA3449223	Shotgun Metagenomics of 250 Adult Twins Reveals Genetic and Environmental Impacts on the Gut Microbiome
+MZ229604.1	ERR4083585	3.94	3.03	3.00	SAMEA6809520	Large scale metagenome assembly reveals novel animal-associated microbial diversity
+MZ229604.1	ERR1135380	3.94	3.03	3.00	SAMEA3663207	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	SRR7587241	3.94	3.03	3.00	SAMN09710141	The role of Parmesan cheese in vectoring bovine microbiota's engraftment in the human gut.
+MZ229604.1	SRR10209667	3.94	3.03	3.00	SAMN12867438	pig gut metagenome Targeted loci environmental
+MZ229604.1	ERR3857639	3.94	3.03	3.00	SAMEA6512880	Mediterranean diet intervention in overweight and obese subjects leads to multiple beneficial shifts in gut microbiome and metabolome independently from energy intake
+MZ229604.1	ERR3211917	3.93	3.03	3.00	SAMEA5414562	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	SRR12711033	3.93	3.03	2.99	SAMN15871266	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	ERR3574521	3.93	3.03	2.99	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	SRR2177284	3.93	3.03	2.99	SAMN04001575	STEC-spiked spinach Metagenome
+MZ229604.1	SRR8289131	3.92	3.03	2.99	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR3211788	3.92	3.03	2.99	SAMEA5414433	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR7439212	3.92	3.03	2.99	SAMEA10813641	Long-term effects of diet on human gut microbiota composition employing shotgun metagenomics data analysis
+MZ229604.1	ERR4682403	3.92	3.03	2.99	SAMEA7428310	Global surveillance of antimicrobial resistance - batch November 2017
+MZ229604.1	SRR6058009	3.92	3.03	2.99	SAMN07679367	Impacts of florfenicol on the antimicrobial resistance and community composition of microbiome in aquaculture ecosystem as revealed by metagenomics sequencing
+MZ229604.1	ERR4678623	3.92	3.03	2.99	SAMEA7426323	Global surveillance of antimicrobial resistance - batch November 2018
+MZ229604.1	SRR2938207	3.92	3.03	2.98	SAMN04261292	Antibiotic resistance exchange between microbiota in resource-poor settings in Latin America
+MZ229604.1	SRR8288629	3.92	3.03	2.98	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR2597490	3.91	3.03	2.98	SAMEA4689004	VETII samples
+MZ229604.1	SRR12529043	3.91	3.03	2.98	SAMN15829913	An integrated gene catalog and over 10,000 metagenome-assembled genomes from the gastrointestinal microbiome of ruminants
+MZ229604.1	SRR12710915	3.91	3.03	2.97	SAMN15870963	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR14842324	3.90	3.03	2.97	SAMN19735756	Global Canine Shotgun Microbiomes
+MZ229604.1	SRR8289413	3.90	3.03	2.97	SAMN10508885	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	DRR195290	3.90	3.03	2.97	SAMD00191348	Megaviridae metabarcoding diversity analysis data
+MZ229604.1	SRR13826014	3.90	3.03	2.97	SAMN16925175	Metagenome study of patients with Budd-Chiari syndrome
+MZ229604.1	SRR14099390	3.90	3.03	2.97	SAMN16925175	Metagenome study of patients with Budd-Chiari syndrome
+MZ229604.1	SRR8289504	3.90	3.03	2.97	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR1135246	3.90	3.03	2.97	SAMEA3663073	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR2739182	3.90	3.03	2.97	SAMEA4833209	Culture-enriched human gut microbiomes reveal core and accessory resistance genes
+MZ229604.1	ERR4330119	3.90	3.03	2.97	SAMEA7041226	Microbiome connections with host metabolism and habitual diet from the PREDICT 1 metagenomic study
+MZ229604.1	ERR527133	3.90	3.03	2.97	SAMEA2581964	Liver cirrhosis occurs as a consequence of many chronic liver diseases that are prevalent worldwide. Previous studies have shown an association between the gut microbiota and liver complications such as cirrhosis and other liver injuries. We therefore undertook a whole gut microbiome wide association study of stool samples from 98 liver cirrhosis patients and 83 healthy controls to characterise the faecal microbial communities and their functional composition. In total, we generated 860 Gb of high-quality sequence data and built a reference gene set for the liver cirrhosis cohort containing 2.69 million genes, 36.1% of which was not covered by previously published gene catalogues.
+MZ229604.1	SRR17284133	3.90	3.03	2.97	SAMN23963225	Transmission and formation of microbiota in the ealry life
+MZ229604.1	SRR15276858	3.90	3.03	2.97	SAMN20362754	AMR target-enriched metagenomic and 16S rRNA reads from cows raised in conventional or organic setting
+MZ229604.1	SRR6474258	3.90	3.03	2.97	SAMN08366201	human gut Metagenome
+MZ229604.1	SRR7521234	3.90	3.03	2.97	SAMN09572431	bird metagenome Metagenome
+MZ229604.1	SRR5678929	3.90	3.03	2.97	SAMN06685608	Farm metagenomes conventional and organic
+MZ229604.1	SRR8289379	3.90	3.03	2.97	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR2182603	3.90	3.03	2.97	SAMEA104359672	Metagenomic characterization of the human intestinal microbiota in faecal samples from STEC-infected patients
+MZ229604.1	SRR11489752	2.98	2.27	2.27	SAMN14543253	Global studies of microbial diversity in pig gut
+MZ229604.1	SRR10572917	2.98	2.27	2.27	SAMN13451426	PCR amplicon specificity sequencing for a nL-qPCR chip to detect enteric pathogens
+MZ229604.1	ERR1135216	2.97	2.27	2.26	SAMEA3663043	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR2380891	2.97	2.27	2.26	SAMEA104674556	EQ.128.130507_meta
+MZ229604.1	SRR16110324	2.97	2.27	2.26	SAMN21894385	sock swab screening for Hepatitis E virus surveillance in pig herds
+MZ229604.1	SRR2155332	2.97	2.27	2.26	SAMN03922488	Characterization of the distal gut microbiota in obese patients following a weight-loss intervention using whole metagenome shotgun sequencing
+MZ229604.1	ERR4571275	2.97	2.27	2.26	SAMEA7294522	Genomic insights into adaptations of TMA-utilizing methanogens to diverse habitats including the human gut
+MZ229604.1	SRR12459432	2.97	2.27	2.26	SAMN15824774	PROMISE Cohort Metagenome sequence data
+MZ229604.1	SRR7030482	2.97	2.27	2.26	SAMN08777591	Goat fecal pellet enrichment culture fungal communities from Isla Vista, California, USA - Bagasse, Gen0, Rep 2 metagenome
+MZ229604.1	ERR3211887	2.97	2.27	2.26	SAMEA5414532	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR5024031	2.97	2.27	2.26	SAMEA3932918	Effects of preservation and storage conditions on the fecal microbiome
+MZ229604.1	ERR912080	2.97	2.27	2.26	SAMEA3449275	Shotgun Metagenomics of 250 Adult Twins Reveals Genetic and Environmental Impacts on the Gut Microbiome
+MZ229604.1	ERR3764804	2.96	2.27	2.26	SAMEA6416063	Gut microbiome response to a fermented milk product in healthy subjects
+MZ229604.1	ERR209059	2.96	2.27	2.26	SAMEA2042281	A method for identifying metagenomic species and variable genetic elements by exhaustive co-abundance binning
+MZ229604.1	SRR4425674	2.96	2.27	2.26	SAMN05597091	Composite fecal samples and WWTP biosolids Raw sequence reads
+MZ229604.1	SRR11489779	2.96	2.27	2.26	SAMN14543228	Global studies of microbial diversity in pig gut
+MZ229604.1	SRR17317419	2.96	2.27	2.26	SAMN24337956	The difference between diarrhea piglets and normal piglets
+MZ229604.1	ERR3211993	2.96	2.27	2.25	SAMEA5414638	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR2855875	2.96	2.27	2.25	SAMEA4968179	A causal role of the gut microbiome in schizophrenia
+MZ229604.1	ERR3211800	2.96	2.27	2.25	SAMEA5414445	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR4398717	2.96	2.27	2.25	SAMEA7112056	Gut Microbiomes of European Turkey and Veal Calf Herds
+MZ229604.1	SRR10209685	2.96	2.27	2.25	SAMN12867437	pig gut metagenome Targeted loci environmental
+MZ229604.1	SRR3181120	2.96	2.27	2.25	SAMN04450452	Cattle feces Metagenome
+MZ229604.1	SRR5574344	2.96	2.27	2.25	SAMN07125683	Metagenomic analysis of vegetable soil profiles
+MZ229604.1	SRR8925750	2.96	2.27	2.25	SAMN11458265	Metagenome of feedstock samples for 56 full-scale biogas plants in China
+MZ229604.1	SRR5127580	2.96	2.27	2.25	SAMN06110140	Gut microbial interactions with the inflammatory cytokine production capacity
+MZ229604.1	SRR12390982	2.95	2.27	2.25	SAMN15733939	Metagenome of wastewater-derived enrichment cultures with different culture media
+MZ229604.1	ERR5030995	2.95	2.27	2.25	SAMEA3932884	Effects of preservation and storage conditions on the fecal microbiome
+MZ229604.1	SRR4018500	2.95	2.27	2.25	SAMN05442517	freshwater metagenome Raw sequence reads
+MZ229604.1	ERR3525311	2.95	2.27	2.25	SAMEA5961688	Metagenomic sequencing of the rumen of cattle (Bos Taurus), sheep (Ovis aries), reindeer (Rangifer tarandus) and red deer (Cervus elaphus)
+MZ229604.1	SRR11435980	2.95	2.27	2.25	SAMN14475180	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR12459640	2.95	2.27	2.25	SAMN15824903	PROMISE Cohort Metagenome sequence data
+MZ229604.1	ERR2241624	2.95	2.27	2.24	SAMEA104467127	As part of the EFFORT project, we sampled feces from pig and poultry livestock in nine European countries (BE, BG, DK, FR, ES, GE, NL, PL, SP). More than 9000 animals were sampled, across 181 pig and 178 poultry herds to generate herd-level composite fecal samples. Using shotgun metagenomics, we have quantified and characterized the antimicrobial resistance gene pools (resistomes) in Europe's two most intensively raised livestock species.
+MZ229604.1	SRR8288996	2.94	2.27	2.24	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR1620360	2.94	2.27	2.24	SAMEA4431973	The gut microbiome in Crohn's disease and modulation by exclusive enteral nutrition
+MZ229604.1	ERR4678562	2.94	2.27	2.24	SAMEA7426262	Global surveillance of antimicrobial resistance - batch November 2018
+MZ229604.1	SRR13318207	2.94	2.27	2.24	SAMN17171336	Netherland Travelers
+MZ229604.1	SRR6058008	2.94	2.27	2.24	SAMN07679372	Impacts of florfenicol on the antimicrobial resistance and community composition of microbiome in aquaculture ecosystem as revealed by metagenomics sequencing
+MZ229604.1	SRR8289244	2.94	2.27	2.24	SAMN10508895	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289458	2.94	2.27	2.24	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR2597541	2.94	2.27	2.24	SAMEA4689055	VETII samples
+MZ229604.1	SRR8288641	2.94	2.27	2.24	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR589512	2.94	2.27	2.24	SAMEA2737667	Gut and Oral Microbiome Dysbiosis in Rheumatoid Arthritis
+MZ229604.1	ERR3574519	2.94	2.27	2.24	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	ERR1992810	2.94	2.27	2.24	SAMEA103954417	Semi-synthetic marine metagenomes for metagenomic pipeline assessment
+MZ229604.1	ERR3519526	2.94	2.27	2.24	SAMEA5953999	Secrets of the hospital underbelly: abundance of antimicrobial resistance genes in hospital wastewater reflects hospital antimicrobial use and inpatient length of stay
+MZ229604.1	ERR4682427	2.94	2.27	2.24	SAMEA7428334	Global surveillance of antimicrobial resistance - batch November 2017
+MZ229604.1	SRR12459264	2.94	2.27	2.24	SAMN15824897	PROMISE Cohort Metagenome sequence data
+MZ229604.1	ERR1655291	2.94	2.27	2.24	SAMEA4462218	The Diet and Exercise-Microbiome Paradigm: Distinct Functional Profiles of the Athlete Microbiome Revealed by Metagenomic and Metabolomic  Analysis
+MZ229604.1	SRR12710908	2.94	2.27	2.24	SAMN15870969	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR2938218	2.94	2.27	2.24	SAMN04262598	Antibiotic resistance exchange between microbiota in resource-poor settings in Latin America
+MZ229604.1	SRR8890822	2.94	2.27	2.24	SAMN11407850	Gut microbiome differences between wild and captive black rhinoceros – implications for rhino health
+MZ229604.1	SRR8890836	2.94	2.27	2.24	SAMN11407866	Gut microbiome differences between wild and captive black rhinoceros – implications for rhino health
+MZ229604.1	SRR11435976	2.94	2.27	2.24	SAMN14475183	Quasimetagenomics sequencing of Salmonella enterica and E. coli O157:H7
+MZ229604.1	SRR8289496	2.94	2.27	2.24	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR1524754	2.93	2.27	2.23	SAMN02929926	Human saliva, creek water, and synthetic metagenomic samples used in selective DNA isolation using restriction enzymes
+MZ229604.1	ERR1135238	2.93	2.27	2.23	SAMEA3663065	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	SRR8288593	2.93	2.27	2.23	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289528	2.93	2.27	2.23	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8288989	2.93	2.27	2.23	SAMN10508889	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289128	2.93	2.27	2.23	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR6995237	2.92	2.27	2.23	SAMEA10313695	iMSMS Baranzini data
+MZ229604.1	SRR11236188	2.92	2.27	2.23	SAMN14270960	Human gut microbiome Raw sequence reads
+MZ229604.1	ERR4398779	2.92	2.27	2.23	SAMEA7112118	Gut Microbiomes of European Turkey and Veal Calf Herds
+MZ229604.1	SRR8289240	2.92	2.27	2.23	SAMN10508895	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR10403546	2.92	2.27	2.23	SAMN13221640	Cross-sectional study of intestinal flora in Parkinson's patients in central China
+MZ229604.1	SRR12667571	2.00	1.52	1.52	SAMN15739358	Sediment microbial communities from Lake Lucerne, Nidwalden, Switzerland - LL_9 metagenome
+MZ229604.1	SRR4051758	2.00	1.52	1.52	SAMN03861969	Panchlora gut microbial communities from Gamboa, Panama - Panchlora_hindgut_metagenome
+MZ229604.1	SRR11412752	1.99	1.52	1.52	SAMN14445522	human gut metagenome Metagenome
+MZ229604.1	ERR2241682	1.99	1.52	1.52	SAMEA104467185	As part of the EFFORT project, we sampled feces from pig and poultry livestock in nine European countries (BE, BG, DK, FR, ES, GE, NL, PL, SP). More than 9000 animals were sampled, across 181 pig and 178 poultry herds to generate herd-level composite fecal samples. Using shotgun metagenomics, we have quantified and characterized the antimicrobial resistance gene pools (resistomes) in Europe's two most intensively raised livestock species.
+MZ229604.1	SRR12711133	1.99	1.52	1.52	SAMN15870884	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR13378556	1.99	1.52	1.52	SAMN17250507	Human Gut Microbiomes from Burkina Faso
+MZ229604.1	SRR14877748	1.99	1.52	1.52	SAMN19769942	Constructed wetlands Raw sequence reads
+MZ229604.1	SRR8198135	1.99	1.52	1.52	SAMN10435343	Evaluation of porcine fecal microbiomes after exposure to ceftriaxone
+MZ229604.1	ERR3211893	1.99	1.52	1.51	SAMEA5414538	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	SRR8316592	1.99	1.52	1.51	SAMN10592412	Gut metagenomes of Yi and Tibetan population and hypertension patients in China
+MZ229604.1	ERR3211779	1.99	1.52	1.51	SAMEA5414424	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR3211784	1.99	1.52	1.51	SAMEA5414429	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	SRR7533028	1.99	1.52	1.51	SAMN09641548	panda gut metagenome raw sequence reads Raw sequence reads
+MZ229604.1	ERR3211797	1.98	1.52	1.51	SAMEA5414442	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	SRR12529382	1.98	1.52	1.51	SAMN15829939	An integrated gene catalog and over 10,000 metagenome-assembled genomes from the gastrointestinal microbiome of ruminants
+MZ229604.1	SRR16327203	1.98	1.52	1.51	SAMN22262140	Xylan alleviates dietary fiber deprivation-induced dysbiosis by selectively promoting Bifidobacterium pseudocatenulatum in pigs
+MZ229604.1	SRR10572878	1.98	1.52	1.51	SAMN13451461	PCR amplicon specificity sequencing for a nL-qPCR chip to detect enteric pathogens
+MZ229604.1	ERR4571256	1.98	1.52	1.51	SAMEA7294536	Genomic insights into adaptations of TMA-utilizing methanogens to diverse habitats including the human gut
+MZ229604.1	ERR2597347	1.98	1.52	1.51	SAMEA4688861	VETII samples
+MZ229604.1	ERR3574520	1.98	1.52	1.51	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	ERR414276	1.97	1.52	1.50	SAMEA2338661	An integrated catalog of reference genes in the human gut microbiome
+MZ229604.1	ERR2597481	1.97	1.52	1.50	SAMEA4688995	VETII samples
+MZ229604.1	ERR1135248	1.97	1.52	1.50	SAMEA3663075	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	SRR7533037	1.97	1.52	1.50	SAMN09641624	panda gut metagenome raw sequence reads Raw sequence reads
+MZ229604.1	ERR2835366	1.97	1.52	1.50	SAMEA4968800	A microbiota-directed complementary food, developed and characterized in gnotobiotic mice and piglets colonized with microbial therapeutic targets, has wide-ranging beneficial effects on biomarkers and mediators of postnatal development in Bangladeshi children with moderate acute malnutrition
+MZ229604.1	ERR3941104	1.97	1.52	1.50	SAMEA6577095	Using metabolomics and microbiome analysis as tools to investigate cheetah liver necrosis syndrome a pilot study
+MZ229604.1	ERR4678596	1.97	1.52	1.50	SAMEA7426296	Global surveillance of antimicrobial resistance - batch November 2018
+MZ229604.1	ERR4844301	1.97	1.52	1.50	SAMEA7567900	Metagenomics and metatranscriptomics of WT and Down Syndrome model (Ts65Dn) mice fed control and High-fat diet, sequenced with Illumina HiSeq (total RNA and ribodepleted RNA).
+MZ229604.1	SRR12710912	1.97	1.52	1.50	SAMN15870965	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR12874596	1.97	1.52	1.50	SAMN16502418	Within-host evolution of Vibrio cholerae using metagenomics
+MZ229604.1	SRR3181119	1.97	1.52	1.50	SAMN04450451	Cattle feces Metagenome
+MZ229604.1	SRR7060083	1.97	1.52	1.50	SAMN08976422	Colorado Natural Cattle SCFP Trial
+MZ229604.1	SRR8126733	1.97	1.52	1.50	SAMN10340209	United States National Arboretum Microbial Observatory
+MZ229604.1	ERR1135381	1.97	1.52	1.50	SAMEA3663208	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR2739181	1.97	1.52	1.50	SAMEA4833209	Culture-enriched human gut microbiomes reveal core and accessory resistance genes
+MZ229604.1	SRR13517627	1.97	1.52	1.50	SAMN17521794	Metagenomics of antimicrobial and heavy metal resistance in the cecal microbiome of fattening pigs raised without antibiotics
+MZ229604.1	ERR4571457	1.97	1.52	1.50	SAMEA7294486	Genomic insights into adaptations of TMA-utilizing methanogens to diverse habitats including the human gut
+MZ229604.1	SRR10499496	1.97	1.52	1.50	SAMN13292902	human gut metagenome Metagenome
+MZ229604.1	SRR9264587	1.97	1.52	1.50	SAMN12011462	human gut metagenome Metagenome
+MZ229604.1	SRR13263841	1.97	1.52	1.50	SAMN17083963	Soil microbial community Generation
+MZ229604.1	SRR13318403	1.97	1.52	1.50	SAMN17171424	Netherland Travelers
+MZ229604.1	SRR14307655	1.97	1.52	1.50	SAMN18790488	Research on diversity of gut microbes
+MZ229604.1	SRR6869093	1.97	1.52	1.50	SAMN08738634	Bovine Fecal Metagenomics During Early Life
+MZ229604.1	SRR3176534	1.97	1.52	1.50	SAMN04448871	gut microbe Metagenome
+MZ229604.1	ERR3211928	1.97	1.52	1.50	SAMEA5414573	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR2241884	1.97	1.52	1.50	SAMEA104467387	As part of the EFFORT project, we sampled feces from pig and poultry livestock in nine European countries (BE, BG, DK, FR, ES, GE, NL, PL, SP). More than 9000 animals were sampled, across 181 pig and 178 poultry herds to generate herd-level composite fecal samples. Using shotgun metagenomics, we have quantified and characterized the antimicrobial resistance gene pools (resistomes) in Europe's two most intensively raised livestock species.
+MZ229604.1	ERR2855824	1.97	1.52	1.50	SAMEA4968242	A causal role of the gut microbiome in schizophrenia
+MZ229604.1	ERR3574872	1.97	1.52	1.50	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	ERR3574885	1.97	1.52	1.50	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	ERR4398767	1.97	1.52	1.50	SAMEA7112106	Gut Microbiomes of European Turkey and Veal Calf Herds
+MZ229604.1	ERR589505	1.97	1.52	1.50	SAMEA2737660	Gut and Oral Microbiome Dysbiosis in Rheumatoid Arthritis
+MZ229604.1	SRR4018511	1.97	1.52	1.50	SAMN05442499	freshwater metagenome Raw sequence reads
+MZ229604.1	SRR2083217	1.97	1.52	1.50	SAMN03801319	Freshwater Viruses Metagenomic assembly
+MZ229604.1	SRR8289163	1.97	1.52	1.50	SAMN10508895	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289332	1.97	1.52	1.50	SAMN10508885	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289506	1.97	1.52	1.50	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8299362	1.97	1.52	1.50	SAMN10561989	Viral diversity in river catchment area
+MZ229604.1	SRR14474049	1.97	1.52	1.50	SAMN19078919	Metagenome of pig fecal bacteria
+MZ229604.1	SRR5371497	1.97	1.52	1.50	SAMN06117796	bovine fecal metagenome raw sequence reads
+MZ229604.1	SRR13434630	1.97	1.52	1.50	SAMN17312157	Primate phageomes are structured by superhost phylogeny and environment
+MZ229604.1	SRR10682144	1.96	1.52	1.50	SAMN13252422	viral metagenome Metagenome
+MZ229604.1	SRR8289132	1.96	1.52	1.50	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR12711056	1.96	1.52	1.49	SAMN15871073	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR6847270	1.96	1.52	1.49	SAMN04330490	Vaginal Microbiome of Pregnancy
+MZ229604.1	SRR6915177	1.96	1.52	1.49	SAMN08813928	Whole-metagenome shotgun sequencing of two Italian fecal CRC cohorts
+MZ229604.1	SRR8289129	1.96	1.52	1.49	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289505	1.96	1.52	1.49	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8288898	1.96	1.52	1.49	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8288595	1.96	1.52	1.49	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289527	1.96	1.52	1.49	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289386	1.96	1.52	1.49	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289529	1.96	1.52	1.49	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8126724	1.95	1.52	1.49	SAMN10340227	United States National Arboretum Microbial Observatory
+MZ229604.1	ERR3450919	1.95	1.52	1.49	SAMEA5814098	Whole shotgun metagenomic sequencing for 1,004 individuals belonging to the TwinsUK cohort.  Supporting data for: Visconti et al, Interplay between the human gut microbiome and host metabolism
+MZ229604.1	ERR3097513	1.95	1.52	1.49	SAMEA5245476	Human fecal metagenomes of individuals sampled along a small-scale urbanization gradient in Cameroon
+MZ229604.1	SRR8289456	1.95	1.52	1.49	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR3986553	1.95	1.52	1.48	SAMEA6618425	Identifying frailty-associated markers in Elderly Irish Individuals
+MZ229604.1	SRR4423065	1.95	1.52	1.48	SAMN05891542	Shotgun sequencing of the gut microbiome to look at vitamin K biosynthesis
+MZ229604.1	SRR8289381	1.95	1.52	1.48	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR2835560	1.95	1.52	1.48	SAMEA4968994	A microbiota-directed complementary food, developed and characterized in gnotobiotic mice and piglets colonized with microbial therapeutic targets, has wide-ranging beneficial effects on biomarkers and mediators of postnatal development in Bangladeshi children with moderate acute malnutrition
+MZ229604.1	SRR4425696	1.95	1.52	1.48	SAMN05597075	Composite fecal samples and WWTP biosolids Raw sequence reads
+MZ229604.1	ERR7130331	1.95	1.52	1.48	SAMEA10021387	Smoking-related dysbiosis and associated metabolites drive cessation-induced weight gain
+MZ229604.1	ERR7159591	1.95	1.52	1.48	SAMEA10021387	Smoking-related dysbiosis and associated metabolites drive cessation-induced weight gain
+MZ229604.1	SRR8289210	1.95	1.52	1.48	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289238	1.95	1.52	1.48	SAMN10508895	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289389	1.95	1.52	1.48	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289523	1.95	1.52	1.48	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289497	1.95	1.52	1.48	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR2108703	1.00	0.76	0.76	SAMEA104232306	In the first part of the experiment, naphthalene contaminated surface sediments, where effluent from the coal-tar contaminated groundwater surfaces, were incubated in situ with either 13C-labeled or natural abundance 13C-naphthalene at various dosing regimes. The dosing regimes correspond with 3 doses in a 24 hr timespan; 5 doses in a 72 hr timespan and 8 doses in 8 days. Shotgun metagenome libraries were prepared in triplicate from all 13C-labeled sediments following the enrichment for 13C-labeled DNA. Sediments fed natural abundance 12C-naphthalene were not replicated, but where exposed to the identical handling as DNA extracted from 13C-labeled sediment. In the second part of the experiment, groundwater was sampled from pristine ('upstream') and contaminated monitoring wells ('shallow','mid' and 'deep'). DNA was extracted directly from filters (5L of groundwater per well) and shotgun metagenomes were sequenced. This data corresponds with metaproteomic data from Hanson et al., 2015.
+MZ229604.1	SRR10253050	1.00	0.76	0.76	SAMN13001813	Amplicon and metagnomic data from virus isolates and primary specimens. Raw sequence reads
+MZ229604.1	SRR11088474	1.00	0.76	0.76	SAMN14069859	ANTIRES - Distribution pathways of antibiotic resistances in municipal wastewater
+MZ229604.1	SRR11510766	1.00	0.76	0.76	SAMN14559131	Sex-specific Associations Between Gut Prevotellaceae and Host Genetics on Adiposity
+MZ229604.1	SRR11673967	1.00	0.76	0.76	SAMN14825723	Activated sludge metagenome Genome sequencing and assembly
+MZ229604.1	SRR12915215	1.00	0.76	0.76	SAMN16546476	Metagenomic sequencing from dairy farm samples
+MZ229604.1	SRR3993057	1.00	0.76	0.76	SAMN05414983	Mongolian Metagenome
+MZ229604.1	SRR5457263	1.00	0.76	0.76	SAMN06267371	Freshwater microbial communities from Pennsylvania, USA, analyzing microbe dynamics in response to fracking - TARM_MetaG_T_14 metagenome
+MZ229604.1	SRR13739618	1.00	0.76	0.76	SAMN17618597	Human gut metagenomes of healthy mothers and their children
+MZ229604.1	SRR5247080	1.00	0.76	0.76	SAMN06268710	Enrichment culture microbial communities from Fremont, California, USA - EucalyptusEnriched_A_E2P metatranscriptome
+MZ229604.1	SRR7153117	1.00	0.76	0.76	SAMN09092255	Coastal salt marsh microbial communities from the Groves Creek Marsh, Skidaway Island, Georgia - 071409AT metaG metagenome
+MZ229604.1	SRR8302209	1.00	0.76	0.76	SAMN10584062	Metageome sequencing of deep-sea sediment from Northwest Indian Ocean
+MZ229604.1	ERR3214084	1.00	0.76	0.76	SAMEA5417241	Hospital Microbiome
+MZ229604.1	SRR14689485	1.00	0.76	0.76	SAMN19433730	NOMIS_Vanishing_Glaciers
+MZ229604.1	SRR2835678	1.00	0.76	0.76	SAMN04215149	Marine macroalgal-microbial communities Metagenome
+MZ229604.1	SRR5112542	1.00	0.76	0.76	SAMN06140899	marine sediment metagenome raw sequence reads
+MZ229604.1	SRR7648350	1.00	0.76	0.76	SAMN09765674	ALOHA Deep Trap Sequencing
+MZ229604.1	SRR12586223	1.00	0.76	0.76	SAMN16053643	Viral Metagenomics in Perca fluviatilis
+MZ229604.1	SRR13924270	1.00	0.76	0.76	SAMN18206905	Metagenomic sequencing of stool samples from human hematopoietic cell transplantation patients
+MZ229604.1	SRR13924349	1.00	0.76	0.76	SAMN18206747	Metagenomic sequencing of stool samples from human hematopoietic cell transplantation patients
+MZ229604.1	SRR13924378	1.00	0.76	0.76	SAMN18206786	Metagenomic sequencing of stool samples from human hematopoietic cell transplantation patients
+MZ229604.1	SRR14654449	1.00	0.76	0.76	SAMN19315518	Human gut metagenome in male healthy controls and patients with calcium oxalate stone
+MZ229604.1	ERR599257	1.00	0.76	0.76	SAMEA2621029	Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for protist
+MZ229604.1	ERR599297	1.00	0.76	0.76	SAMEA2621027	Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for protist
+MZ229604.1	ERR3476747	1.00	0.76	0.76	SAMEA5846978	Optimizing sequencing protocols for leaderboard metagenomics by combining long and short reads
+MZ229604.1	ERR3801450	1.00	0.76	0.76	SAMEA6427674	Whole genome shotgun data from dairy catttle
+MZ229604.1	SRR8266644	1.00	0.76	0.76	SAMN10503396	Holstein cattle rumen whole metagenome sequence Madison, WI
+MZ229604.1	ERR3097466	1.00	0.76	0.76	SAMEA5245429	Human fecal metagenomes of individuals sampled along a small-scale urbanization gradient in Cameroon
+MZ229604.1	SRR3181133	1.00	0.76	0.76	SAMN04450465	Cattle feces Metagenome
+MZ229604.1	SRR8745604	1.00	0.76	0.76	SAMN11160409	The impact of artificial selection on the mammalian gut microbiota, Shotgun Metagenomics data
+MZ229604.1	SRR9161846	1.00	0.76	0.76	SAMN11878357	Dissecting the functional co-evolution of mammals and their gut microbiota: the role of diet and digestive system's physiology
+MZ229604.1	ERR2078503	1.00	0.76	0.76	SAMEA104200292	NEON
+MZ229604.1	ERR5004078	1.00	0.76	0.76	SAMEA7724299	Earth Microbiome Project Multi-omics (EMP500)
+MZ229604.1	ERR5004488	1.00	0.76	0.76	SAMEA7724110	Earth Microbiome Project Multi-omics (EMP500)
+MZ229604.1	SRR9598993	1.00	0.76	0.76	SAMN06241981	human gut metagenome PacBio Raw sequence reads
+MZ229604.1	SRR5579871	1.00	0.76	0.76	SAMN06343831	Surface soil microbial communities from Centralia Pennsylvania, which are recovering from an underground coalmine fire - Coalmine Soil_Cen06_05102014_R1 metagenome
+MZ229604.1	SRR7471226	1.00	0.76	0.76	SAMN09091562	Tropical forest soil microbial communities from Luquillo Experimental Forest, Puerto Rico - Sample 44 metagenome
+MZ229604.1	SRR8879136	1.00	0.76	0.76	SAMN11382428	Soil microbial communities from Loxahatchee National Wildlife Refuge, Florida, United States - Lox_Sample_2.5 metagenome
+MZ229604.1	SRR8881010	1.00	0.76	0.76	SAMN11382440	Soil microbial communities from Loxahatchee National Wildlife Refuge, Florida, United States - Lox_Sample_3.3 metagenome
+MZ229604.1	SRR8881011	1.00	0.76	0.76	SAMN11382431	Soil microbial communities from Loxahatchee National Wildlife Refuge, Florida, United States - Lox_Sample_3.5 metagenome
+MZ229604.1	SRR8881341	1.00	0.76	0.76	SAMN11382429	Soil microbial communities from Loxahatchee National Wildlife Refuge, Florida, United States - Lox_Sample_3.2 metagenome
+MZ229604.1	SRR4051759	1.00	0.76	0.76	SAMN03861969	Panchlora gut microbial communities from Gamboa, Panama - Panchlora_hindgut_metagenome
+MZ229604.1	SRR4297032	1.00	0.76	0.76	SAMN05806435	Enrichment from mangrove soil Raw sequence reads
+MZ229604.1	SRR10036038	1.00	0.76	0.76	SAMN12647038	A metagenomics-enabled investigation of antimicrobial resistance in an urban watershed
+MZ229604.1	SRR8126734	1.00	0.76	0.76	SAMN10340208	United States National Arboretum Microbial Observatory
+MZ229604.1	SRR8841422	1.00	0.76	0.76	SAMN11295996	Microsnail Microbiome Diet Study
+MZ229604.1	SRR8428046	1.00	0.76	0.76	SAMN10722590	The relationship of fecal microbiomes and nutritional status in cystic fibrosis
+MZ229604.1	ERR1726717	1.00	0.76	0.76	SAMEA2657026	Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for protist
+MZ229604.1	ERR1726798	1.00	0.76	0.76	SAMEA2731359	Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for protist
+MZ229604.1	ERR4691757	1.00	0.76	0.76	SAMEA2731190	Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for protist
+MZ229604.1	ERR4691760	1.00	0.76	0.76	SAMEA2731420	Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for protist
+MZ229604.1	ERR599306	1.00	0.76	0.76	SAMEA2657078	Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for protist
+MZ229604.1	ERR868508	1.00	0.76	0.76	SAMEA2620292	Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for protist
+MZ229604.1	ERR1711731	1.00	0.76	0.76	SAMEA4525153	KCL_twins2
+MZ229604.1	ERR4083929	1.00	0.76	0.76	SAMEA6809579	Large scale metagenome assembly reveals novel animal-associated microbial diversity
+MZ229604.1	ERR4083982	1.00	0.76	0.76	SAMEA6809579	Large scale metagenome assembly reveals novel animal-associated microbial diversity
+MZ229604.1	SRR14699973	1.00	0.76	0.76	SAMN16453537	metagenome-assembled genomes (MAGs) from mangrove sediment, seagrass sediment, estuary sediment and oilfield samples
+MZ229604.1	SRR17255717	1.00	0.76	0.76	SAMN23967102	METALGEN
+MZ229604.1	SRR2163473	1.00	0.76	0.76	SAMN03431442	Marine sediment incubations Transcriptome or Gene expression
+MZ229604.1	SRR3181148	1.00	0.76	0.76	SAMN04450480	Cattle feces Metagenome
+MZ229604.1	SRR3181163	1.00	0.76	0.76	SAMN04450495	Cattle feces Metagenome
+MZ229604.1	SRR9077855	1.00	0.76	0.76	SAMN11649961	Virome of Australian fleas
+MZ229604.1	ERR1712193	1.00	0.76	0.76	SAMEA2623204	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719168	1.00	0.76	0.76	SAMEA2657063	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719188	1.00	0.76	0.76	SAMEA2732866	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719210	1.00	0.76	0.76	SAMEA2657106	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719221	1.00	0.76	0.76	SAMEA2656958	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719226	1.00	0.76	0.76	SAMEA2732866	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719277	1.00	0.76	0.76	SAMEA2732373	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719279	1.00	0.76	0.76	SAMEA2656991	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719282	1.00	0.76	0.76	SAMEA2732983	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719293	1.00	0.76	0.76	SAMEA2656982	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719327	1.00	0.76	0.76	SAMEA2622912	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719346	1.00	0.76	0.76	SAMEA2657106	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719356	1.00	0.76	0.76	SAMEA2656982	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719373	1.00	0.76	0.76	SAMEA2657063	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719394	1.00	0.76	0.76	SAMEA2732607	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719396	1.00	0.76	0.76	SAMEA2656991	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719401	1.00	0.76	0.76	SAMEA2656973	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719420	1.00	0.76	0.76	SAMEA2622228	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719436	1.00	0.76	0.76	SAMEA2732716	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719461	1.00	0.76	0.76	SAMEA2657038	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719488	1.00	0.76	0.76	SAMEA2619943	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719493	1.00	0.76	0.76	SAMEA2732139	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1719499	1.00	0.76	0.76	SAMEA2732139	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	ERR1740138	1.00	0.76	0.76	SAMEA2621362	Metatranscriptome sequencing from  samples corresponding to size fractions for protists.
+MZ229604.1	SRR10450102	1.00	0.76	0.76	SAMN08738428	North Pacific Subtropical Gyre diel marine metatranscriptomes
+MZ229604.1	SRR10450104	1.00	0.76	0.76	SAMN08738430	North Pacific Subtropical Gyre diel marine metatranscriptomes
+MZ229604.1	SRR10450106	1.00	0.76	0.76	SAMN08738432	North Pacific Subtropical Gyre diel marine metatranscriptomes
+MZ229604.1	SRR10450111	1.00	0.76	0.76	SAMN08738437	North Pacific Subtropical Gyre diel marine metatranscriptomes
+MZ229604.1	SRR10450112	1.00	0.76	0.76	SAMN08738438	North Pacific Subtropical Gyre diel marine metatranscriptomes
+MZ229604.1	SRR10450117	1.00	0.76	0.76	SAMN08738443	North Pacific Subtropical Gyre diel marine metatranscriptomes
+MZ229604.1	SRR10450119	1.00	0.76	0.76	SAMN08738445	North Pacific Subtropical Gyre diel marine metatranscriptomes
+MZ229604.1	SRR3342120	1.00	0.76	0.76	SAMN04595099	North Pacific Subtropical Gyre eukaryotic plankton metatranscriptome sequencing
+MZ229604.1	SRR4381460	1.00	0.76	0.76	SAMN05924766	Trade-off between taxon diversity and functional diversity in European lake ecosystems
+MZ229604.1	SRR6232772	1.00	0.76	0.76	SAMN07631369	Marine microbial communities from the Southern Atlantic ocean transect to study dissolved organic matter and carbon cycling - DeepDOM_E4_Q_5 metaT metatranscriptome
+MZ229604.1	SRR6233821	1.00	0.76	0.76	SAMN07631412	Marine microbial communities from the Southern Atlantic ocean transect to study dissolved organic matter and carbon cycling - DeepDOM_S14_5 metaT metatranscriptome
+MZ229604.1	SRR8787024	1.00	0.76	0.76	SAMN11258012	Metatranscriptomic sequencing of lava-induced surface bloom.
+MZ229604.1	SRR8787025	1.00	0.76	0.76	SAMN11258011	Metatranscriptomic sequencing of lava-induced surface bloom.
+MZ229604.1	SRR9108851	1.00	0.76	0.76	SAMN10094272	Diel Eukaryotic Metatranscriptomes from the North Pacific Subtropical Gyre
+MZ229604.1	SRR9108863	1.00	0.76	0.76	SAMN10094280	Diel Eukaryotic Metatranscriptomes from the North Pacific Subtropical Gyre
+MZ229604.1	SRR9108865	1.00	0.76	0.76	SAMN10094278	Diel Eukaryotic Metatranscriptomes from the North Pacific Subtropical Gyre
+MZ229604.1	SRR9108878	1.00	0.76	0.76	SAMN10094261	Diel Eukaryotic Metatranscriptomes from the North Pacific Subtropical Gyre
+MZ229604.1	ERR3199648	1.00	0.76	0.76	SAMEA5382881	Study on the diversity of gut microorganisms in mice infected with different toxic H7N9 viruses
+MZ229604.1	ERR3211933	1.00	0.76	0.76	SAMEA5414578	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR3574515	1.00	0.76	0.76	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	SRR11482343	1.00	0.76	0.76	SAMN14538511	Farm dust metagenomes in European poultry and pig farms
+MZ229604.1	SRR12907738	1.00	0.76	0.76	SAMN16554570	human gut microbiota raw sequences of critically ill patients
+MZ229604.1	SRR13569753	1.00	0.76	0.76	SAMN17613378	virome in the liver of small animals
+MZ229604.1	SRR8198127	1.00	0.76	0.76	SAMN10435347	Evaluation of porcine fecal microbiomes after exposure to ceftriaxone
+MZ229604.1	SRR8925749	1.00	0.76	0.76	SAMN11458264	Metagenome of feedstock samples for 56 full-scale biogas plants in China
+MZ229604.1	ERR1950668	1.00	0.76	0.76	SAMEA104032360	Surveillance for prevalence of drug resistance bacteria in Ugandan animal agriculture
+MZ229604.1	ERR1135249	1.00	0.76	0.76	SAMEA3663076	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR1950672	1.00	0.76	0.76	SAMEA104032364	Surveillance for prevalence of drug resistance bacteria in Ugandan animal agriculture
+MZ229604.1	ERR3211913	1.00	0.76	0.76	SAMEA5414558	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	SRR10209684	1.00	0.76	0.76	SAMN12867445	pig gut metagenome Targeted loci environmental
+MZ229604.1	SRR11489754	1.00	0.76	0.76	SAMN14543251	Global studies of microbial diversity in pig gut
+MZ229604.1	SRR12349259	1.00	0.76	0.76	SAMN15648638	the microbes of duck faces and shrimp pond
+MZ229604.1	SRR9866673	1.00	0.76	0.76	SAMN12283828	Metagenomic sequencing of Lawsonia intracellularis
+MZ229604.1	SRR10098309	0.99	0.76	0.76	SAMN12692666	Bovine composite fecal metagenome from pre-weaned dairy calves and lactating cows
+MZ229604.1	SRR13061005	0.99	0.76	0.76	SAMN16796190	Fecal Whole Metagenomic Shotgun Sequencing on Koreans
+MZ229604.1	ERR4086538	0.99	0.76	0.76	SAMEA6811483	Statin treatment reduces the prevalence of gut microbiota dysbiosis in obese individuals
+MZ229604.1	ERR4086544	0.99	0.76	0.76	SAMEA6811483	Statin treatment reduces the prevalence of gut microbiota dysbiosis in obese individuals
+MZ229604.1	ERR6465867	0.99	0.76	0.76	SAMEA9533357	The origins and spread of domestic horses from the Western Eurasian steppes
+MZ229604.1	SRR10499541	0.99	0.76	0.76	SAMN13293006	human gut metagenome Metagenome
+MZ229604.1	SRR12711024	0.99	0.76	0.76	SAMN15870914	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR7723005	0.99	0.76	0.76	SAMN09863661	Influence of early environmental factors on the establishment and development of gut microbiome composition and function and metabolomics profiles in infants at-risk of celiac disease
+MZ229604.1	ERR1135680	0.99	0.76	0.76	SAMEA3663212	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR1135683	0.99	0.76	0.76	SAMEA3663215	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR1726583	0.99	0.76	0.76	SAMEA2732866	Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for protist
+MZ229604.1	ERR868465	0.99	0.76	0.76	SAMEA2622130	Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for protist
+MZ229604.1	ERR3211925	0.99	0.76	0.76	SAMEA5414570	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR3574343	0.99	0.76	0.76	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	SRR10769902	0.99	0.76	0.76	SAMN13474945	Wastewater treatment and land application of swine wastewater Raw sequence reads
+MZ229604.1	SRR13517625	0.99	0.76	0.76	SAMN17521794	Metagenomics of antimicrobial and heavy metal resistance in the cecal microbiome of fattening pigs raised without antibiotics
+MZ229604.1	SRR4425660	0.99	0.76	0.76	SAMN05597105	Composite fecal samples and WWTP biosolids Raw sequence reads
+MZ229604.1	SRR7193046	0.99	0.76	0.76	SAMN09235250	Evaluation of porcine fecal microbiomes after exposure to ceftriaxone
+MZ229604.1	SRR8244715	0.99	0.76	0.76	SAMN10417038	Shotun metagenome sequencing of mouse infection time series
+MZ229604.1	SRR9866671	0.99	0.76	0.76	SAMN12283826	Metagenomic sequencing of Lawsonia intracellularis
+MZ229604.1	ERR1135677	0.99	0.76	0.75	SAMEA3663209	The Pig’s other genome: a reference gene catalogue of the gut microbiome
+MZ229604.1	ERR3211785	0.99	0.76	0.75	SAMEA5414430	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR3857612	0.99	0.76	0.75	SAMEA6512902	Mediterranean diet intervention in overweight and obese subjects leads to multiple beneficial shifts in gut microbiome and metabolome independently from energy intake
+MZ229604.1	ERR4090479	0.99	0.76	0.75	SAMEA6811321	Statin treatment reduces the prevalence of gut microbiota dysbiosis in obese individuals
+MZ229604.1	ERR4678682	0.99	0.76	0.75	SAMEA7426382	Global surveillance of antimicrobial resistance - batch November 2018
+MZ229604.1	ERR4678683	0.99	0.76	0.75	SAMEA7426383	Global surveillance of antimicrobial resistance - batch November 2018
+MZ229604.1	SRR11615224	0.99	0.76	0.75	SAMN14738226	Integral approach in the resistome characterization on Spanish swine farms.
+MZ229604.1	SRR15604556	0.99	0.76	0.75	SAMN20968415	Adjunctive probiotic Lactobacillus rhamnosus Probio-M9 enhances the effect of anti-PD-1 antitumor therapy via regulating the gut microbiota damaged by antibiotics
+MZ229604.1	SRR1612069	0.99	0.76	0.75	SAMN03068463	Wake Forest Vervet Microbiome Project
+MZ229604.1	SRR14574034	0.99	0.76	0.75	SAMN19237092	rumen content metagenomics sequencing
+MZ229604.1	SRR6784537	0.99	0.76	0.75	SAMN06619283	MECFS metagenomics
+MZ229604.1	SRR8288594	0.99	0.76	0.75	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8288633	0.99	0.76	0.75	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR1078374	0.99	0.76	0.75	SAMEA3613850	Metagenomic data from 12 aquaria for determination of the minimal selective concentration of tetracycline in complex communities
+MZ229604.1	ERR2683234	0.99	0.76	0.75	SAMEA4777491	Global surveillance of antimicrobial resistance - Batch June 2017
+MZ229604.1	ERR3764805	0.99	0.76	0.75	SAMEA6416064	Gut microbiome response to a fermented milk product in healthy subjects
+MZ229604.1	ERR4334220	0.99	0.76	0.75	SAMEA7045305	Microbiome connections with host metabolism and habitual diet from the PREDICT 1 metagenomic study
+MZ229604.1	ERR4682856	0.99	0.76	0.75	SAMEA7428498	Global surveillance of antimicrobial resistance - batch June 2018
+MZ229604.1	ERR912130	0.99	0.76	0.75	SAMEA3449325	Shotgun Metagenomics of 250 Adult Twins Reveals Genetic and Environmental Impacts on the Gut Microbiome
+MZ229604.1	SRR12459266	0.99	0.76	0.75	SAMN15824895	PROMISE Cohort Metagenome sequence data
+MZ229604.1	SRR12710910	0.99	0.76	0.75	SAMN15870967	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR12711052	0.99	0.76	0.75	SAMN15871075	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR12711118	0.99	0.76	0.75	SAMN15871045	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR15429281	0.99	0.76	0.75	SAMN20718331	Mastitis microbiomes of cow and mouse Metagenome
+MZ229604.1	SRR3993003	0.99	0.76	0.75	SAMN05414934	Mongolian Metagenome
+MZ229604.1	SRR13224055	0.98	0.76	0.75	SAMN16845056	3G-ESP Lake Erie 2018
+MZ229604.1	SRR5788179	0.98	0.76	0.75	SAMN07136833	Marine metagenomes from the bioGEOTRACES project
+MZ229604.1	SRR6243052	0.98	0.76	0.75	SAMN07946183	Viral metagenome human tissue sequencing
+MZ229604.1	SRR8288674	0.98	0.76	0.75	SAMN10508895	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR6465868	0.98	0.76	0.75	SAMEA9533357	The origins and spread of domestic horses from the Western Eurasian steppes
+MZ229604.1	SRR13740006	0.98	0.76	0.75	SAMN17618834	Human gut metagenomes of healthy mothers and their children
+MZ229604.1	SRR5007313	0.98	0.76	0.75	SAMN05720145	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from USA - AD_STIC12_MetaG metagenome
+MZ229604.1	SRR8288672	0.98	0.76	0.75	SAMN10508895	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289519	0.98	0.76	0.75	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	DRR171333	0.98	0.76	0.75	SAMD00162318	Comparison of sequencing bias for library preparation kit
+MZ229604.1	DRR330126	0.98	0.76	0.75	SAMD00402954	Monitoring circulating tumor DNA by using panel-specific sequencing to predict recurrence in colorectal cancer after surgical resection
+MZ229604.1	ERR1578684	0.98	0.76	0.75	SAMEA4378293	Integrated metabolomics and metagenomics analysis of plasma and urine identified microbial metabolites associated with coronary heart disease
+MZ229604.1	ERR1992807	0.98	0.76	0.75	SAMEA103954418	Semi-synthetic marine metagenomes for metagenomic pipeline assessment
+MZ229604.1	ERR1992809	0.98	0.76	0.75	SAMEA103954416	Semi-synthetic marine metagenomes for metagenomic pipeline assessment
+MZ229604.1	ERR2696419	0.98	0.76	0.75	SAMEA4786490	Semi-synthetic marine metagenomes for metagenomic pipeline assessment
+MZ229604.1	ERR2696420	0.98	0.76	0.75	SAMEA4786491	Semi-synthetic marine metagenomes for metagenomic pipeline assessment
+MZ229604.1	ERR2241881	0.98	0.76	0.75	SAMEA104467384	As part of the EFFORT project, we sampled feces from pig and poultry livestock in nine European countries (BE, BG, DK, FR, ES, GE, NL, PL, SP). More than 9000 animals were sampled, across 181 pig and 178 poultry herds to generate herd-level composite fecal samples. Using shotgun metagenomics, we have quantified and characterized the antimicrobial resistance gene pools (resistomes) in Europe's two most intensively raised livestock species.
+MZ229604.1	ERR2241885	0.98	0.76	0.75	SAMEA104467388	As part of the EFFORT project, we sampled feces from pig and poultry livestock in nine European countries (BE, BG, DK, FR, ES, GE, NL, PL, SP). More than 9000 animals were sampled, across 181 pig and 178 poultry herds to generate herd-level composite fecal samples. Using shotgun metagenomics, we have quantified and characterized the antimicrobial resistance gene pools (resistomes) in Europe's two most intensively raised livestock species.
+MZ229604.1	ERR2241960	0.98	0.76	0.75	SAMEA104467463	As part of the EFFORT project, we sampled feces from pig and poultry livestock in nine European countries (BE, BG, DK, FR, ES, GE, NL, PL, SP). More than 9000 animals were sampled, across 181 pig and 178 poultry herds to generate herd-level composite fecal samples. Using shotgun metagenomics, we have quantified and characterized the antimicrobial resistance gene pools (resistomes) in Europe's two most intensively raised livestock species.
+MZ229604.1	ERR2597348	0.98	0.76	0.75	SAMEA4688862	VETII samples
+MZ229604.1	ERR2597357	0.98	0.76	0.75	SAMEA4688871	VETII samples
+MZ229604.1	ERR3211774	0.98	0.76	0.75	SAMEA5414419	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR3211889	0.98	0.76	0.75	SAMEA5414534	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR3211900	0.98	0.76	0.75	SAMEA5414545	Metagenomic assessment of the effect of sample processing on different microbiomes
+MZ229604.1	ERR3525310	0.98	0.76	0.75	SAMEA5961687	Metagenomic sequencing of the rumen of cattle (Bos Taurus), sheep (Ovis aries), reindeer (Rangifer tarandus) and red deer (Cervus elaphus)
+MZ229604.1	ERR3574517	0.98	0.76	0.75	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	ERR3574522	0.98	0.76	0.75	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	ERR3574562	0.98	0.76	0.75	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	ERR4083789	0.98	0.76	0.75	SAMEA6809531	Large scale metagenome assembly reveals novel animal-associated microbial diversity
+MZ229604.1	ERR4398763	0.98	0.76	0.75	SAMEA7112102	Gut Microbiomes of European Turkey and Veal Calf Herds
+MZ229604.1	ERR4398806	0.98	0.76	0.75	SAMEA7112145	Gut Microbiomes of European Turkey and Veal Calf Herds
+MZ229604.1	ERR4682794	0.98	0.76	0.75	SAMEA7428436	Global surveillance of antimicrobial resistance - batch June 2018
+MZ229604.1	ERR7197646	0.98	0.76	0.75	SAMEA10535678	Hi-C metagenomics study on faecal microbiomes from 5-5 British low- and high-antimicrobial use pig farms
+MZ229604.1	SRR5377206	0.98	0.76	0.75	SAMN06624499	human gut metagenome Raw sequence reads
+MZ229604.1	SRR10572834	0.98	0.76	0.75	SAMN13451493	PCR amplicon specificity sequencing for a nL-qPCR chip to detect enteric pathogens
+MZ229604.1	SRR10572855	0.98	0.76	0.75	SAMN13451474	PCR amplicon specificity sequencing for a nL-qPCR chip to detect enteric pathogens
+MZ229604.1	SRR10572871	0.98	0.76	0.75	SAMN13451468	PCR amplicon specificity sequencing for a nL-qPCR chip to detect enteric pathogens
+MZ229604.1	SRR10572872	0.98	0.76	0.75	SAMN13451467	PCR amplicon specificity sequencing for a nL-qPCR chip to detect enteric pathogens
+MZ229604.1	SRR10572873	0.98	0.76	0.75	SAMN13451466	PCR amplicon specificity sequencing for a nL-qPCR chip to detect enteric pathogens
+MZ229604.1	SRR10572890	0.98	0.76	0.75	SAMN13451450	PCR amplicon specificity sequencing for a nL-qPCR chip to detect enteric pathogens
+MZ229604.1	SRR10572899	0.98	0.76	0.75	SAMN13451442	PCR amplicon specificity sequencing for a nL-qPCR chip to detect enteric pathogens
+MZ229604.1	SRR10572901	0.98	0.76	0.75	SAMN13451440	PCR amplicon specificity sequencing for a nL-qPCR chip to detect enteric pathogens
+MZ229604.1	SRR10572907	0.98	0.76	0.75	SAMN13451435	PCR amplicon specificity sequencing for a nL-qPCR chip to detect enteric pathogens
+MZ229604.1	SRR10572908	0.98	0.76	0.75	SAMN13451434	PCR amplicon specificity sequencing for a nL-qPCR chip to detect enteric pathogens
+MZ229604.1	SRR10682712	0.98	0.76	0.75	SAMN13253017	viral metagenome Metagenome
+MZ229604.1	SRR10828597	0.98	0.76	0.75	SAMN13701970	Metagenomics uncover antibiotic resistance genes in pig and chicken Raw sequence reads
+MZ229604.1	SRR13436280	0.98	0.76	0.75	SAMN17006404	human gut microbiome predicts response to MTX treatment
+MZ229604.1	SRR13517645	0.98	0.76	0.75	SAMN17521793	Metagenomics of antimicrobial and heavy metal resistance in the cecal microbiome of fattening pigs raised without antibiotics
+MZ229604.1	SRR413750	0.98	0.76	0.75	SAMN00792095	A metagenome-wide association study of gut microbiota in type 2 diabetes.
+MZ229604.1	SRR3953989	0.98	0.76	0.75	SAMN05441317	Phage-resistant Synechococcus
+MZ229604.1	SRR4101300	0.98	0.76	0.75	SAMN05715932	food contamination metagenome Metagenome
+MZ229604.1	SRR4451543	0.98	0.76	0.75	SAMN05545044	Human gut microbiome with bacterial pathogen challenge
+MZ229604.1	SRR5371493	0.98	0.76	0.75	SAMN06117798	bovine fecal metagenome raw sequence reads
+MZ229604.1	SRR6512899	0.98	0.76	0.75	SAMN08385657	Bovine Fecal Metagenome
+MZ229604.1	SRR7533030	0.98	0.76	0.75	SAMN09641547	panda gut metagenome raw sequence reads Raw sequence reads
+MZ229604.1	SRR8288606	0.98	0.76	0.75	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8288906	0.98	0.76	0.75	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289414	0.98	0.76	0.75	SAMN10508895	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289516	0.98	0.76	0.75	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8299381	0.98	0.76	0.75	SAMN10561992	Viral diversity in river catchment area
+MZ229604.1	SRR8925785	0.98	0.76	0.75	SAMN11458267	Metagenome of feedstock samples for 56 full-scale biogas plants in China
+MZ229604.1	SRR9603015	0.98	0.76	0.75	SAMN12137782	humman gut microbiota metagenome sequensing Raw sequence reads
+MZ229604.1	ERR4398769	0.98	0.76	0.75	SAMEA7112108	Gut Microbiomes of European Turkey and Veal Calf Herds
+MZ229604.1	ERR2367394	0.98	0.76	0.75	SAMEA104562589	Common beans and cowpeas as complementary foods to reduce environmental enteric dysfunction and stunting in Malawian children
+MZ229604.1	ERR6996583	0.98	0.76	0.75	SAMEA10314796	iMSMS Baranzini data
+MZ229604.1	ERR4398709	0.98	0.76	0.75	SAMEA7112048	Gut Microbiomes of European Turkey and Veal Calf Herds
+MZ229604.1	ERR4398798	0.98	0.76	0.75	SAMEA7112137	Gut Microbiomes of European Turkey and Veal Calf Herds
+MZ229604.1	ERR4682384	0.98	0.76	0.75	SAMEA7428291	Global surveillance of antimicrobial resistance - batch November 2017
+MZ229604.1	ERR710423	0.98	0.76	0.75	SAMEA3178943	Gut microbiome development along the colorectal adenoma-carcinoma sequence
+MZ229604.1	SRR10692415	0.98	0.76	0.75	SAMN13246503	human gut metagenome Metagenome
+MZ229604.1	SRR10692670	0.98	0.76	0.75	SAMN13246244	human gut metagenome Metagenome
+MZ229604.1	SRR12961173	0.98	0.76	0.75	SAMN16598094	Human gut microbes Metagenome
+MZ229604.1	SRR8288677	0.98	0.76	0.75	SAMN10508895	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289501	0.98	0.76	0.75	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR9218142	0.98	0.76	0.75	SAMN10877829	Metagenomic Reconstructions of Gut Microbiome in Weanling Pigs
+MZ229604.1	DRR330107	0.98	0.76	0.74	SAMD00402935	Monitoring circulating tumor DNA by using panel-specific sequencing to predict recurrence in colorectal cancer after surgical resection
+MZ229604.1	DRR330131	0.98	0.76	0.74	SAMD00402959	Monitoring circulating tumor DNA by using panel-specific sequencing to predict recurrence in colorectal cancer after surgical resection
+MZ229604.1	ERR2835425	0.98	0.76	0.74	SAMEA4968859	A microbiota-directed complementary food, developed and characterized in gnotobiotic mice and piglets colonized with microbial therapeutic targets, has wide-ranging beneficial effects on biomarkers and mediators of postnatal development in Bangladeshi children with moderate acute malnutrition
+MZ229604.1	ERR3218092	0.98	0.76	0.74	SAMEA104500565	PATCH_MICROBIOME
+MZ229604.1	ERR3574725	0.98	0.76	0.74	SAMEA5989477	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes
+MZ229604.1	ERR4086545	0.98	0.76	0.74	SAMEA6811483	Statin treatment reduces the prevalence of gut microbiota dysbiosis in obese individuals
+MZ229604.1	ERR4398765	0.98	0.76	0.74	SAMEA7112104	Gut Microbiomes of European Turkey and Veal Calf Herds
+MZ229604.1	ERR4682358	0.98	0.76	0.74	SAMEA7428265	Global surveillance of antimicrobial resistance - batch November 2017
+MZ229604.1	ERR589513	0.98	0.76	0.74	SAMEA2737668	Gut and Oral Microbiome Dysbiosis in Rheumatoid Arthritis
+MZ229604.1	SRR4018493	0.98	0.76	0.74	SAMN05442511	freshwater metagenome Raw sequence reads
+MZ229604.1	SRR12089732	0.98	0.76	0.74	SAMN15366210	Trace amine producing bacteria are widespread in the human skin microbiota
+MZ229604.1	SRR12711444	0.98	0.76	0.74	SAMN15870928	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR13855168	0.98	0.76	0.74	SAMN18090720	Development of standard protocols for shotgun metagenomics analyses of human fecal microbiota (raw sequencing reads)
+MZ229604.1	SRR14489481	0.98	0.76	0.74	SAMN19068589	Study of microbial community from mixed cow-dung and plant sample
+MZ229604.1	SRR14842348	0.98	0.76	0.74	SAMN19735734	Global Canine Shotgun Microbiomes
+MZ229604.1	SRR14842351	0.98	0.76	0.74	SAMN19735731	Global Canine Shotgun Microbiomes
+MZ229604.1	SRR3053214	0.98	0.76	0.74	SAMN04362352	Beef Production Metagenome Raw sequence reads
+MZ229604.1	SRR4425664	0.98	0.76	0.74	SAMN05597109	Composite fecal samples and WWTP biosolids Raw sequence reads
+MZ229604.1	SRR4425719	0.98	0.76	0.74	SAMN05597096	Composite fecal samples and WWTP biosolids Raw sequence reads
+MZ229604.1	SRR5679022	0.98	0.76	0.74	SAMN06685517	Farm metagenomes conventional and organic
+MZ229604.1	SRR6058006	0.98	0.76	0.74	SAMN07679370	Impacts of florfenicol on the antimicrobial resistance and community composition of microbiome in aquaculture ecosystem as revealed by metagenomics sequencing
+MZ229604.1	SRR7642179	0.98	0.76	0.74	SAMN09762372	Rural and Urban infant''s fecal microbiota study
+MZ229604.1	SRR8288628	0.98	0.76	0.74	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8288673	0.98	0.76	0.74	SAMN10508895	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289098	0.98	0.76	0.74	SAMN10508895	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289286	0.98	0.76	0.74	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289330	0.98	0.76	0.74	SAMN10508885	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289500	0.98	0.76	0.74	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR9844162	0.98	0.76	0.74	SAMN12371673	Gut microbiome for the MORDOR I study.
+MZ229604.1	SRR8289503	0.98	0.76	0.74	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	ERR4657931	0.97	0.76	0.74	SAMEA7372251	gut metagenome of HC, IBS, DEP and COMO
+MZ229604.1	SRR10691957	0.97	0.76	0.74	SAMN13246730	human gut metagenome Metagenome
+MZ229604.1	SRR12711362	0.97	0.76	0.74	SAMN15871487	Metagenomic sequencing of  the digestive tract of buffalo
+MZ229604.1	SRR6177793	0.97	0.76	0.74	SAMN07740643	Mycobacterium tuberculosis Genome sequencing and assembly
+MZ229604.1	SRR8288671	0.97	0.76	0.74	SAMN10508895	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8288991	0.97	0.76	0.74	SAMN10508890	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289376	0.97	0.76	0.74	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289530	0.97	0.76	0.74	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
+MZ229604.1	SRR8289459	0.97	0.76	0.74	SAMN10508882	Analytical and Clinical Validation of a Microbial Cell-Free DNA Sequencing Test for Infectious Disease
