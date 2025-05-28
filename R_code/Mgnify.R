@@ -47,4 +47,19 @@ repeat {
 
 ##  restart repeat loop without resetting "count" or overwriting "samples"!
 
+### AGAIN ## AGAIN ## AGAIN
+
+saveRDS(samples, "Mgnify_download_to_7402.RDS")
+
+## url <- j$links[["next"]]
+## url
+
+## [1] "https://www.ebi.ac.uk/metagenomics/api/v1/samples?biome=root%3AHost-associated%3AHuman%3ADigestive+system&page=7403"
+
+##  restart repeat loop without resetting "count" or overwriting "samples"!
+
 saveRDS(samples, "Mgnify_download.RDS")
+
+
+
+
