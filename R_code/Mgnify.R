@@ -29,12 +29,22 @@ repeat {
   if (url==j$links$last) break
 }
 
+#### on the Server (because of Problems on some pages):
+
+## Finished round: 5122
+
+##  Fehler: lexical error: invalid char in json text.
+##                                       <!doctype html> <html lang="en"
+##                     (right here) ------^
+
+
+## saveRDS(samples, "Mgnify_download_to5122.RDS")
+
+##  > url <- j$links[["next"]]
+##  > url
+## [1] "https://www.ebi.ac.uk/metagenomics/api/v1/samples?biome=root%3AHost-associated%3AHuman%3ADigestive+system&page=5123"
+
+
+##  restart repeat loop without resetting "count" or overwriting "samples"!
+
 saveRDS(samples, "Mgnify_download.RDS")
-
-samples$studyID <- sapply(samples$relationships$studies$data, function (x) {
-  paste(x[["id"]], collapse = "_")
-})
-
-table(samples$studyID)
-
-### Wow! This data is so so rich!
