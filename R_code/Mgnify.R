@@ -63,7 +63,27 @@ saveRDS(samples, "Mgnify_download_to_7402.RDS")
 
 ##  restart repeat loop without resetting "count" or overwriting "samples"!
 
-saveRDS(samples, "Mgnify_download.RDS")
+
+## ## ## Danger don't overwrite if you haven't a really great new download ;-)
+## ## saveRDS(samples, "Mgnify_download.RDS")
+
+
+### now query via the R-package
+library(MGnifyR)
+
+mg <- MgnifyClient()
+
+metagenome_samples <- doQuery(
+  mg, "samples", experiment_type="metagenomic",
+  biome_name="Human:Digestive system", instrument_platform = "Illumina",
+  max.hits = NULL)
+
+metagenome_studies <- doQuery(
+  mg, "studies", experiment_type="metagenomic",
+  biome_name="Human:Digestive system", instrument_platform = "Illumina",
+  max.hits = NULL)
+
+
 
 
 

@@ -3,6 +3,8 @@ library(ggplot2)
 library(dplyr)
 library(xml2)
 library(rentrez)
+library(magrittr)
+library(dplyr)
 
 sqlfile <- "H:/Analysenetz/transfer/SRAmetadb.sqlite"
 sra_con <- dbConnect(RSQLite::SQLite(), sqlfile)
@@ -11,10 +13,31 @@ sra_con <- dbConnect(RSQLite::SQLite(), sqlfile)
 ## "Score constant" at default value of 13,000 and "Masking threshold" at
 ## default value of 5663
 
-peb <- read.delim("data/pebblescout-meta-summary_stx1a.tsv")
 
+peb_files <- list.files("data/", pattern = "pebblescout-meta-summary_*")
+
+peb <- lapply(peb_files, function(x) {
+  cbind(read.delim(paste0("data/", x)),
+        gene=gsub("pebblescout-meta-summary_(.*)\\.tsv", "\\1", x))
+}) %>% do.call(rbind, .) %>% as_tibble()
+
+## number of hits
 length(peb$SubjectID)
+## number of genes hit
 length(unique(peb$SubjectID))
+
+tapply(peb$SubjectID, peb$gene, function(x) length(unique(x)))
+
+tapply(peb$SubjectID, peb$gene,
+       function(x) length(unique(x)))
+
+tapply(peb$BioSample, peb$gene,
+       function(x) length(unique(x)))
+
+
+table(peb$Title)
+
+table(peb$SubjectID)
 
 ## how many (unique) Samples per Study (proxy: Title)
 ttab <- tapply(peb$BioSample, peb$Title, function(x) length(unique(x)))
@@ -55,6 +78,41 @@ filtered_query <- sprintf("
 
 
 filtered_result <- dbGetQuery(sra_con, filtered_query)
+
+
+## We lose too many
+sum(filtered_result$matching_biosample_count)
+length(biosample_ids)
+
+
+subject_ids <- unique(peb$SubjectID)
+formatted_srrs <- paste0("'", paste(subject_ids, collapse = "','"), "'")
+
+query_direct <- sprintf("
+  SELECT
+    run.run_accession,
+    experiment.experiment_accession,
+    sample.sample_accession AS biosample,
+    study.study_accession AS bioproject,
+    study.study_title
+  FROM run
+  JOIN experiment ON run.experiment_accession = experiment.experiment_accession
+  JOIN sample ON experiment.sample_accession = sample.sample_accession
+  JOIN study ON experiment.study_accession = study.study_accession
+  WHERE run.run_accession IN (%s)
+", formatted_srrs)
+
+result <- dbGetQuery(sra_con, query_direct)
+
+
+### querrying the subject IDs directly!!!
+head(result)
+
+length(unique(result$biosample))
+
+sum(filtered_result$matching_biosample_count)
+
+length(unique(peb$BioSample))
 
 filtered_result$short_title <- substr(filtered_result$study_title, 1, 40)
 filtered_result$prevalence_raw <- filtered_result$matching_biosample_count/
