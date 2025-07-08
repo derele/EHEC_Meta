@@ -1,5 +1,10 @@
+library(dplyr)
+library(MGnifyR)
 
-Mgnf <- readRDS("Mgnify_download_to5122.RDS")
+## read the data downloaded and stored (see Mgnify.R)
+Mgnf <- readRDS("Mgnify_download.RDS")
+
+mg <- MgnifyClient()
 
 
 Mgnf$studyID <- sapply(Mgnf$relationships$studies$data, function(x){
@@ -9,14 +14,14 @@ Mgnf$studyID <- sapply(Mgnf$relationships$studies$data, function(x){
 
 Study_tab <- table(Mgnf$studyID)
 
-head(Study_tab[order(Study_tab, decreasing = TRUE)], n=254)
-## these studies have over 100 samples
+head(Study_tab[order(Study_tab, decreasing = TRUE)], n=756)
+## 756 studies have over 100 samples
 
-sum(head(Study_tab[order(Study_tab, decreasing = TRUE)], n=254))
-## Even in a third of the data, this has over 100k samples
+sum(head(Study_tab[order(Study_tab, decreasing = TRUE)], n=756))
+## These are 361,408 samples!!
 
 ## study size will not be a good selection criterion, on the other hand this
-## shows that looking through 500-700 studies (for metadata etc) will be enough
+## shows that looking through ~700 studies (for metadata etc) will be enough
 ## to compile a dataset with good sample (health) data
 
 
@@ -28,15 +33,66 @@ Mgnf$human_host_tax <- ifelse(Mgnf$attributes$host == "9606",
 
 table(Mgnf$human_host_tax, useNA = "ifany")
 
-table(Mgnf$human_host_tax, Mgnf$attributes$species)
+Mgnf$biome <- as.character(Mgnf$attributes$`environment-biome`)
 
-tbl <- table(Mgnf$attributes$`environment-biome`, Mgnf$human_host_tax)
+table(Mgnf$human_host_tax, Mgnf$attributes$species)
+## "\n\nHomo sapiens", "\nHomo sapiens", Home sapiens"
+## "Homo sapien" and the correct "Homo sapiens" are wanted
+
+Mgnf$species_human <- ifelse(as.character(Mgnf$attributes$species)%in%
+                               c("\n\nHomo sapiens", "\nHomo sapiens",
+                                 "Home sapiens", "Homo sapien", "Homo sapiens"),
+                             "Hsapiens", "OTHER")
+
+table(Spc = Mgnf$species_human, Host = Mgnf$human_host_tax, useNA = "ifany")
+
+
+Mgnf$strict_human <- Mgnf$human_host_tax %in% "human" &
+  Mgnf$species_human%in%"Hsapiens"
+
+
+analyses_metadata <- getMetadata(mg, Mgnf$id[[1]])
+
+study_samples <- sapply(unique(Mgnf$studyID)[1:10], function (x) {
+  doQuery(mg, "studies", x)
+})
+
+
+Mgnf$intesti <- unlist(lapply(Mgnf$attributes$`sample-metadata`, function (x){
+  any(grepl("stool|gut|intesti|fecal|faecal|faeces|feces",
+            x[["value"]]))
+}))
+
+
+
+Mgnf$intesti <- unlist(lapply(Mgnf$attributes$`sample-metadata`, function (x){
+  any(grepl("stool|gut|intesti|fecal|faecal|faeces|feces",
+            x[["value"]]))
+}))
+
+table(Inte = Mgnf$intesti, Hum = Mgnf$strict_human)
+
+### looking a little through metadata
+Mgnf[!duplicated(Mgnf$studyID),]$attributes$`sample-metadata`
+
+
+Mgnf %>%
+  group_by(studyID) %>%
+  summarize(sample_count = n(),
+            human_count = sum(strict_human, na.rm = TRUE),
+            envir = paste(unique(biome), collapse = "_")) %>%
+  filter(nchar(studyID)>2) %>% arrange(desc(sample_count)) %>%
+  print(n=80)
+
+
+Mgnf$attributes$`sample-metadata`
+
 
 ## export to sort into "good", "bad" and "maybe"
 write.csv2(tbl, "biomes_4_manual_annotation.csv")
 
 
-
+head(Mgnf)
 
 head(Study_tab[order(Study_tab, decreasing = TRUE)], n=25)
 

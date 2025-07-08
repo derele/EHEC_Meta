@@ -105,6 +105,13 @@ query_direct <- sprintf("
 result <- dbGetQuery(sra_con, query_direct)
 
 
+## ## now compare with the Mgnf (direkt api to json) query
+## table(Mgnf$attributes$accession%in%result$biosample)
+FALSE   TRUE
+433005    870
+
+
+
 ### querrying the subject IDs directly!!!
 head(result)
 
@@ -137,6 +144,10 @@ filtered_result <- filtered_result %>%
 
 
 table(filtered_result$study_type, filtered_result$species_study)
+
+## ## now compare with the Mgnf (direkt api to json) query
+table(Mgnf$attributes$accession%in%)
+
 
 
 filtered_result_with_labels <- filtered_result[filtered_result$total_biosample_count > 250, ]
