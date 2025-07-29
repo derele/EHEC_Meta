@@ -1,4 +1,5 @@
 "";"human";"OTHER"
+"-";0;0
 "=F100";0;0
 "=F101";0;0
 "=F102";0;0
@@ -188,57 +189,190 @@
 "=F97";0;0
 "=F98";0;0
 "=F99";0;0
+"> 3 micron phytoplankton";0;0
+"0";0;0
+"0.8-3 micron phytoplankton";0;0
+"0.8-3micron phytoplankton";0;0
+"00000891";0;0
+"00009003";0;0
+"01000035";0;0
+"113";0;1196
+"15";0;0
 "16S amplicon";0;0
+"16s amplicon survey";103;0
 "16S V1_V3";65;0
+"3-20 micron phytoplankton";0;0
+"3-45 micron phytoplankton";0;0
+"3-45micron phytoplankton";0;0
+"9003";71;0
 "a";0;0
 "abalone seed nursing pond";0;0
 "Acacia mangium plantation located at a region originally with Brazilian Atlantic Florest";0;0
+"Acid mine drainage";0;0
+"Acuaculture";0;5
 "adult leaf";0;2
+"agricultural";0;2
+"Agricultural";0;0
 "Agricultural biome";0;0
 "agricultural ecosystem";0;0
+"agricultural environmental material";0;0
+"Agricultural Farm";0;1
+"agricultural field";0;0
+"agricultural site";0;18
 "agricultural soil";0;0
 "Agricultural soil";0;0
+"Agricultural Soil";0;1
+"agriculture";0;0
 "agriculture ecosystem";0;0
 "Agriculture soil";0;0
 "air";1;6
+"air_biome";0;0
 "airways";29;0
 "Airways";102;0
+"alkaline hot spring";0;0
 "allotment garden soil";0;0
-"anatomical entity environment";175;0
+"Alpine soil";0;0
+"alpine tundra";0;0
+"Amazon";0;0
+"Amazon river basin";0;0
+"Amazon tropical rainforest";0;0
+"anaerobic bioreactor";0;0
+"Anaerobic bioreactor";0;0
+"anaerobic digester";0;15
+"Anaerobic digester  microbiome";0;0
+"anaerobic membrane reactor";0;0
+"anaerobic reactor";0;0
+"Anaerobic reactor";0;0
+"Anaerobic Reactor";0;0
+"anaerobic reactor sludge";0;0
+"anaerobic sludge";0;0
+"anatomical entity environment";175;102
+"Animal";0;4
+"animal-associated habitat";0;350
 "animal-associated habitat (ENVO:00006776)";0;0
-"Animal facility";0;96
+"animal cage ENVO:01000922";0;0
+"animal facility";0;16
+"Animal facility";0;136
+"animal manure";0;0
 "Ann Arbor";0;0
+"anode biofilm";0;0
 "Antarcitc coastal environment";0;0
 "Antarctic";0;0
 "Antarctic coastal -associated";0;0
-"anthropogenic terrestrial biome";195;0
+"Antarctic Peninsula associated";0;0
+"Anthropogenic biomes";0;0
+"anthropogenic environment";0;0
+"anthropogenic environmental material";0;0
+"anthropogenic habitat";0;0
+"anthropogenic terrestrial biome";347;1309
+"anthropogenic terrestrial biome (ENVO:01000219)";11;207
+"aquaculture";0;0
+"Aquaculture";0;17
+"aquaculture site";0;0
 "aquatic";0;0
 "Aquatic";0;0
 "AQUATIC";0;0
+"Aquatic (formerly temperate forest)";0;0
 "aquatic biome";0;22
 "Aquatic biome";0;34
+"Aquatic Biome";0;216
+"aquatic environment";0;0
+"AQUATIC ENVIRONMENT";0;0
+"aquatic indoor system";0;0
+"aquatic, marine, benthic, coastal";0;730
+"aquifer";0;0
 "Arable region with soybean";4;0
 "arable soil microcosm";0;0
+"Archaea";0;0
+"archaeal community";0;0
 "arctic";0;0
 "Arctic";0;0
+"Arctic Ocean-associated";0;0
+"Arctic soil";0;0
+"Arctic thaw ponds";0;0
+"Arctic tundra";0;0
+"arcto-alpine tundra biome";0;0
+"area of cropland";0;12
 "Argentinean Pampa";0;0
+"arid";0;0
+"Arid";0;0
 "Arid soil";0;0
-"Atlantic Ocean";0;0
+"artificial";0;0
+"Artificial biome";0;0
+"Atlantic Forest";0;0
+"Atlantic ocean";0;0
+"Atlantic Ocean";0;10
+"Atlantic_Highlands";0;0
+"Atlantic_Maritime";0;0
+"Azov sea biome";0;0
+"bacteria";135;0
+"bacterial culture";0;0
+"Bacterial microbiome";1004;0
+"bacterioplankton";0;0
 "Bal";78;0
+"Baltic Sea Germany";0;0
 "bare mudflat location1";0;0
 "bare mudflat location2";0;0
 "bare mudflat location3";0;0
+"bathroom";0;0
 "bay";0;0
-"biome";0;0
+"beach";0;0
+"Beach";0;0
+"bee gut";0;418
+"beech forest";0;0
+"Benthic marine sediment";0;0
+"bentonic organism";0;0
+"Billabong";0;0
+"Bioelectrochemical reactor with toluene as carbon source";0;0
+"biofilm material";101;0
+"biogas plant";0;0
+"Biogas plant";0;0
+"biogas reactor";0;0
+"biological soil crust";0;0
+"biome";5;0
+"bioreactor";0;0
 "Bioreactor";0;0
+"bioreactor metagenome";0;0
+"bisphenol A culture medium";0;0
+"blank";0;13
+"Blank";0;0
 "bodily fluid";118;0
+"Bog Forest";0;0
+"Boreal";0;0
 "Boreal Cordillera";0;0
 "boreal forest";0;107
+"boreal peatlands";0;0
+"Boreal Plains";0;0
+"boreal stream";0;0
+"Boreal_Plains";0;0
+"Boreal_Shield";0;0
+"Bos taurus";0;2
+"Bos taurus x Bison bison";0;2
+"bottom sediment";0;0
+"bottom water";0;0
+"bovine rumen";0;9
 "brackish";0;0
 "Brackish water";0;0
+"Brackish water river";0;0
+"BRINE POOL";0;0
+"broccoli leaf surfaces";0;2
+"Broiler Chicken";0;17
 "bronchial epithelium";34;0
 "Bronchoscope";10;0
+"brownfield";0;0
+"Brownfield";0;0
 "Bru";78;0
+"building";0;0
+"built environment";2;0
+"Builtin";0;0
+"Cadmium contaminated soil";0;3
+"caecum";0;0
+"cane";0;32
+"Caribbean Sea";0;0
+"Cave Ecosystem";0;0
+"cave system";0;0
+"ceca";0;1
+"cell culture";0;0
 "CF lung";46;0
 "CF0004 (2)";1;0
 "CF0005 (1)";1;0
@@ -293,174 +427,514 @@
 "CF0107 (2)";1;0
 "CF0109 (1)";1;0
 "CF0109 (2)";1;0
+"Channel";0;0
 "cheese";0;0
+"Chicha_microbiota";0;0
+"chichen";0;2
+"chicken";0;147
+"Chicken";0;39
+"Chicken caecum";0;0
+"chicken gut";0;1282
+"chiclken";0;24
 "city";0;0
+"City";0;24
+"clay soil";0;0
+"Coal gangue";0;0
+"coast";0;0
+"coastal";0;1
+"Coastal";0;0
+"Coastal Bay";0;0
 "coastal biome";0;0
 "Coastal Biome";0;0
+"coastal ecosystem";0;0
 "coastal marine";0;0
+"coastal marine estuary";0;0
+"Coastal mudflat";0;0
+"Coastal Sea area";0;0
+"coastal sea water";0;0
 "coastal seawater";0;0
+"coastal seawater, dysoxic";0;0
+"coastal seawater, oxic";0;0
+"coastal seawater, oxycline";0;0
+"coastal seawater, oxygen minimum zone";0;0
+"coastal seawater, sub-surface";0;0
+"coastal seawater, suboxic";0;0
+"coastal seawater, surface";0;0
+"coastal sediment";0;0
 "Coastal sediment";0;0
+"coastal water";0;0
+"coastal water body";0;0
+"coastal water replicate1";0;0
+"coastal water replicate2";0;0
+"coastal water replicate3";0;0
 "coastal wetland ecosystem [ENVO:00000230]";0;0
 "coastal_water";0;0
 "coastel marine";0;0
-"Colon";113;0
+"Coffee ferment";0;0
+"cold seep";0;0
+"cold seeps";0;0
+"Cold seeps";0;0
+"Colombia, Antioquia";0;11
+"Colombia, Cundinamarca";0;3
+"colon";123;93
+"Colon";134;44
 "column_control_1";1;0
 "column_control_2";1;0
 "column_control_3";1;0
 "column_control_4";1;0
+"Common Effluent Treatment Plant";0;0
+"compost";0;0
+"Compost";0;0
 "Compost tea";0;0
+"coniferous forest";0;0
+"coniferous forest biome";0;0
 "Constructed feature";0;0
+"continental subsurface zone";0;0
+"continuous culture";0;0
 "Control";93;0
 "control_DNA";1;0
+"cool tempreate";0;0
 "Coral";0;0
-"coral reef";0;221
+"coral reef";0;276
+"Coral reef";0;1
+"Coral Reef";0;0
+"costal lagoon periodically connected to the Atlantic Ocean";0;0
+"costal lagoon periodicay coneccted to the Atlantic Ocean";0;0
+"Cow";0;162
 "cropland";0;0
 "cropland (ENVO:01000245)";0;0
-"cropland biome";0;0
+"cropland biome";0;1
+"Cropland biome";0;0
+"cropland biome ENVO:01000245";0;0
 "cropping";0;0
+"Cryoconite";0;0
+"Cryoconite 1";0;0
+"Cryoconite 10";0;0
+"Cryoconite 11";0;0
+"Cryoconite 12";0;0
+"Cryoconite 13";0;0
+"Cryoconite 14";0;0
+"Cryoconite 15";0;0
+"Cryoconite 16";0;0
+"Cryoconite 17";0;0
+"Cryoconite 18";0;0
+"Cryoconite 19";0;0
+"Cryoconite 2";0;0
+"Cryoconite 20";0;0
+"Cryoconite 3";0;0
+"Cryoconite 4";0;0
+"Cryoconite 5";0;0
+"Cryoconite 6";0;0
+"Cryoconite 7";0;0
+"Cryoconite 8";0;0
+"Cryoconite 9";0;0
 "crystalline bedrock fracture";0;0
 "cultivated";0;7
+"cultivated environment";0;0
 "cultivated habitat";0;0
+"culture";0;0
+"cultured habitat";0;0
+"Cundinamarca";0;4
 "Cystic fibrosis lung microbiome";20;0
+"deciduous forest";0;0
+"deciduous woodland";0;4
+"deep-sea";0;0
 "deep-sea coral community";0;0
 "Deep-Sea sediment";0;0
 "Deep-Sea sediment (DHAB)";0;0
 "deep brine influenced site subseafloor sediment";0;0
 "deep brine pool subseafloor sediment";0;0
+"Deep ocean";0;0
+"deep sea";0;0
 "Deep Sea";0;0
 "deep subsurface";0;0
-"dense settlement biome";13332;0
-"desert";0;0
+"Deep subsurface";0;0
+"Deep Subsurface";0;0
+"dense settlement biome";18424;354
+"dense settlement biome (ENVO:01000248)";0;4
+"dental calculus";9;0
+"Dental Caries";7;0
+"Dental Plaque";4;0
+"desert";0;1
+"Desert";0;9
+"DESERT";0;1
+"Desert Agriculture";0;12
+"desert biome";0;0
+"Desert Soil";0;1
+"Desert Springs";0;0
+"Deserts";0;26
+"Dietary supplement powder";0;0
 "digestive system [UBERON:0001007]";0;832
+"digestive tract environment";191;0
 "Digestive tract environment";0;83
-"drinking water";0;0
+"Dilution Basin Mediterranean";0;0
+"Dog";0;45
+"domestic cat faeces";0;44
+"domestic dog faeces";0;0
+"drinking water";3;0
+"drinking water distribution system";0;0
+"Drinking water system";0;0
+"duck cecum";0;0
+"Dune";0;22
+"dunesoil";0;0
+"EBPR sludge";0;0
+"EBPR Sludge";0;0
+"ecological corridor";0;0
+"Endorhiza";0;12
+"Enrichment culture";0;0
 "enrichment culture from haloalkaline lake";0;0
+"entire larveae";0;0
+"ENV:00000447";0;0
+"enviromental system";0;32
 "environment system";0;0
+"Environmental material";0;0
 "environmental system";0;0
 "environmental system determined by an organim";0;59
 "environmental system determined by an organism";0;418
+"ENVO 00002046";0;0
+"ENVO 01000043";0;0
+"ENVO 01000047";0;0
+"ENVO: 01000023";0;0
+"ENVO:00000038, &quot;LAGOON&quot;";0;0
+"ENVO:00000039";0;0
 "ENVO:00000426";0;0
 "ENVO:00000428";44;0
 "ENVO:00000446";184;0
+"ENVO:00000446  terrestrial biome";1;0
 "ENVO:00000447";0;0
+"ENVO:00000447 for &quot;marine biome&quot;";0;0
+"ENVO:00000447 for marine biome";0;0
+"ENVO:00000447 marine biome";0;0
+"ENVO:00000447 MARINE BIOME";0;0
+"ENVO:0000047";0;0
 "ENVO:00000477";0;0
+"ENVO:00002001";0;0
 "ENVO:00002003";434;0
-"ENVO:00002030";0;48
+"ENVO:00002030";0;50
+"ENVO:00002124";0;0
 "ENVO:00002228";0;0
 "ENVO:00002988";0;0
+"ENVO:0000447";0;0
 "ENVO:00005791";0;1
+"ENVO:00009002";0;0
+"ENVO:00009003";1036;0
+"ENVO:00009004";0;2
+"ENVO:01000004";0;0
+"ENVO:01000020";0;0
+"EnvO:01000023";0;0
+"ENVO:01000023";0;0
+"ENVO:01000035";0;0
 "ENVO:01000042";0;0
+"ENVO:01000047";0;0
+"ENVO:01000047 &quot;MEDITTEREAN SEA BIOME&quot;";0;0
+"ENVO:01000047, &quot;MEDITERREAN SEA BIOME&quot;";0;0
 "ENVO:01000048";0;0
-"ENVO:01000219";1490;0
+"ENVO:01000048; ENVO:01000035";0;0
+"ENVO:01000049";0;5
+"ENVO:01000126 neritic sublittoral zone";0;0
+"ENVO:01000219";1490;25
+"ENVO:01000228";0;0
+"ENVO:01000252 &quot;freshwater lake biome&quot;";0;0
+"ENVO:01000418";540;0
 "ENVO:01000921]|[ENVO:01000922";0;48
+"ENVO:01001002";4;0
 "ENVO:01001406";24;0
 "ENVO:02000049";0;0
+"ENVO:02500044";0;0
+"ENVO:03000085";0;0
 "ENVO:2100002";796;0
-"ENVO:animal-associated habitat";0;2533
-"ENVO:aquatic biome";195;0
-"ENVO:dense settlement biome";502;0
+"ENVO:animal-associated habitat";3;3955
+"ENVO:aquatic biome";251;0
+"ENVO:cropland biome";0;778
+"ENVO:dense settlement biome";4276;0
+"ENVO:feces";10;0
 "ENVO:freshwater biome";0;0
-"ENVO:human-associated habitat";2160;22
+"ENVO:human-associated habitat";4981;22
 "ENVO:large lake biome";0;0
-"ENVO:mammalia-associated habitat";0;20
+"ENVO:mammalia-associated habitat";221;47
 "ENVO:marine biome";0;0
+"ENVO:ocean water";0;0
 "ENVO:plant-associated habitat";0;0
 "ENVO:small lake biome";0;0
+"ENVO:soil";0;0
 "ENVO:taiga";0;0
 "ENVO:temperate coniferous forest biome";0;0
 "ENVO:temperate grasslands, savannas, and shrubland biome";0;0
-"ENVO:terrestrial biome";0;0
+"ENVO:terrestrial biome";0;24
 "ENVO:tropical and subtropical coniferous forest biome";0;0
 "ENVO:tropical and subtropical moist broadleaf forest biome";0;0
-"ENVO:urban biome";2621;0
+"ENVO:tundra biome";0;0
+"ENVO:urban biome";3836;0
 "ENVO:wastewater treatment plant";0;0
+"ENVO_00000038";0;0
+"ENVO_00000316; ENVO:01000177";0;19
+"ENVO_01000599";0;0
 "ENVO_03000034";0;0
+"equine faeces";0;31
+"Equine Gut";0;0
+"equine_faecal_microbiome";0;73
+"estuarine";0;0
+"Estuarine";0;0
 "estuarine biome";0;0
+"Estuarine Biome";0;0
 "estuarine biome [ENVO:01000020]";0;0
+"estuarine ecosystem";0;0
+"estuarine ecosystems";0;0
+"estuarine sediments";0;0
+"estuary";0;0
+"Estuary";0;0
 "Eucalyptus plantation located at a region originally with Brazilian Atlantic Florest";0;0
 "eukaryota";0;0
-"faeces";0;46
+"FACE";0;0
+"Faecal";0;0
+"faeces";0;47
+"Faeces";0;88
+"farm";0;0
 "Farm";0;0
-"fecal";117;0
+"farm soil";0;0
+"Farming Environment";206;0
+"fecal";117;5
+"fecal environment";0;0
 "fecal environmentÊ[ENVO:01001029]";693;0
 "fecal material[ENVO:00002003]";6;0
-"Feces";82;0
+"feces";1805;16
+"Feces";170;47
 "female vagina";66;0
+"fermentation pit";0;0
+"fermentation pit for CSFL";0;0
+"fermented food product";0;0
+"field";0;656
+"Field";0;1
+"field soil";0;0
+"Fir soil";0;0
+"fjord";0;0
+"flooded areas";0;0
 "flooded grassland biome";0;0
-"forest";0;0
+"Foege building";0;36
+"food metagenome";0;0
+"food microbiome";0;0
+"food production factory";0;0
+"Foodservice manufacturing";0;0
+"forest";0;2
 "Forest";0;0
+"forest biome";0;29
+"forest soil";0;0
 "Forest soil";0;0
+"fragile environment";0;4
 "fresh leaves";0;0
+"fresh water";0;0
+"fresh water ENVO:00002011";0;0
 "freshwater";0;0
 "Freshwater";0;0
+"freshwater algal bloom";0;0
+"freshwater biom";0;0
 "freshwater biome";0;0
+"Freshwater biome";0;0
+"freshwater biome [ENVO:00000873]";0;0
 "Freshwater biome [ENVO:00000873]";0;0
+"freshwater biome ENVO:00000873";0;0
 "freshwater environment";0;0
+"freshwater habitats";0;0
+"freshwater lake";0;0
+"freshwater lake biome";0;0
+"freshwater river";0;0
+"freshwater river biome";0;0
+"freshwater sediment";0;0
+"freshwater stream";0;0
+"freshwater wetland";0;0
 "freshwater wetland ecosystem";0;0
+"Freshwater/Arctic";0;0
+"Freshwater/Marine";0;0
+"full-scale biogas plant";0;0
+"full-scale biogas reactor";0;0
+"fungal product";0;0
+"Fynbos";0;0
 "Gar";78;0
+"Gardern";0;0
 "gastric microbiome";120;0
+"gastrointestinal tract";8;0
+"GI";0;0
+"glacier";0;0
+"Glacier";0;0
+"Glassland";0;0
+"granular sludge obtained from a thermophilic up- flow anaerobic sludge blanket reactor";0;0
+"grass";0;0
+"grassland";0;0
 "Grassland";0;0
 "grassland biome";0;0
+"Green leafs";0;51
 "Greenhouse-Mesocosm";0;0
-"gut";30;0
-"Gut";12;29
-"gut microbiome";256;0
+"Groundwater";0;0
+"groundwater microbiome";0;0
+"Gulf of Eilat";0;0
+"gut";6231;1753
+"Gut";423;573
+"GUT";0;0
+"Gut Bos taurus";0;33
+"gut microbiome";366;1
+"Gut microbiome";0;0
 "gut(UBERON:0001007)";26;0
+"habitat";0;0
+"half salt water";0;0
+"head";137;0
+"High Alpine";0;0
+"high temperature habitat";0;0
+"hive";0;40
 "homo sapien";1369;0
-"Homo sapiens";36;0
+"Homo sapiens";104;0
 "Homo sapiens [NCBITaxon:9606]";1;0
+"horse manure";0;42
+"Horse rectum";0;30
 "hospital";371;0
 "Hospital";1;0
-"host-associated";108;0
-"host-associated biome";2;0
+"host-associated";109;297
+"Host-associated";0;6
+"host-associated biome";1006;328
+"host-associated biome# manual or sample XML";0;4
+"host-associated habitat";0;0
+"host associated";0;383
+"Host associated";61;119
+"Host Associated";0;0
+"host associated biome";88;0
+"host is healthy farmed silver fox or raccoon dog";0;0
+"host_assocaited";0;95
+"hot spring";0;0
+"Hot spring";0;0
+"Hot Spring";0;0
+"Hot spring water";0;0
 "hot springs";0;0
-"human";3131;0
-"Human";774;0
-"human-associated";3;0
-"Human-associated";750;0
-"human-associated habitat";608;0
-"human-gut";100;0
+"House";0;0
+"human";7335;0
+"Human";858;0
+"human-associated";138;0
+"Human-associated";752;0
+"human-associated biome";1;0
+"Human-associated biome";25;1
+"Human-associated biome ";12;0
+"human-associated habitat";6475;0
+"Human-associated habitat";728;0
+"human-associated habitat [ENVO:00009003]";115;0
+"human-gut";2479;0
 "Human-gut";110;0
-"human-oral";554;0
+"human-oral";654;0
 "human airway";702;0
 "Human Airway";56;0
+"Human anteior nares swab from both sides";38;0
 "Human associated habitat";85;0
 "human BAL";42;0
-"human body";543;0
+"human body";1131;0
+"human buccal mucosa swab";42;0
 "human cadaver";104;0
+"Human colon";1;0
 "human construction";0;0
-"human gut";1401;0
-"Human gut";51;0
-"human gut microbiome";204;0
-"Human gut stool";301;0
+"human digestive tract";1417;0
+"human feces";24;0
+"human gut";3915;0
+"Human gut";838;0
+"Human Gut";40;0
+"human gut microbiome";208;0
+"Human gut microbiome";2;0
+"Human gut stool";320;0
+"human hard palate swab";29;0
+"human host";35;0
+"human Keratinized gingiva swab";31;0
 "human lung";401;0
 "Human lung microbiome.";3;0
 "human lung tissue";395;0
-"human microbiome";333;0
+"human microbiome";407;0
 "Human microbiome";920;0
-"Human Microbiome";290;0
-"human oral";269;0
-"human oral cavity";118;0
+"Human Microbiome";798;0
+"human oral";567;0
+"human oral cavity";3237;0
+"Human oral cavity";15;0
+"human oral mucosa model";9;0
+"human oral wash";41;0
+"human Palatine tonsils swab";42;0
+"human peridontal picket";10;0
 "human respiratory system";24;0
+"human saliva";34;0
+"Human saliva";1319;0
+"human skin";487;0
 "human sputum subject1";1;0
+"Human stool";0;0
 "Human subgingival microbiome";24;0
+"human Supragingival plaque scrape";34;0
+"human tongue dorsum swab";37;0
 "human urinary microbiome";47;0
 "Human vagina";85;0
 "human_gut";10;0
 "human_lung";193;0
-"in vitro culture";4;0
+"human_oral_cavity";50;0
+"human_stool";1016;0
+"HumanGut";22;0
+"hydrothermal vent";0;0
+"Hydrothermal vent";0;0
+"hypersaline";0;0
+"hypersaline environment";0;0
+"hypersaline water";0;0
+"in situ Sea Water";0;0
+"in vitro biofilm grown from human saliva";7;0
+"in vitro culture";6;0
+"indoor kitchen";0;0
+"indoor microbiome";0;0
+"Industrial cooling water";0;0
 "industrial landfill";0;0
+"Industry";0;0
 "inpatient_icu";715;0
-"intestine";0;4
+"Insect and food";0;1
+"insect gut";0;14
+"internal/external nematode body";0;0
+"International Space Station - Russian Service Module";0;0
+"intertidal sediment";0;0
+"intertidal sediment replicate1";0;0
+"intertidal sediment replicate2";0;0
+"Intertidal Zone";0;0
+"intestine";1493;4
+"Intestine and spleen";0;0
+"intestine environment";578;464
+"iron oxyhydroxides rich mound";0;0
+"kelp forest";0;145
 "kit_reagents";1;0
+"lab";0;11
+"lab-scale biogas reactor";0;0
+"Lab environment";0;0
 "lab incubation";0;0
+"laboratory";188;27
+"Laboratory";0;0
+"Laboratory Blank";0;0
+"Laboratory contaminants";0;2
+"laboratory enrichment";0;0
 "Laboratory environment (ENVO_01001405)";0;0
+"laboratory insectary";0;20
+"Laboratory reactor";0;0
+"laboratory/specific-pathogen-free mouse house";0;285
 "lagoon [ENVO:00000038]";0;0
+"lake";0;0
+"Lake";0;0
+"Lake Lugano";0;0
+"lake sediment";0;0
+"Lake Taihu sediment";0;0
+"Lakes";0;0
+"Large intestine";0;2
+"large lake biome";0;0
+"large lake ENVO:00000891";0;0
+"large river biome";0;0
+"leaf";0;96
+"Leaf";0;2
 "leaf litter";0;0
 "lentic water body";0;0
 "lesion site";1;0
+"lichen";0;0
+"lichens";0;0
+"Liquid";0;0
+"Lotic";0;32
 "lower airways";37;0
-"lung";1;0
+"lower digestive tract";148;1320
+"lower intestine";0;28
+"lowland rainforest";0;0
+"lowland rocky";0;0
+"lowland sandy";0;0
+"lung";27;0
 "Lung";885;0
 "lung-microbiome";26;0
 "lung [UBERON:0002048]";50;0
@@ -478,175 +952,713 @@
 "Lung_7";1;0
 "Lung_8";1;0
 "Lung_9";1;0
+"mammalia-associated habitat";0;288
+"mangrove";0;0
+"Mangrove";0;0
+"mangrove biome";0;0
+"manure";0;465
+"marginal sea";0;0
 "marginal sea biome";0;0
 "marginal sea biome [ENVO:01000046]";0;0
-"marine";0;0
+"marine";0;2
 "Marine";0;0
+"Marine (coastal seawater)";0;0
 "marine abyssal zone biome";0;0
 "marine abyssal zone biome [ENVO:01000027]|polar biome [ENVO_01000339]";0;0
 "marine algal bloom";0;0
 "marine basaltic hydrothermal vent biome";0;0
+"marine bathyal zone";0;0
 "marine bathyal zone biome";0;0
+"marine benthic";0;0
+"marine benthic biome";0;0
 "marine benthos";0;0
 "marine biom";0;0
 "marine biome";0;52
 "Marine biome";0;0
+"Marine Biome";0;0
+"marine biome ";0;0
+"Marine biome - coastal";0;0
 "marine biome (ENVO: 00000428)";0;0
 "marine biome (ENVO:00000428)";0;0
-"marine biome (ENVO:00000447)";0;0
+"marine biome (ENVO:00000447)";0;1
+"Marine Biome (ENVO:00000447)";0;0
 "marine biome [ENVO: 00000447]";0;0
 "marine biome [ENVO:00000447]";0;0
+"Marine biome 00000447";0;0
+"marine biome ENVO:00000447";0;0
 "marine cold seep biome";0;0
-"marine coral reef biome";0;18
+"marine coral reef biome";0;20
+"Marine coral reef biome";0;8
+"marine environment";0;0
+"Marine environment";0;0
+"marine habitat";0;0
+"Marine habitat";0;0
+"marine hydrothermal vent";0;0
+"marine hydrothermal vent biome";0;0
+"Marine metagenome";0;0
+"marine methane seep";0;0
+"Marine near barrier island";0;0
+"marine neritic benthic zone biome";0;4
 "marine pelagic";0;0
+"Marine pelagic";0;0
 "marine pelagic biome";0;0
 "marine pelagic biome (ENVO:01000023)";0;0
 "marine pelagic biome [ENVO:01000023]";0;0
 "marine photic zone [ENVO:00000209]";0;0
-"marine salt marsh biome";0;0
+"marine reef biome ENVO:01000029";0;0
+"marine salt marsh";0;0
+"marine salt marsh biome";0;7
+"marine salt marsh biome ENVO:01000022";0;0
 "marine sediment";0;0
 "Marine sediment";0;0
+"Marine Sediment";0;0
+"marine sediment (ENVO:00002113)";0;0
+"marine sediment_454";0;0
+"marine sediment_Hiseq";0;0
+"marine soil";0;0
+"Marine soil";0;0
+"marine subtidal rocky reef biome";0;0
 "Marine Surface Coastal Sediments";0;0
+"marine surface sediments";0;0
+"marine ultramafic hydrothermal vent biome ENVO:01000053";0;1
 "marine water";0;0
 "Marine water";0;0
+"marine water body";0;0
+"Marine waters";0;0
+"Marine/Arctic";0;0
+"Marine/NorthAtlantic";0;0
+"marsh";0;0
 "mature Spartina alterniflora location1";0;0
 "mature Spartina alterniflora location2";0;0
 "mature Spartina alterniflora location3";0;0
+"Mediterranean";0;0
 "Mediterranean area";75;0
+"Mediterranean forest";0;0
 "mediterranean forest biome";0;0
-"mediterranean sea biome";0;9
+"mediterranean forests, woodlands, and shrub biome";0;0
+"Mediterranean forests, woodlands, and shrub biome";0;0
+"mediterranean sea biome";0;11
 "mediterranean sea biome [ENVO:01000047]";0;0
 "mediterranean sea biome(ENVO:01000047)";0;0
+"Mediterranean Sea:";0;0
+"mediterranean shrubland biome";0;0
 "Mediterranean vegetation";0;136
+"Mediterranean woodland biome";0;0
+"Meromictic lakes are unusual hydrological formations where bodies of water follow a seasonal cycle of stratifi- cation but do not mix completely.";0;0
+"mesophotic coral reef";0;0
 "Mezquital Valley field soil";0;0
-"microbiome";0;0
+"mice microbiome";0;6
+"Micro";0;0
+"microbial control";0;0
+"Microbial Mat Material";0;0
+"microbiome";64;51
+"microbiome,16S barcoded pyrosequencing";1;0
+"microbiota";1;0
+"middle Europe";0;0
+"millet root";0;0
+"mine";0;0
+"mine tailing pool";0;0
+"mine water";0;0
+"miscellaneous";0;0
 "missing";67;0
 "missing: control sample";0;0
+"Mix soil";0;0
 "mixed forest biome";0;0
+"Mixed layer surface ocean";0;0
 "Mixed plantation located at a region originally with Brazilian Atlantic Florest";0;0
+"mixedwood plains";0;0
 "Mixedwood_Plains";0;0
+"mock";0;0
+"mock community";4;0
+"Mock Community";0;0
 "Montane Cordillera";0;0
 "montane grassland biome";0;0
+"Montane grasslands and shrublands";0;0
 "montane shrubland biome";0;0
+"Moor";0;12
+"Moose rumen";0;6
+"mountain";0;650
+"mountain forest soil";0;0
+"mouse";0;1530
+"Mouse";0;3
+"mouse colon";0;1
+"mouse gut";17;266
+"Mouse gut";0;20
 "mouse lung microbiome";30;0
+"Mouth";56;0
 "mucus";0;21
+"mud/sand";0;0
 "multicellular organism [UBERON:0000468]";339;82
+"na";28;0
+"NA";22;0
+"nasal";656;0
+"nasal cavity";2012;0
+"natural water and sediment";0;0
+"NE Atlantic";0;0
+"Near shore reef";0;0
+"negative control";1;0
 "Negative control";7;0
+"negative control1";0;0
+"negative control2";0;0
+"negative control3";0;0
+"negative control4";0;0
+"negative control5";0;0
+"negative control6";0;0
+"negative control7";0;0
+"negative control8";0;0
 "neritic epipelagic zone";0;0
+"neritic epipelagic zone biome";0;0
 "neritic epipelagic zone biome [ENVO:01000042]";0;0
+"neritic epipelagic zone biome ENVO:01000042";0;0
 "neritic sea surface microlayer biome";0;0
+"neritic sub-littoral zone";0;1
 "normal site";1;0
+"North Pacific Subtropical Gyre";0;12
+"not applicable";0;0
 "Not applicable";197;0
+"Not Applicable (NA)";0;0
+"not collected";737;0
 "not described";0;0
-"ocean";0;2
+"not spplicable";0;0
+"ocean";0;14
 "Ocean";0;1
+"ocean biom";0;0
 "ocean biome";0;0
+"Ocean Biome";0;0
+"ocean biome  [ENVO:01000048]";0;0
 "ocean biome [ENVO:01000048]";0;0
+"Ocean biome ENVO:01000048";0;0
 "Ocean Reef";0;0
+"ocean surface";0;0
+"ocean water";0;0
+"Ocean water";0;0
+"Ocean, Temperate, Oligotrophic";0;0
+"ocean, this term applies to plant growth forms.";0;0
 "ocean_biome";0;0
+"Oceanic";0;0
+"oceanic abyssopelagic zone biome";0;0
+"oceanic bathypelagic zone";0;0
+"oceanic bathypelagic zone biome";0;0
+"oceanic epipelagic zone";0;0
 "oceanic epipelagic zone biome";0;0
 "oceanic epipelagic zone biome [ENVO:01000035]|marine pelagic biome [ENVO:01000023]|polar biome [ENVO_01000339]";0;0
 "oceanic epipelagic zone biome [ENVO:01000035]|polar biome [ENVO_01000339]";0;0
-"old field";2;0
+"oceanic hadal pelagic zone biome";0;0
+"oceanic mesopelagic zone biome";0;0
+"oceanic mesopelagic zone biome ENVO:01000036";0;0
+"oceanic sea surface microlayer biome ENVO:01000034";0;0
+"Oil drilling waste recycling plant";0;0
+"Oil polluted aspen rhizosphere";0;57
+"oil polluted sandy soil";0;45
+"oil well";0;0
+"old field";303;0
+"oligotrophic";0;0
 "open ocean";0;0
-"oral cavity";1;0
+"oral";377;0
+"Oral";1;0
+"oral cavity";136;0
+"Oral cavity";94;0
+"oral microbiome";1;0
+"oral opening";136;0
+"organic feature";0;9
+"organic matter fall";0;2
+"organism-associated habitat";0;123
+"organism substance";0;0
+"outer slope of the reef";0;0
 "oxygen deficient zone";0;0
+"Pacific coast";0;0
 "Pacific Maritime";0;0
+"paleome";0;0
+"palm oil mill effluent";0;0
+"park land";0;0
+"parkland";0;0
+"Parkland";0;0
 "pasture";0;0
 "Pasture";0;0
+"Patient1_Buccal";1;0
+"Patient1_Dorsal";1;0
+"Patient1_Saliva";1;0
+"Patient1_tooth12";1;0
+"Patient1_tooth19";1;0
+"Patient1_tooth25";1;0
+"Patient1_tooth28";1;0
+"Patient1_tooth30";1;0
+"Patient1_tooth9";1;0
+"Patient1_Ventral";1;0
+"Patient10_Buccal";1;0
+"Patient10_Dorsal";1;0
+"Patient10_tooth19";1;0
+"Patient10_tooth25";1;0
+"Patient10_tooth3";1;0
+"Patient10_tooth30";1;0
+"Patient10_tooth9";1;0
+"Patient10_ToothA";1;0
+"Patient10_ToothI";1;0
+"Patient10_Ventral";1;0
+"Patient11_Buccal";1;0
+"Patient11_Dorsal";1;0
+"Patient11_Saliva";1;0
+"Patient11_tooth12";1;0
+"Patient11_tooth19";1;0
+"Patient11_tooth25";1;0
+"Patient11_tooth28";1;0
+"Patient11_tooth3";1;0
+"Patient11_tooth30";1;0
+"Patient11_tooth9";1;0
+"Patient11_Ventral";1;0
+"Patient12_Buccal";1;0
+"Patient12_Dorsal";1;0
+"Patient12_Saliva";1;0
+"Patient12_toothA";1;0
+"Patient12_toothE";1;0
+"Patient12_toothI";1;0
+"Patient12_toothP";1;0
+"Patient12_toothT";1;0
+"Patient13_Buccal";1;0
+"Patient13_Dorsal";1;0
+"Patient13_Saliva";1;0
+"Patient13_tooth12";1;0
+"Patient13_tooth19";1;0
+"Patient13_tooth25";1;0
+"Patient13_tooth3";1;0
+"Patient13_tooth30";1;0
+"Patient13_tooth9";1;0
+"Patient13_Ventral";1;0
+"Patient14_Buccal";1;0
+"Patient14_Dorsal";1;0
+"Patient14_Saliva";1;0
+"Patient14_Ventral";1;0
+"Patient15_Buccal";1;0
+"Patient15_Dorsal";1;0
+"Patient15_Saliva";1;0
+"Patient15_Ventral";1;0
+"Patient16_Buccal";1;0
+"Patient16_Saliva";1;0
+"Patient16_Ventral";1;0
+"Patient17_Buccal";1;0
+"Patient17_Dorsal";1;0
+"Patient17_Saliva";1;0
+"Patient17_Ventral";1;0
+"Patient2_Buccal";1;0
+"Patient2_Dorsal";1;0
+"Patient2_tooth12";1;0
+"Patient2_tooth19";1;0
+"Patient2_tooth25";1;0
+"Patient2_tooth28";1;0
+"Patient2_tooth30";1;0
+"Patient2_tooth9";1;0
+"Patient2_Ventral";1;0
+"Patient3_Buccal";1;0
+"Patient3_Dorsal";1;0
+"Patient3_Saliva";1;0
+"Patient3_tooth12";1;0
+"Patient3_tooth19";1;0
+"Patient3_tooth25";1;0
+"Patient3_tooth28";1;0
+"Patient3_tooth3";1;0
+"Patient3_tooth30";1;0
+"Patient3_tooth9";1;0
+"Patient3_toothA";1;0
+"Patient3_Ventral";1;0
+"Patient4_Buccal";1;0
+"Patient4_Dorsal";1;0
+"Patient4_Saliva";1;0
+"Patient4_tooth19";1;0
+"Patient4_tooth25";1;0
+"Patient4_tooth3";1;0
+"Patient4_tooth30";1;0
+"Patient4_tooth9";1;0
+"Patient4_toothA";1;0
+"Patient4_toothT";1;0
+"Patient4_Ventral";1;0
+"Patient6_Buccal";1;0
+"Patient6_Dorsal";1;0
+"Patient6_Saliva";1;0
+"Patient6_tooth12";1;0
+"Patient6_tooth19";1;0
+"Patient6_tooth25";1;0
+"Patient6_tooth28";1;0
+"Patient6_tooth3";1;0
+"Patient6_tooth30";1;0
+"Patient6_tooth9";1;0
+"Patient6_Ventral";1;0
+"Patient7_Buccal";1;0
+"Patient7_Dorsal";1;0
+"Patient7_Saliva";1;0
+"Patient7_tooth12";1;0
+"Patient7_tooth19";1;0
+"Patient7_tooth25";1;0
+"Patient7_tooth28";1;0
+"Patient7_tooth3";1;0
+"Patient7_tooth30";1;0
+"Patient7_tooth9";1;0
+"Patient7_Ventral";1;0
+"Patient8_Buccal";1;0
+"Patient8_Dorsal";1;0
+"Patient8_Saliva";1;0
+"Patient8_tooth12";1;0
+"Patient8_tooth19";1;0
+"Patient8_tooth25";1;0
+"Patient8_tooth28";1;0
+"Patient8_tooth3";1;0
+"Patient8_tooth30";1;0
+"Patient8_tooth9";1;0
+"Patient8_Ventral";1;0
+"Patient9_Buccal";1;0
+"Patient9_Dorsal";1;0
+"Patient9_Saliva";1;0
+"Patient9_tooth19";1;0
+"Patient9_tooth25";1;0
+"Patient9_tooth28";1;0
+"Patient9_tooth3";1;0
+"Patient9_tooth30";1;0
+"Patient9_tooth9";1;0
+"Patient9_toothI";1;0
+"Patient9_Ventral";1;0
 "PCB sediment";0;0
 "PCO:1000004";52;0
 "pcr_reagents";1;0
 "peat soil";0;0
+"peatland";0;0
+"pelagic ocean";0;0
+"periurban shantytown";68;0
+"permafrost";0;0
 "Perturbed soil";0;0
+"phosphogypsum waste heap soil";0;0
 "Phragmites australis location1";0;0
 "Phragmites australis location2";0;0
 "Phragmites australis location3";0;0
+"Phyllosphere";0;12
+"pig";0;185
 "Pig";0;90
 "pig feces";0;0
+"pig gut";0;295
+"pig manure";0;90
+"Pitchers";0;0
+"plankton community";0;0
+"plant";0;1
+"Plant-associated biome";0;2
+"plant_root-associated";0;85
 "plastic marine debris";0;0
+"polar biome";0;0
 "Polar biome";0;0
 "Polar Biome";0;0
-"Porifera";0;3
+"polar desert biome";0;0
+"polar desert biome (ENVO:01000186)";0;0
+"pond";0;0
+"Porifera";0;8
+"Posterior body half";0;0
+"pot";0;0
+"Potato field";0;44
+"poultry";0;178
+"poultry farm";0;1
+"Praires";0;0
 "prairie";15;0
+"prarie";0;0
+"prepared meals";0;0
+"Production facility";0;66
+"Prokaryotes";0;0
+"Protist";0;0
+"Pseudostem";0;36
+"Puna";0;0
+"quatic biome";0;0
+"rangeland";0;0
+"rangeland biome";0;155
+"Rangeland biome";0;0
+"rangeland biome (ENVO:01000247)";0;48
+"reagent";0;0
+"Recirculating Acaqulture System";0;12
+"reproductive structure";323;0
+"Reservoir";0;0
+"respiratory";16;0
+"respiratory airway";82;0
 "Respiratory tract";89;0
+"Rhizosphere";0;1768
+"rhizosphere sediments";0;0
 "Rhizosphere soil";0;0
+"river";0;0
+"River";0;2
+"RIVER";0;0
+"River sediment";0;0
+"root";0;132
+"Roots";0;10
+"rough grass terrain";0;0
+"rumen";0;72
+"Rumen";0;34
+"rumen fluid";0;24
+"Rumen microbiome";0;112
+"Rural";0;16
+"rural village";129;0
+"salamander skin";0;0
+"saline evaporation pond";0;0
+"saline pan";0;0
 "saline pond";0;0
-"saliva";82;0
+"saline sediment environment";0;0
+"saliva";145;0
+"Saliva";98;0
+"salt flat";0;0
+"salt lake";0;0
 "salt marsh";0;0
-"sea";0;0
+"Salt Marsh";0;0
+"salt water";0;0
+"Saltern";0;0
+"Saltmarsh";0;0
+"sample-AB09";0;0
+"sample-AS09";0;0
+"sample-BB09";0;0
+"sample-BS09";0;0
+"sample-CB09";0;0
+"sample-CS09";0;0
+"sample-DB09";0;0
+"sample-DS09";0;0
+"sand";0;0
+"Sand";0;0
+"Savana";0;0
+"Scots pine forest";0;0
+"sea";0;53
+"Sea";0;0
+"Sea beach";0;0
+"sea ice";0;0
 "Sea surface water";0;0
 "sea water";0;0
+"Sea Water";0;0
 "sea water(ENVO:00002149)";0;0
 "seafloor";0;0
 "seamount";0;0
 "seawater";0;0
+"Seawater";0;0
+"seawater biome";0;0
+"seawater column";0;0
+"seawater from aquaculture system";0;0
+"seawater microbiome";0;0
 "sediment";0;0
+"Sediment";0;0
+"Sediment sample";0;0
 "Sediment surface";0;0
+"sediment22";0;0
 "sedimentary";0;0
+"Sediments";0;0
+"sediments of lake";0;0
 "see floor";0;0
+"Semi-Arid Plateaux";0;0
+"Semi_Arid_Plateau";0;0
+"Semiarid";0;0
+"Sequencing Batch Reactor";0;0
+"Severely preterm infant";342;0
+"sewage sludge";0;0
+"sewage system";23;0
+"sheep host";0;1
 "shower hose biofilms";0;0
+"Shower hoses";0;0
+"Shrimp aquaculture";0;0
+"Shrimp aquaculture farm";0;0
+"shrubland biome";0;0
+"silty";0;0
+"simulated";0;0
+"skin";14;0
+"Skin";96;0
+"skin epidermis";0;275
+"sludge";530;0
+"Sludge";0;0
+"Small intestine";0;2
+"small lake biome";0;0
 "Small lake biome";0;0
-"soil";0;383
-"Soil";0;0
+"Small lake biome [ENVO:00000892]";0;0
+"small lake biome ENVO_00000892";0;0
+"small river";0;0
+"small river biome";0;0
+"small river biome biome";0;0
+"snail microbiome";0;92
+"snow";0;0
+"soil";0;509
+"Soil";0;23
 "Soil forest";0;0
+"soil(ENVO:00001998)";0;0
+"soil_environment";0;0
+"solar saltern";0;0
 "solid surface layer";0;0
+"Solid waste";0;0
+"soybean corn rotation agricultural field";0;327
+"Space station";0;0
 "SPF";0;0
+"Sputum";137;0
 "sputum biome";8;0
+"stable";0;0
+"stem";0;27
 "stool";0;23
+"stream";0;0
 "Suaeda salsa location1";0;0
 "Suaeda salsa location2";0;0
 "Suaeda salsa location3";0;0
+"Sub-arctic tundra";0;0
 "Sub tropical";0;0
+"subarctic forest";0;14
+"subarctic ocean";0;0
 "subpolar coniferous forest biome";0;0
+"subseafloor sediment";0;0
+"Subsurface";0;0
 "subsurface water";0;0
+"subterrestrial habitat";0;0
+"subtidal sediment";0;0
+"subtidal zone";0;0
+"subtropical broadleaf forest biome";0;0
 "subtropical coastal water";0;0
+"subtropical forest";0;1
+"subtropical rainforest";0;35
+"Sundarbans estuary";0;0
+"Surface marine water";0;0
+"surface seawater";0;0
 "surface sediment";0;0
+"Surface sediment";0;0
+"surface sediments";0;0
+"surface water";0;0
+"Surface Water";0;0
+"suspended biomass from biological reactor treating wastewater";0;0
+"Swamp";0;0
+"swine";0;46
+"synthetic";3;0
+"taiga";0;0
 "Taiga Cordillera";0;0
 "Taiga Plains";0;0
 "tailing";0;0
+"Tailing";0;0
 "Teku kana";0;0
 "temperate";0;0
 "Temperate";0;0
 "temperate biome;soil";0;0
+"temperate broadleaf and mixed forest biome";0;0
 "Temperate broadleaf and mixed forests";0;0
+"temperate broadleaf evergreen forest";0;791
+"Temperate Broadleaf forest";0;0
 "temperate broadleaf forest biome";0;0
 "temperate coastal marine";0;0
+"Temperate Conifer Forest";0;0
 "temperate coniferous forest biome";0;0
 "Temperate coniferous forests";0;0
-"temperate forest";0;0
-"temperate grassland";0;0
+"temperate deciduous";0;0
+"Temperate deciduous broadleaf forest";0;0
+"temperate forest";0;149
+"temperate grassland";0;1
 "Temperate grassland";0;0
-"temperate grassland biome";0;52
+"temperate grassland biome";0;59
+"temperate grassland biome ENVO:01000193";0;0
+"Temperate grasslands";0;0
+"temperate grasslands, savannas, and shrubland biome";0;0
+"Temperate hardwood forest";0;10
+"temperate marine upwelling biome";0;0
 "temperate marine upwelling biome [ENVO:01000860]";0;0
 "temperate mediterranean sea biome";0;0
+"temperate mixed forest biome";0;0
+"temperate mixed forest biome [ENVO:01000212]";0;0
 "Temperate shelf and sea biome";0;0
+"temperate shrubland biome";120;0
+"temperate stream";0;0
+"temperate woodland";0;9
+"Temperate Woodland biome";0;0
+"Temperate Woodland Biome";0;0
 "Temperate woodland biome [ENVO:01000221]";0;0
-"Terrestrial";0;0
-"terrestrial biome";83;1
+"terrestial biome";0;0
+"terrestrial";0;36
+"Terrestrial";0;413
+"TERRESTRIAL";0;0
+"terrestrial artificial anaerobic";0;0
+"terrestrial biome";1681;313
+"Terrestrial biome";0;0
+"Terrestrial Biome";0;0
+"terrestrial biome [ENVO:00000446]";394;0
 "Terrestrial biome [ENVO:00000446]";0;0
+"terrestrial biome ENVO:00000446";70;0
+"Terrestrial biome ENVO:00000446";0;140
+"terrestrial environmental zone";0;0
+"terrestrial geothermal fumarole";0;0
+"terrestrial habitat(ENVO:00002009)";0;0
 "terrestrial studies";0;0
+"terrestrial subsurface";0;0
+"The marine bathyal zone biome comprises regions of the marine benthic biome between approximately 200 m and 3000 m depth. This zone generally coincides with the continental slope.";0;0
+"The Pampas";0;0
 "The soil was collected from an experimental area during soybean cultivation, at the R5 stage of the crop, after inoculation of Pseudomonas fluorescens";0;0
 "The soil was collected from an experimental area during soybean cultivation, at the R5 stage of the crop.";0;0
+"thermokarst ponds";0;0
+"Thermophilic biogas plant";0;0
+"This is a filtered seawater sample";0;0
+"tidewater glacier";0;0
 "Trades Biome";0;0
+"transportation";47;0
+"tropic orchard";0;0
+"Tropical";0;60
+"Tropical and subtropical moist broadleaf forest biome";0;0
+"tropical and subtropical regions";0;0
+"tropical broadleaf forest biome";0;0
+"tropical coniferous forest biome";0;0
 "tropical dry broadleaf forest biome";0;0
+"tropical island";0;160
 "tropical moist broadleaf forest biome";0;0
+"tropical rainforest";0;0
+"Tropical rainforest";0;35
+"tropical river";0;0
+"tropical semi-deciduous broadleaf forest";0;21
+"tropical shrubland biome";0;0
+"trunk";0;37
 "tundra";0;0
+"Tundra";0;0
 "tundra biome";0;0
+"tundrar biome";0;0
+"UBERON:0004111";0;0
+"under-ice water";0;0
+"unknown";0;0
+"Upflow anaerobic sludge blanket and membrane aerated biofilm reactor";0;0
+"urban";260;0
+"Urban";0;0
 "Urban Biom";0;0
-"urban biome";2688;369
+"urban biome";5878;766
 "Urban terrestrial grassland and tidal saltmarshes";0;0
-"vagina";8;0
+"urine";231;0
+"vagina";2640;0
+"vaginal";39;0
 "vaginal sample";44;0
-"village biome";0;0
+"village";0;0
+"village biome";749;99
+"village biome [ENVO:01000246]";0;4
+"village biome ENVO:01000246";0;0
+"village biome[ENVO:01000246]";0;1273
+"vineyard";0;42
+"Vivarium";0;11
+"volar forearm";259;0
+"Volcanic";0;0
+"VSF CW";0;0
+"Wadden Sea Northern Germany";0;0
+"waste material";0;113
+"wastewater";0;0
 "Wastewater";0;0
-"water";34;0
+"Wastewater sludge";0;0
+"wastewater treatment plant";0;0
+"Wastewater treatment plant";0;0
+"Wastewater Treatment Plant";0;0
+"wastewater/sludge";0;0
+"water";34;1
 "Water";4;0
+"water and sediment in basin experimen";0;0
+"water and sediment in basin experiment";0;0
+"water bacterioplankton";0;0
 "water body";0;0
+"water column";0;0
+"water line";0;0
+"water sources, duck cecum";0;0
+"water surface";0;0
+"water trough";0;0
+"water well";0;0
+"West texas ranch horses";0;0
 "Westerlies Biome";0;0
+"wetland";0;0
 "Wetland";0;0
-"Woodland";0;0
+"Wild flower meadow";0;0
+"Wood";0;6
+"Woodland";0;7
+"Woodland biome";0;0
 "Woodlands";0;0
+"xeric basin";0;0
+"Xeric basin biome";0;0
+"Xeric shrubland biome";0;2
 "young leaf";0;10
 "young Spartina alterniflora patch 1";0;0
 "young Spartina alterniflora patch 2";0;0
