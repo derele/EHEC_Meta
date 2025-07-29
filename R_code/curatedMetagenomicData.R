@@ -1,0 +1,15 @@
+library(curatedMetagenomicData)
+library(dplyr)
+library(magrittr)
+
+## fully anotated disease status!!!
+table(is.na(sampleMetadata$disease))
+
+table(sampleMetadata$body_site)
+## great stool      21030
+
+
+sampleMetadata %>%
+  filter(body_site == "stool")%>%
+  select("NCBI_accession") %>%
+  write.csv("cMD_ncbi.txt", row.names = FALSE)
