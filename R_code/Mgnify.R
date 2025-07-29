@@ -6,10 +6,15 @@ library(purrr)
 
 base_url <- "https://www.ebi.ac.uk/metagenomics/api/v1/samples"
 biome <- "root:Host-associated:Human:Digestive system"
-url <- paste0(base_url, "?biome=", URLencode(biome, reserved = TRUE))
 
-samples <- NULL
-count <- 0
+
+## url <- paste0(base_url, "?biome=", URLencode(biome, reserved = TRUE))
+
+## ## Commented to avoid overwriting during the unfortunately necessary
+## ## restarts
+
+## samples <- NULL
+## count <- 0
 
 repeat {
   res <- GET(url)
