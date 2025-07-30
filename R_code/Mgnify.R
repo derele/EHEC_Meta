@@ -75,12 +75,12 @@ mg <- MgnifyClient()
 
 metagenome_samples <- doQuery(
   mg, "samples", experiment_type="metagenomic",
-  biome_name="Human:Digestive system", instrument_platform = "Illumina",
+  biome_name="Human:Digestive system",
   max.hits = NULL)
 
 metagenome_studies <- doQuery(
   mg, "studies", experiment_type="metagenomic",
-  biome_name="Human:Digestive system", instrument_platform = "Illumina",
+  biome_name="Human:Digestive system",
   max.hits = NULL)
 
 
