@@ -54,7 +54,9 @@ echo "✅ Finished processing $SRA_ID"
 # Optional cleanup
 rm ${SRA_ID}_*.fastq
 rm ${SRA_ID}.bt2.bam*
-rm fastp.html fastp.json
-rm ${SRA_ID}.clean.fastq
 
 rm -r ${SRA_ID}
+rm ${SRA_ID}.clean.fastq
+
+rm fastp.html fastp.json
+
