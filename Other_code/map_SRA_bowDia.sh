@@ -20,8 +20,15 @@ fasterq-dump --threads 8 --skip-technical --split-files \
 
 ### CLEANUP
 
+repair.sh in1=${SRA_ID}_1.fastq in2=${SRA_ID}_2.fastq \
+          out1=${SRA_ID}_1.repaired.fastq \
+          out2=${SRA_ID}_2.repaired.fastq \
+          outs=${SRA_ID}_singletons.fastq \
+                    overwrite=t
+
+
 echo "▶ Running fastp..."
-fastp -i ${SRA_ID}_1.fastq -I ${SRA_ID}_2.fastq \
+fastp -i ${SRA_ID}_1.repaired.fastq -I ${SRA_ID}_2.repaired.fastq \
       -o ${SRA_ID}_1.clean.fastq -O ${SRA_ID}_2.clean.fastq \
       --thread $THREADS 
 
