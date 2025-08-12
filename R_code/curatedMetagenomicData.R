@@ -18,6 +18,7 @@ sM <- sampleMetadata %>%
 
 if(write_NEW_SRA){
   sM %>%
+    filter(!is.na(NCBI_accession)) %>%
     pull(NCBI_accession) %>%
     writeLines("data/cMD_ncbi.txt")
 }
@@ -32,6 +33,8 @@ multiAcc_list <- sapply(multiAcc, strsplit, ";")
 multiAcc_second <- lapply(multiAcc_list, function(x) x[2:length(x)])
 
 missingAcc <- unlist(multiAcc_second)
+
+missingAcc <- missingAcc[!is.na(missingAcc)]
 
 if(write_2nd_SRA){
     writeLines(missingAcc, "data/cMD_2nd_ncbi.txt")
