@@ -1,0 +1,12 @@
+| Code         | Likely Gene/Product                  | Pathotype       |
+| ------------ | ------------------------------------ | --------------- |
+| EAEC\_AAIC   | aaiC (secretory system component)    | EAEC            |
+| EAEC\_AATA   | aatA (dispersin export)              | EAEC            |
+| EIECSHIGELLA | ipaH / virF / ial (invasion markers) | EIEC / Shigella |
+| EPEC\_BFPA   | bfpA (bundle-forming pilus)          | Typical EPEC    |
+| EPEC\_EAE    | eae (intimin)                        | EPEC / EHEC     |
+| ETEC\_LT     | eltA/B (heat-labile toxin)           | ETEC            |
+| ETEC\_STH    | estH (heat-stable toxin H)           | ETEC            |
+| ETEC\_STP    | estP (heat-stable toxin P)           | ETEC            |
+| STECSTX1     | stx1 (Shiga toxin 1)                 | STEC            |
+| STECSTX2     | stx2 (Shiga toxin 2)                 | STEC            |
