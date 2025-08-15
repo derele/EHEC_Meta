@@ -2,6 +2,8 @@ library(curatedMetagenomicData)
 library(dplyr)
 library(magrittr)
 library(tidyverse)
+library(pheatmap)
+
 
 write_NEW_SRA <- FALSE
 write_2nd_SRA <- FALSE
@@ -26,14 +28,14 @@ if(write_NEW_SRA){
 accs <- sM %>%
   pull(NCBI_accession)
 
+
+## Extracting multiple entries in NCBI Accession column
 multiAcc <- unique(accs[!grepl("^\\w{3}\\d{6,7}$", accs)])
 multiAcc_list <- sapply(multiAcc, strsplit, ";")
 
 
 multiAcc_second <- lapply(multiAcc_list, function(x) x[2:length(x)])
-
 missingAcc <- unlist(multiAcc_second)
-
 missingAcc <- missingAcc[!is.na(missingAcc)]
 
 if(write_2nd_SRA){
@@ -43,7 +45,7 @@ if(write_2nd_SRA){
 ### reading the data after processing with "Other_code/map_sra_bowDia.sh"
 results_dir <- "H:/Analysenetz/transfer/EHEC_processed/"
 
-bar <- list.files(results_dir, pattern = "\\.bt2\\.idxstats\\.txt$", full.names = TRUE) %>%
+bt_raw <- list.files(results_dir, pattern = "\\.bt2\\.idxstats\\.txt$", full.names = TRUE) %>%
   map(~ {
     tab <- read.table(.x, sep = "\t", stringsAsFactors = FALSE)
     tab$sample <- sub("\\.bt2\\.idxstats\\.txt$", "", basename(.x))
@@ -58,7 +60,7 @@ bar <- list.files(results_dir, pattern = "\\.bt2\\.idxstats\\.txt$", full.names 
     unmapped = V4
   )
 
-baz <- bar %>%
+bt_collated <- bt_raw %>%
   filter(gene_id != "*") %>%
   mutate(marker = sub("(.*)\\(gb\\|.*;(.*)\\)", "bt_\\1_\\2", gene_id)) %>%
   select(sample, marker, mapped) %>%
@@ -68,8 +70,8 @@ baz <- bar %>%
     values_fill = 0
   )
 
-table(STX2A = baz$bt_VFG000837_stx2A, STX2B = baz$bt_VFG000838_stx2B)
-table(baz$bt_VFG000739_eae>1, STX2B = baz$bt_VFG000803_eae>1)
+table(STX2A = bt_collated$bt_VFG000837_stx2A, STX2B = bt_collated$bt_VFG000838_stx2B)
+table(bt_collated$bt_VFG000739_eae>1, STX2B = bt_collated$bt_VFG000803_eae>1)
 
 
 dia_files <- list.files(results_dir, pattern="*.diamond.tsv", full.names = TRUE)
@@ -104,7 +106,7 @@ summarise_diamond <- function(file) {
 ## Apply to all files and combine
 dia_summary <- bind_rows(lapply(dia_files, summarise_diamond))
 
-dia_baz <- dia_summary %>%
+dia_collated <- dia_summary %>%
   mutate(marker = sub("(.*)\\(gb\\|.*;(.*)\\)", "\\1_\\2", marker)) %>%
   select(sample, marker, hits, hits_95) %>%
   pivot_wider(
@@ -113,14 +115,13 @@ dia_baz <- dia_summary %>%
     values_fill = 0
   )
 
-library(pheatmap)
 
-pheatmap(log10(dia_baz[, !colnames(dia_baz)%in%"sample"]+1))
-dia_baz95 <- dia_baz[, grepl("hits_95", colnames(dia_baz))]
-pheatmap(log10(dia_baz95[rowSums(dia_baz95)>2, ]+1))
+pheatmap(log10(dia_collated[, !colnames(dia_collated)%in%"sample"]+1))
+dia_collated95 <- dia_collated[, grepl("hits_95", colnames(dia_collated))]
+pheatmap(log10(dia_collated95[rowSums(dia_collated95)>2, ]+1))
 
 
-Screen <- inner_join(baz, dia_baz)
+Screen <- inner_join(bt_collated, dia_collated)
 Screen_df <- as.data.frame(Screen)
 
 rownames(Screen_df) <- Screen_df$sample
