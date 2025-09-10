@@ -7,7 +7,6 @@ library(ggplot2)
 library(boot)
 
 
-
 write_NEW_SRA <- FALSE
 write_2nd_SRA <- FALSE
 
@@ -124,32 +123,65 @@ dia_collated95 <- dia_collated[, grepl("hits_95", colnames(dia_collated))]
 pheatmap(log10(dia_collated95[rowSums(dia_collated95)>2, ]+1))
 
 
-Screen <- inner_join(bt_collated, dia_collated)
-Screen_df <- as.data.frame(Screen)
+map_results <- inner_join(bt_collated, dia_collated)
+map_results_df <- as.data.frame(map_results)
 
-rownames(Screen_df) <- Screen_df$sample
+rownames(map_results_df) <- map_results_df$sample
 
 ## need to work on the controls!!
 controls <- c("SRR12195337", "SRR12195338", "SRR12195339",
               "SRR4101313", "SRR4101314", "SRR4101315", "SRR33438544",
               "SRR32314265")
 
-### need to expand the NCBI_ID here once mutliple runs per samples are read!
-finalData <- inner_join(sM, Screen, by = c("NCBI_accession" = "sample")) %>%
-  as.data.frame()
 
-finalData$my_sample_ID <- make.unique(finalData$NCBI_accession)
+### Some samples have the same NCBI accession as they are the same used in
+## multiple studies (shoud have downloaded and screened them only once; TODO:
+## select unique accessions when completing the dataset!!)
+
+### we here discard simple the second mention of ever accession in the data!
+## they come from currated data!
+
+sM <- sM[!duplicated(sM$NCBI_accession), ]
+
+## now we need to expand the multiple collected accessions.
+
+library(dplyr)
+
+# Beispiel: sM_long hat die Spalten: group_id (alte Zeilennummer) + NCBI_accession
+sM_long <- sM %>%
+  mutate(my_sample_id = row_number()) %>%        # jede alte Zeile bekommt eine ID
+  separate_rows(NCBI_accession, sep = ";")   # aufsplitten
+
+# Nun joinen wir mit der Screen-Tabelle
+joined <- sM_long %>%
+  left_join(map_results, by = c("NCBI_accession" = "sample"))
+
+# Jetzt für jede Gruppe aufsummieren:
+collated_joined <- joined %>%
+  group_by(my_sample_id) %>%
+  summarise(
+    across(starts_with("bt_") | starts_with("hits_"), sum, na.rm = TRUE),
+    across(!starts_with("bt_") & !starts_with("hits_"), ~ first(.x)),
+    .groups = "drop"
+  )
+
+## need to expand the NCBI_ID here once mutliple runs per samples are read!
+finalData <- inner_join(sM, map_results, by = c("NCBI_accession" = "sample")) %>%
+  as.data.frame()
 
 rownames(finalData) <- finalData$my_sample_ID
 
+finalData <- collated_joined
+rownames(finalData) <- finalData$my_sample_id
+
 screenCols <- colnames(finalData[, grepl("bt_|hits_", colnames(finalData))])
 specificCols <- colnames(finalData[, grepl("bt_|hits_95_", colnames(finalData))])
-stxCols <- colnames(Screen[, grepl("stx", colnames(Screen))])
-stx2Cols <- colnames(Screen[, grepl("stx2", colnames(Screen))])
+stxCols <- colnames(map_results[, grepl("stx", colnames(map_results))])
+stx2Cols <- colnames(map_results[, grepl("stx2", colnames(map_results))])
 
 ### back to the contreols in the overall screening dataset... to see some
 ## non-human (non curatedMetagenomcData merging)
-pheatmap(log10(Screen_df[controls ,screenCols]+1))
+pheatmap(log10(map_results_df[controls , screenCols]+1))
 
 
 posStudies <- rownames(finalData)[rowSums(finalData[, screenCols])>5]
@@ -164,22 +196,22 @@ study_annot <- finalData[, c("DE2011_outbreak", "disease", "age", "study_name")]
 study_annot$age <- as.numeric(study_annot$age)
 
 pheatmap(log10(finalData[posStudies, screenCols]+1),
-         annotation_row = study_annot[, c(1, 3)],
+##         annotation_row = study_annot[, c(1, 3)],
          show_rownames = FALSE)
 
 ## based on this (and controls we should drop eae < 95%)
 screenCols <- screenCols[!screenCols%in%c("hits_VFG000739_eae", "hits_VFG000803_eae")]
 
 pheatmap(log10(finalData[pposStudies, screenCols]+1),
-         annotation_row = study_annot[, c(1, 3)],
+##         annotation_row = study_annot[, c(1, 3)],
          show_rownames = FALSE)
 
 pheatmap(log10(finalData[stxStudies, screenCols]+1),
-         annotation_row = study_annot[, c(1, 2, 3)],
+##         annotation_row = study_annot[, c(1, 2, 3)],
          show_rownames = FALSE)
 
 pheatmap(log10(finalData[stx2Studies, screenCols]+1),
-         annotation_row = study_annot[, c(2,3)],
+##         annotation_row = study_annot[, c(2,3)],
          show_rownames = FALSE)
 
 
@@ -188,8 +220,7 @@ pheatmap(log10(finalData[finalData$disease%in%"STEC", screenCols]+1),
          show_rownames = FALSE)
 
 
-
-length(Stx2_samples)/nrowposStudieslength(Stx2_samples)/nrow(finalData)*100
+length(Stx2_samples)/nrow(finalData)*100
 
 tapply(finalData$number_bases, finalData$study_name, mean)/1000000
 
@@ -203,6 +234,8 @@ finalData$STX2bt <- finalData$bt_VFG000837_stx2A>0|
 nrow(finalData[finalData$STX2bt & !finalData$study_name%in%"LomanNJ_2013", ])/
   nrow(finalData[!finalData$study_name%in%"LomanNJ_2013", ])*100
 ### 0.3624883%
+
+## 0.280095%
 
 ## but detection is dependent on sequencing depth
 depth_model<- glm(STX2bt ~ number_bases,
@@ -254,7 +287,7 @@ ggsave("figures/detection_depht.png")
 ## At about 4e+10 = 40,000,000,000 == 40 GB we can expect to have 100% sensitivity.
 
 table(finalData$number_bases > 4e+10) ## no 100% sensitivity
-table(finalData$number_bases > 1.3e+10) ## 160 samples with 95% sensitivity at 13GB data
+table(finalData$number_bases > 1.3e+10) ## 188 samples with 95% sensitivity at 13GB data
 
 table(finalData[!finalData$study_name%in%"LomanNJ_2013", "STX2bt"])
 
