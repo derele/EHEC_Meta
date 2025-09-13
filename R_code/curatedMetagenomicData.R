@@ -9,6 +9,7 @@ library(boot)
 
 write_NEW_SRA <- FALSE
 write_2nd_SRA <- FALSE
+write_final_SRA <-FALSE
 
 ## fully anotated disease status!!!
 table(is.na(sampleMetadata$disease))
@@ -117,16 +118,9 @@ dia_collated <- dia_summary %>%
     values_fill = 0
   )
 
-
-pheatmap(log10(dia_collated[, !colnames(dia_collated)%in%"sample"]+1))
-dia_collated95 <- dia_collated[, grepl("hits_95", colnames(dia_collated))]
-pheatmap(log10(dia_collated95[rowSums(dia_collated95)>2, ]+1))
-
-
-map_results <- inner_join(bt_collated, dia_collated)
-map_results_df <- as.data.frame(map_results)
-
-rownames(map_results_df) <- map_results_df$sample
+map_results <- full_join(bt_collated, dia_collated)
+## to figure out which samples are missing just one of the methods!
+map_results_all <- inner_join(bt_collated, dia_collated)
 
 ## need to work on the controls!!
 controls <- c("SRR12195337", "SRR12195338", "SRR12195339",
@@ -145,19 +139,28 @@ sM <- sM[!duplicated(sM$NCBI_accession), ]
 
 ## now we need to expand the multiple collected accessions.
 
-library(dplyr)
 
-# Beispiel: sM_long hat die Spalten: group_id (alte Zeilennummer) + NCBI_accession
+# my_sample_id (alte Zeilennummer) + NCBI_accession
 sM_long <- sM %>%
   mutate(my_sample_id = row_number()) %>%        # jede alte Zeile bekommt eine ID
   separate_rows(NCBI_accession, sep = ";")   # aufsplitten
+
+## we use map_results_all because we want to complete the collection using data
+### from both mapping methods!!
+table(sM_long$NCBI_accession%in%map_results_all$sample)
+
+stillMissingACC <- sM_long$NCBI_accession[!sM_long$NCBI_accession%in%map_results_all$sample]
+
+if(write_final_SRA){
+  writeLines(stillMissingACC, "data/cMD_3rd_ncbi.txt")
+}
 
 # Nun joinen wir mit der Screen-Tabelle
 joined <- sM_long %>%
   left_join(map_results, by = c("NCBI_accession" = "sample"))
 
 # Jetzt für jede Gruppe aufsummieren:
-collated_joined <- joined %>%
+finalData <- joined %>%
   group_by(my_sample_id) %>%
   summarise(
     across(starts_with("bt_") | starts_with("hits_"), sum, na.rm = TRUE),
@@ -165,77 +168,87 @@ collated_joined <- joined %>%
     .groups = "drop"
   )
 
-## need to expand the NCBI_ID here once mutliple runs per samples are read!
-finalData <- inner_join(sM, map_results, by = c("NCBI_accession" = "sample")) %>%
-  as.data.frame()
-
-rownames(finalData) <- finalData$my_sample_ID
-
-finalData <- collated_joined
-rownames(finalData) <- finalData$my_sample_id
-
-screenCols <- colnames(finalData[, grepl("bt_|hits_", colnames(finalData))])
-specificCols <- colnames(finalData[, grepl("bt_|hits_95_", colnames(finalData))])
-stxCols <- colnames(map_results[, grepl("stx", colnames(map_results))])
-stx2Cols <- colnames(map_results[, grepl("stx2", colnames(map_results))])
-
-### back to the contreols in the overall screening dataset... to see some
-## non-human (non curatedMetagenomcData merging)
-pheatmap(log10(map_results_df[controls , screenCols]+1))
-
-
-posStudies <- rownames(finalData)[rowSums(finalData[, screenCols])>5]
-pposStudies <- rownames(finalData)[rowSums(finalData[, specificCols])>5]
-stxStudies <- rownames(finalData)[rowSums(finalData[, stxCols])>3]
-stx2Studies <- rownames(finalData)[rowSums(finalData[, stx2Cols])>0]
-
-finalData$DE2011_outbreak <- ifelse(finalData$study_name=="LomanNJ_2013",
-                                    "Yes", "No")
-
-study_annot <- finalData[, c("DE2011_outbreak", "disease", "age", "study_name")]
-study_annot$age <- as.numeric(study_annot$age)
-
-pheatmap(log10(finalData[posStudies, screenCols]+1),
-##         annotation_row = study_annot[, c(1, 3)],
-         show_rownames = FALSE)
-
-## based on this (and controls we should drop eae < 95%)
-screenCols <- screenCols[!screenCols%in%c("hits_VFG000739_eae", "hits_VFG000803_eae")]
-
-pheatmap(log10(finalData[pposStudies, screenCols]+1),
-##         annotation_row = study_annot[, c(1, 3)],
-         show_rownames = FALSE)
-
-pheatmap(log10(finalData[stxStudies, screenCols]+1),
-##         annotation_row = study_annot[, c(1, 2, 3)],
-         show_rownames = FALSE)
-
-pheatmap(log10(finalData[stx2Studies, screenCols]+1),
-##         annotation_row = study_annot[, c(2,3)],
-         show_rownames = FALSE)
-
-
-pheatmap(log10(finalData[finalData$disease%in%"STEC", screenCols]+1),
-        ## annotation_row = study_annot[, c(2,3)],
-         show_rownames = FALSE)
-
-
-length(Stx2_samples)/nrow(finalData)*100
-
-tapply(finalData$number_bases, finalData$study_name, mean)/1000000
-
-table(finalData[!finalData$study_name%in%"LomanNJ_2013", "bt_VFG000837_stx2A"])
-table(finalData[!finalData$study_name%in%"LomanNJ_2013",
-                "bt_VFG000837_stx2A"]>0)
-
+## bowtie but super sensitive setting everything to stx2 when detected
 finalData$STX2bt <- finalData$bt_VFG000837_stx2A>0|
   finalData$bt_VFG000838_stx2B>0
+
+## this is the positive control: finalData$study_name=="LomanNJ_2013"
+finalData$DE2011 <- ifelse(finalData$study_name=="LomanNJ_2013",
+                           "YES", "NO")
+
+table(finalData$disease)
+
+
+finalData <- finalData %>%
+  mutate(
+    disease_group = case_when(
+      disease == "healthy" ~ "Healthy",
+
+      # Gut / digestion / liver / metabolic
+      disease %in% c("acute_diarrhoea","adenoma","ascites;cirrhosis",
+                     "ascites;cirrhosis;hepatitis","ascites;cirrhosis;hepatitis;schistosoma",
+                     "ascites;cirrhosis;schistosoma","CDI","cirrhosis","cirrhosis;hepatitis",
+                     "CMV;coeliac;gestational_diabetes","cystitis","fatty_liver",
+                     "generic_diabetes","gestational_diabetes","gestational_diabetes;pre-eclampsia",
+                     "hepatitis","IBD","IGT","infectiousgastroenteritis","pyelonefritis","pyelonephritis",
+                     "salmonellosis", "STH","stomatitis","T1D","T1D;coeliac;irritable_bowel",
+                     "T2D","tonsillitis","CRC","CRC;T2D") ~ "Gut / digestion",
+
+      # Cardiovascular & Cancer
+      disease %in% c("ACVD",
+                     "melanoma","melanoma;metastases","melanoma;metastases;melanoma_surgery",
+                     "melanoma;metastases_bone","melanoma;metastases_liver","melanoma;metastases_lung",
+                     "melanoma;metastases_lung,metastases_nodes","melanoma;metastases_lung;metastases_adrenal",
+                     "melanoma;metastases_lung;metastases_liver","melanoma;metastases_lung;metastases_liver;metastases_bone",
+                     "melanoma;metastases_lung;metastases_liver;metastases_nodes",
+                     "melanoma;metastases_lung;metastases_nodes",
+                     "melanoma;metastases_lung;metastases_nodes;metastases_SQ",
+                     "melanoma;metastases_nodes","melanoma;metastases_nodes;metastases_bone",
+                     "melanoma;metastases_nodes;metastases_SQ","melanoma;metastases_SQ",
+                     "melanoma;metastases_SQ;metastases_adrenal",
+                     "melanoma;treatment_colitis",
+                     "hypertension", "pre-eclampsia") ~ "Cardiovascular & Cancer",
+
+      # Other / infections / immune / misc
+      disease %in% c("asthma","BD","bronchitis","chorioamnionitis","cough","fever","ME/CFS",
+                     "migraine","migraine;asthma","migraine;generic_diabetes","otitis","pneumonia",
+                     "premature_born","RA","respiratoryinf","schizofrenia","sepsis","skininf","suspinf",
+                     "MDRB") ~ "Other / infections",
+
+      disease %in% "STEC" ~ "STEC",
+
+      TRUE ~ "manual_check"
+    )
+  )
+
+table(finalData$disease_group)
+
+plot_heatmap <- function(df, anno_cols, num_prefix = c("hits_", "bt_")) {
+  num <- df %>%
+    select(any_of(unlist(map(num_prefix,
+                             ~ grep(.x, names(df), value = TRUE))))) %>%
+    mutate(across(everything(), ~log10(.x + 1))) %>%
+    as.data.frame()
+  rownames(num) <- df$my_sample_ID # assumes you have that column
+
+  anno <- df %>%
+    select(all_of(c("my_sample_ID", anno_cols))) %>%
+    as.data.frame()
+  rownames(anno) <- anno$my_sample_ID
+  anno$my_sample_ID <- NULL
+
+  pheatmap::pheatmap(num,
+                     annotation_row = anno,
+                     show_rownames = FALSE)
+}
+
+finalData %>%
+  filter(DE2011 == "YES") %>%
+  plot_heatmap(anno_cols = c("country", "disease"))
 
 nrow(finalData[finalData$STX2bt & !finalData$study_name%in%"LomanNJ_2013", ])/
   nrow(finalData[!finalData$study_name%in%"LomanNJ_2013", ])*100
 ### 0.3624883%
-
-## 0.280095%
 
 ## but detection is dependent on sequencing depth
 depth_model<- glm(STX2bt ~ number_bases,
@@ -340,9 +353,41 @@ ggplot(boot_df, aes(x = true_prevalence)) +
 ggsave("figures/bootstrap_estimate.png")
 
 
-disease_model<- glm(STX2bt ~ disease,
-                    ##                  data=finalData[!finalData$study_name%in%"LomanNJ_2013",],
+disease_model<- glm(STX2bt ~ disease_group,
                     data=finalData,
                     family = binomial)
 
 summary(disease_model)
+
+
+west_model<- glm(STX2bt ~ non_westernized,
+                    data=subset(finalData, !disease%in%"STEC"),
+                    family = binomial)
+
+summary(west_model)
+
+table(subset(finalData, non_westernized == "yes")$disease,
+      subset(finalData, non_westernized == "yes")$country)
+
+tapply(finalData$age, finalData$non_westernized, fivenum, na.rm=TRUE)
+
+country_model<- glm(STX2bt ~ country,
+                 data=subset(finalData, !disease%in%"STEC"),
+                 family = binomial)
+
+summary(country_model)
+
+finalData$stunting <- finalData$disease%in%"STH"
+
+stunting_model <- glm(STX2bt ~ stunting,
+                       data=subset(finalData, !disease%in%"STEC" &
+                                     finalData$non_westernized == "yes"
+                       ),
+                       family = binomial)
+
+### nothing for stunting not even within non-westernized
+
+finalData %>%
+  dplyr::filter(DE2011 == "NO" &
+                STX2bt == TRUE) %>%
+  plot_heatmap(anno_cols = c("non_westernized", "disease_group"))
