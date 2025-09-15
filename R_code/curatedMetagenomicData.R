@@ -391,3 +391,49 @@ finalData %>%
   dplyr::filter(DE2011 == "NO" &
                 STX2bt == TRUE) %>%
   plot_heatmap(anno_cols = c("non_westernized", "disease_group"))
+
+
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+
+# Summarise counts AND non_westernized together
+country_summary <- finalData %>%
+  group_by(country) %>%
+  summarise(
+    n_samples = n(),
+    non_westernized = any(non_westernized == "yes"),
+    .groups = "drop"
+  )
+
+# Join to world map
+world_data <- world %>%
+  left_join(country_summary, by = c("iso_a3" = "country"))
+
+# 4. Plot with ggplot2
+country_plot <-
+  ggplot(world_data) +
+  geom_sf(aes(fill = n_samples), color = "grey80") +
+  scale_fill_viridis_c(option = "plasma", trans = "log", na.value = "grey90",
+                       breaks = c(1, 10, 100, 1000, 10000)
+  ) +
+  ylim(-60, 80) +
+  theme_minimal() +
+  labs(fill = "Samples",
+       title = "Number of samples per country",
+       subtitle = "log scale color gradient")
+
+ggsave("figures/country_plot.png", country_plot, bg = "white", width = 9,
+       height = 4, dpi = 600)
+
+country_plot_western <-
+  country_plot +
+  geom_sf(
+  data = world_data %>% filter(non_westernized == TRUE),
+  fill = NA, color = "black", size = 1) +
+  labs(fill = "Samples",
+       title = "Number of samples per country",
+       subtitle = "highglihgting \"non westernized countries\"")
+
+ggsave("figures/country_plot_western.png", country_plot_western,
+       bg = "white", width = 9, height = 4, dpi = 600)
