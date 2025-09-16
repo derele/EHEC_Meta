@@ -5,7 +5,9 @@ library(tidyverse)
 library(pheatmap)
 library(ggplot2)
 library(boot)
-
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
 
 write_NEW_SRA <- FALSE
 write_2nd_SRA <- FALSE
@@ -176,7 +178,11 @@ finalData$STX2bt <- finalData$bt_VFG000837_stx2A>0|
 finalData$DE2011 <- ifelse(finalData$study_name=="LomanNJ_2013",
                            "YES", "NO")
 
-table(finalData$disease)
+## some samples have zero sequencing depth
+finalData <- subset(finalData, number_bases > 0)
+
+## Bangladesh shoudl be considered non-westernized
+finalData$non_westernized[finalData$country == "BGD"] <- "yes"
 
 
 finalData <- finalData %>%
@@ -223,45 +229,71 @@ finalData <- finalData %>%
 
 table(finalData$disease_group)
 
-plot_heatmap <- function(df, anno_cols, num_prefix = c("hits_", "bt_")) {
+plot_heatmap <- function(df, anno_cols, num_prefix = c("hits_", "bt_"), ...) {
   num <- df %>%
     select(any_of(unlist(map(num_prefix,
                              ~ grep(.x, names(df), value = TRUE))))) %>%
     mutate(across(everything(), ~log10(.x + 1))) %>%
     as.data.frame()
-  rownames(num) <- df$my_sample_ID # assumes you have that column
+  rownames(num) <- df$my_sample_id # assumes you have that column
 
   anno <- df %>%
-    select(all_of(c("my_sample_ID", anno_cols))) %>%
+    select(all_of(c("my_sample_id", anno_cols))) %>%
     as.data.frame()
-  rownames(anno) <- anno$my_sample_ID
-  anno$my_sample_ID <- NULL
+  rownames(anno) <- anno$my_sample_id
+  anno$my_sample_id <- NULL
 
   pheatmap::pheatmap(num,
                      annotation_row = anno,
-                     show_rownames = FALSE)
+                     show_rownames = FALSE,
+                     ...)
 }
 
+png("figures/Loman2013_heat.png", res = 600, width = 8, height = 6,
+    units = "in")
 finalData %>%
   filter(DE2011 == "YES") %>%
-  plot_heatmap(anno_cols = c("country", "disease"))
+  plot_heatmap(
+    num_prefix = c("hits_.*stx2", "bt_.*stx2"),
+    anno_cols = c("country", "disease", "stec_count", "shigatoxin_2_elisa",
+                  "stool_texture" ),
+    labels_col = c("Diamond 75% STX2A", "Diamond 75% STX2B",
+                   "Diamond 95% STX2A", "Diamond 95% STX2B",
+                   "Bowtie STX2A", "Bowtie STX2B")
+    )
+dev.off()
+
+##
+foo <- finalData %>%
+    filter(DE2011 == "YES")
+
+## In the newest iteration we are missing two positives!!! Why oh why? TODO!!
+(nrow(foo[foo$STX2bt, ])+2)/(nrow(foo))
+
+## Or did we process three more unifected samples? ... TODO!!!
+nrow(foo[foo$STX2bt, ])/(nrow(foo)-3)
+
+table(finalData[!finalData$study_name%in%"LomanNJ_2013", "STX2bt"], useNA="ifany")
+### HERE DETECtion NEG = 16362    POS = 57
 
 nrow(finalData[finalData$STX2bt & !finalData$study_name%in%"LomanNJ_2013", ])/
   nrow(finalData[!finalData$study_name%in%"LomanNJ_2013", ])*100
-### 0.3624883%
+### 0.35 %
 
-## but detection is dependent on sequencing depth
-depth_model<- glm(STX2bt ~ number_bases,
-                 data=finalData[finalData$disease%in%"healthy",],
-                 family = binomial)
+depth_model <- glm(STX2bt ~ number_bases,
+                   family = binomial,
+                   data = finalData[finalData$disease%in%"healthy", ])
+
+summary(depth_model)
+
 
 ## From LomanNJ_2013 depth at their 0.67% sensitivity
 # 1. Get reference prediction
 ref_depth <- data.frame(number_bases = 1.075e9)
 current_prob <- predict(depth_model, newdata = ref_depth, type = "response")
 
-target_prob <- 0.67
-current_linear_pred <- predict(depth_model, newdata = ref_depth, type = "link")  # Log-odds
+target_prob <- 0.67 ## TODO get it REAL
+current_linear_pred <- predict(depth_model, newdata = ref_depth, type = "response")  # Log-odds
 beta_1 <- coef(depth_model)["number_bases"]
 new_intercept <- log(target_prob / (1 - target_prob)) - beta_1 * ref_depth$number_bases
 
@@ -270,34 +302,117 @@ depth_model_adjusted$coefficients["(Intercept)"] <- new_intercept
 
 predict(depth_model_adjusted, newdata = ref_depth, type = "response")  # Should output 0.67
 
+zero_depth <- data.frame(number_bases = 0)
+predict(depth_model_adjusted, newdata = zero_depth, type = "response")  # Should output ZERO
+
 new_data <- data.frame(number_bases = seq(1e8, 4e10, length.out = 100))
-new_data$prob <- predict(depth_model_adjusted, newdata = new_data, type = "response")
+pred <- predict(depth_model_adjusted, newdata = new_data, type = "link", se.fit = TRUE)
 
-
+new_data <- new_data %>%
+  mutate(
+    fit = pred$fit,                  # linear predictor (logit scale)
+    se  = pred$se.fit,
+    prob = plogis(fit),              # back-transform mean
+    LL   = plogis(fit - 1.96 * se),  # CI lower bound
+    UL   = plogis(fit + 1.96 * se)   # CI upper bound
+  )
 
 finalData[finalData$disease%in%"healthy", "pred_sensitivity"] <-
   predict(depth_model_adjusted,
-          new_data = finalData[finalData$disease%in%"healthy","number_bases"],
-          type="response") + 0.67
+          newdata = finalData[finalData$disease%in%"healthy","number_bases"],
+          type="response")
 
 
 # 4. Plot
-ggplot(new_data, aes(x = number_bases, y = prob)) +
+extrapolation_plot <-
+  ggplot(new_data, aes(x = number_bases, y = prob)) +
   geom_line() +
   geom_vline(xintercept = 1.075e9, linetype = "dashed", color = "red") +
   geom_hline(yintercept = 0.67, linetype = "dashed", color = "red") +
-  # geom_point(data=finalData, aes(x = number_bases, y = pred_sensitivity,
-  #                                color=study_name)) +
-  labs(x = "Sequencing Depth (number_bases)", y = "Adjusted Detection Probability",
-       title = "Logistic Model Calibrated to 67% Sensitivity at 1.075B Reads")
+  scale_x_continuous(
+    limits = c(0, 4e10),
+    labels = function(x) x / 1e9,
+    breaks = seq(0, 4e10, by = 1e10)
+  ) +
+  ylim(0.6, 1) +
+  theme_minimal() +
+  labs(x = "Sequencing Depth (Gigabases)", y = "Adjusted Detection Probability",
+       title = "Logistic model calibrated to 67% Sensitivity at 1.075Gb sequencing depth")
+
+ggsave("figures/detection_depht.png", extrapolation_plot, bg = "white")
+
+extrapolation_plot_studies <-
+  extrapolation_plot +
+  geom_jitter(
+    data = finalData, alpha = 0.2, width = 1000000, height = 0.01,
+    aes(x = number_bases, y = pred_sensitivity, color = study_name)
+  ) +
+  guides(
+    color = guide_legend(override.aes = list(alpha = 1))  # force full opacity in legend
+  ) +
+  labs(
+    color = "Study short name"   # custom legend title
+  ) +
+  theme(
+    legend.position = c(0.98, 0.26),
+    legend.justification = c("right", "bottom"),
+    legend.background = element_rect(fill = alpha("white", 0.6)),
+    legend.key.size = unit(0.4, "cm"),   # smaller boxes
+    legend.text = element_text(size = 7), # smaller labels
+    legend.title = element_text(size = 8)
+  )
 
 
-
-ggsave("figures/detection_depht.png")
-
+ggsave("figures/detection_depht_studies.png", extrapolation_plot, bg = "white")
 
 
-## At about 4e+10 = 40,000,000,000 == 40 GB we can expect to have 100% sensitivity.
+###  A feeling for how much data is in an area
+# Center of ellipse
+x0 <- 0.8e10   # pick around where prob ≈ 0.85 on your curve
+y0 <- 0.85
+a <- 6e9       # horizontal radius (adjust as needed)
+b <- 0.15      # vertical radius
+
+ellipse <- data.frame(
+  x = x0 + a * cos(seq(0, 2*pi, length.out = 200)),
+  y = y0 + b * sin(seq(0, 2*pi, length.out = 200))
+)
+
+inside <- finalData %>%
+  filter(!is.na(number_bases), !is.na(pred_sensitivity)) %>%
+  mutate(in_ellipse = ((number_bases - x0)^2 / a^2) +
+           ((pred_sensitivity - y0)^2 / b^2) <= 1)
+
+sum(inside$in_ellipse)   # count points
+
+sum(inside$in_ellipse) / length(inside$in_ellipse)
+## proportion of samples
+
+sum(inside$number_bases[inside$in_ellipse]) ## count bases
+
+
+sum(inside$number_bases[inside$in_ellipse])/
+  sum(inside$number_bases) *100 ## proportion bases
+
+extrapolation_plot_studies_ellipse <-
+  extrapolation_plot_studies +
+  geom_path(data = ellipse, aes(x = x, y = y), color = "black", linetype = "dashed")
+
+ggsave("figures/detection_depht_studies_ellipse.png", extrapolation_plot_studies_ellipse,
+       bg = "white")
+
+extrapolation_plot_confidence <-
+  extrapolation_plot +
+  geom_ribbon(
+    aes(x = number_bases, ymin = LL, ymax = UL),
+    inherit.aes = FALSE,
+    data = new_data,
+    fill = "grey80", alpha = 0.5
+  )
+
+ggsave("figures/detection_depht_studies.png", extrapolation_plot_confidence,
+       bg = "white")
+
 
 table(finalData$number_bases > 4e+10) ## no 100% sensitivity
 table(finalData$number_bases > 1.3e+10) ## 188 samples with 95% sensitivity at 13GB data
@@ -391,11 +506,6 @@ finalData %>%
   dplyr::filter(DE2011 == "NO" &
                 STX2bt == TRUE) %>%
   plot_heatmap(anno_cols = c("non_westernized", "disease_group"))
-
-
-library(sf)
-library(rnaturalearth)
-library(rnaturalearthdata)
 
 # Summarise counts AND non_westernized together
 country_summary <- finalData %>%
