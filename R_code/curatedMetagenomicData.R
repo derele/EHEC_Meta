@@ -8,6 +8,10 @@ library(boot)
 library(sf)
 library(rnaturalearth)
 library(rnaturalearthdata)
+library(sjPlot)
+library(ggwordcloud)
+
+
 
 write_NEW_SRA <- FALSE
 write_2nd_SRA <- FALSE
@@ -75,7 +79,7 @@ bt_collated <- bt_raw %>%
     values_fill = 0
   )
 
-table(STX2A = bt_collated$bt_VFG000837_stx2A, STX2B = bt_collated$bt_VFG000838_stx2B)
+table(STX2A = bt_collated$bt_VFG000837_stx2A>0, STX2B = bt_collated$bt_VFG000838_stx2B>0)
 table(bt_collated$bt_VFG000739_eae>1, STX2B = bt_collated$bt_VFG000803_eae>1)
 
 
@@ -124,6 +128,22 @@ map_results <- full_join(bt_collated, dia_collated)
 ## to figure out which samples are missing just one of the methods!
 map_results_all <- inner_join(bt_collated, dia_collated)
 
+table(all = (
+  map_results$bt_VFG000837_stx2A +
+    map_results$bt_VFG000838_stx2B +
+    map_results$hits_VFG000837_stx2A +
+    map_results$hits_VFG000838_stx2B)>0,
+  map_results$bt_VFG000837_stx2A>0)
+
+table(all = (
+  map_results$bt_VFG000837_stx2A +
+    map_results$bt_VFG000838_stx2B +
+    map_results$hits_95_VFG000837_stx2A +
+    map_results$hits_95_VFG000838_stx2B)>0,
+  map_results$bt_VFG000837_stx2A>0)
+
+
+
 ## need to work on the controls!!
 controls <- c("SRR12195337", "SRR12195338", "SRR12195339",
               "SRR4101313", "SRR4101314", "SRR4101315", "SRR33438544",
@@ -171,8 +191,15 @@ finalData <- joined %>%
   )
 
 ## bowtie but super sensitive setting everything to stx2 when detected
-finalData$STX2bt <- finalData$bt_VFG000837_stx2A>0|
-  finalData$bt_VFG000838_stx2B>0
+finalData$STX2bt <- (finalData$bt_VFG000837_stx2A +
+                       finalData$bt_VFG000838_stx2B +
+                       finalData$hits_95_VFG000837_stx2A +
+                       finalData$hits_95_VFG000838_stx2B)>0
+
+
+# Scale number_bases to billions for more interpretable OR
+finalData_subset <- subset(finalData, !disease %in% "STEC")
+finalData_subset$number_bases_billion <- finalData_subset$number_bases / 1e9
 
 ## this is the positive control: finalData$study_name=="LomanNJ_2013"
 finalData$DE2011 <- ifelse(finalData$study_name=="LomanNJ_2013",
@@ -189,45 +216,152 @@ finalData <- finalData %>%
   mutate(
     disease_group = case_when(
       disease == "healthy" ~ "Healthy",
+      disease == "STEC" ~ "STEC",
+      # Gut / Gut Infections (origin is in the gut)
+      disease %in% c("acute_diarrhoea", "CDI", "infectiousgastroenteritis",
+                     "salmonellosis", "STH", "IBD",
+                     "CDI;cellulitis", "CDI;osteoarthritis", "CDI;pneumonia", "CDI;ureteralstone",
+                     "IBD;perianal_fistula") ~ "Gut / Gut Infections",
 
-      # Gut / digestion / liver / metabolic
-      disease %in% c("acute_diarrhoea","adenoma","ascites;cirrhosis",
-                     "ascites;cirrhosis;hepatitis","ascites;cirrhosis;hepatitis;schistosoma",
-                     "ascites;cirrhosis;schistosoma","CDI","cirrhosis","cirrhosis;hepatitis",
-                     "CMV;coeliac;gestational_diabetes","cystitis","fatty_liver",
-                     "generic_diabetes","gestational_diabetes","gestational_diabetes;pre-eclampsia",
-                     "hepatitis","IBD","IGT","infectiousgastroenteritis","pyelonefritis","pyelonephritis",
-                     "salmonellosis", "STH","stomatitis","T1D","T1D;coeliac;irritable_bowel",
-                     "T2D","tonsillitis","CRC","CRC;T2D") ~ "Gut / digestion",
+      # Digestion / Liver / Metabolic (organs & metabolic processes)
+      disease %in% c("adenoma", "ascites;cirrhosis",
+                     "ascites;cirrhosis;hepatitis", "ascites;cirrhosis;hepatitis;schistosoma",
+                     "ascites;cirrhosis;schistosoma", "cirrhosis", "cirrhosis;hepatitis",
+                     "CMV;coeliac;gestational_diabetes", "cystitis", "fatty_liver",
+                     "generic_diabetes", "gestational_diabetes", "gestational_diabetes;pre-eclampsia",
+                     "hepatitis", "IGT", "pyelonefritis", "pyelonephritis",
+                     "stomatitis", "T1D", "T1D;coeliac;irritable_bowel",
+                     "T2D", "CRC", "CRC;T2D",
+                     "T2D;adenoma", "T2D;adenoma;fatty_liver",
+                     "T2D;adenoma;fatty_liver;hypertension", "T2D;adenoma;hypertension",
+                     "T2D;fatty_liver", "T2D;fatty_liver;hypertension", "T2D;hypertension",
+                     "abdominalhernia", "adenoma;fatty_liver", "adenoma;fatty_liver;hypertension",
+                     "adenoma;hypertension", "ascites;cirrhosis;hepatitis;wilson",
+                     "ascites;cirrhosis;wilson", "fatty_liver;hypertension",
+                     "CRC;T2D;fatty_liver;hypertension", "CRC;T2D;hypertension",
+                     "CRC;fatty_liver", "CRC;fatty_liver;hypertension", "CRC;hypertension",
+                     "metabolic_syndrome") ~ "Digestion / Liver / Metabolic",
 
       # Cardiovascular & Cancer
-      disease %in% c("ACVD",
-                     "melanoma","melanoma;metastases","melanoma;metastases;melanoma_surgery",
-                     "melanoma;metastases_bone","melanoma;metastases_liver","melanoma;metastases_lung",
-                     "melanoma;metastases_lung,metastases_nodes","melanoma;metastases_lung;metastases_adrenal",
-                     "melanoma;metastases_lung;metastases_liver","melanoma;metastases_lung;metastases_liver;metastases_bone",
+      disease %in% c("ACVD", "hypertension", "pre-eclampsia",
+                     "melanoma", "melanoma;metastases", "melanoma;metastases;melanoma_surgery",
+                     "melanoma;metastases_bone", "melanoma;metastases_liver", "melanoma;metastases_lung",
+                     "melanoma;metastases_lung,metastases_nodes", "melanoma;metastases_lung;metastases_adrenal",
+                     "melanoma;metastases_lung;metastases_liver", "melanoma;metastases_lung;metastases_liver;metastases_bone",
                      "melanoma;metastases_lung;metastases_liver;metastases_nodes",
                      "melanoma;metastases_lung;metastases_nodes",
                      "melanoma;metastases_lung;metastases_nodes;metastases_SQ",
-                     "melanoma;metastases_nodes","melanoma;metastases_nodes;metastases_bone",
-                     "melanoma;metastases_nodes;metastases_SQ","melanoma;metastases_SQ",
+                     "melanoma;metastases_nodes", "melanoma;metastases_nodes;metastases_bone",
+                     "melanoma;metastases_nodes;metastases_SQ", "melanoma;metastases_SQ",
                      "melanoma;metastases_SQ;metastases_adrenal",
                      "melanoma;treatment_colitis",
-                     "hypertension", "pre-eclampsia") ~ "Cardiovascular & Cancer",
+                     "CAD", "CAD;T2D", "HF;CAD", "HF;CAD;T2D", "HF;T2D") ~ "Cardiovascular & Cancer",
 
-      # Other / infections / immune / misc
-      disease %in% c("asthma","BD","bronchitis","chorioamnionitis","cough","fever","ME/CFS",
-                     "migraine","migraine;asthma","migraine;generic_diabetes","otitis","pneumonia",
-                     "premature_born","RA","respiratoryinf","schizofrenia","sepsis","skininf","suspinf",
-                     "MDRB") ~ "Other / infections",
-
-      disease %in% "STEC" ~ "STEC",
+      # Other / infections / immune / misc (Non-Gut)
+      disease %in% c("asthma", "BD", "bronchitis", "chorioamnionitis", "cough", "fever", "ME/CFS",
+                     "migraine", "migraine;asthma", "migraine;generic_diabetes", "otitis", "pneumonia",
+                     "premature_born", "RA", "respiratoryinf", "schizofrenia", "sepsis", "skininf", "suspinf",
+                     "MDRB", "cellulitis", "gangrene", "osteoarthritis",
+                     # Neurological / Autoimmune
+                     "MS", "IGT;MS", "PD", "MA", "tonsillitis") ~ "Other / Non-Gut Infections",
 
       TRUE ~ "manual_check"
     )
   )
 
-table(finalData$disease_group)
+
+# Disease-level counts
+counts_disease <- finalData %>%
+  count(disease_group, disease)
+
+
+# Get group sizes
+group_sizes <- finalData %>%
+  count(disease_group) %>%
+  rename(total_n = n)
+
+# Create color palette for categories
+category_colors <- c(
+  "Healthy" = "#2E8B57", "Gut / Gut Infections" = "#FF6B6B",
+  "Digestion / Liver / Metabolic" = "#4ECDC4", "Cardiovascular & Cancer" = "#FFA73F",
+  "Other / Non-Gut Infections" = "#9B59B6", "STEC" = "#E74C3C",
+  "manual_check" = "#95A5A6"
+)
+
+# Create and save individual plots
+for (group in unique(finalData$disease_group)) {
+
+  group_data <- counts_disease %>%
+    filter(disease_group == group) %>%
+    arrange(desc(n))
+
+  group_total <- group_sizes$total_n[group_sizes$disease_group == group]
+  base_color <- category_colors[group]
+
+  # Create color variations
+  n_words <- nrow(group_data)
+  if (n_words > 1) {
+    color_values <- colorRampPalette(c(base_color, "white"))(n_words + 1)[1:n_words]
+  } else {
+    color_values <- base_color
+  }
+
+  # Center label
+  center_label <- data.frame(
+    disease_group = group,
+    disease = paste0(group, "\n(n=", group_total, ")"),
+    n = max(counts_disease$n) * 3,
+    color_group = "center"
+  )
+
+  # Prepare plot data with log transformation
+  plot_data <- group_data %>%
+    mutate(
+      n_log = log10(n + 1),
+      color_group = "word"
+    ) %>%
+    bind_rows(center_label %>% mutate(n_log = log10(n + 1)))
+
+  # Create individual wordcloud
+  p <- ggplot(plot_data, aes(
+    label = disease,
+    size = n_log,
+    color = ifelse(color_group == "center", "center", disease)
+  )) +
+    geom_text_wordcloud(
+      rm_outside = TRUE,
+      shape = "circle",
+      grid_size = 1,
+      eccentricity = 0.9,
+      seed = 123
+    ) +
+    scale_size_continuous(
+      range = c(2, 12),
+      guide = "none"
+    ) +
+    scale_color_manual(
+      values = c(setNames(color_values, group_data$disease), "center" = "black"),
+      guide = "none"
+    ) +
+    theme_void() +
+    theme(
+      plot.background = element_blank(),
+      panel.background = element_blank()
+    )
+
+  # Save individual plot with transparent background
+  ggsave(
+    filename = paste0("figures/", gsub("/", "_", group), "_wordcloud.png"),
+    plot = p,
+    width = 8,
+    height = 8,
+    dpi = 300,
+    bg = "transparent"
+  )
+
+  cat("Saved:", group, "wordcloud\n")
+}
+
 
 plot_heatmap <- function(df, anno_cols, num_prefix = c("hits_", "bt_"), ...) {
   num <- df %>%
@@ -274,7 +408,7 @@ foo <- finalData %>%
 nrow(foo[foo$STX2bt, ])/(nrow(foo)-3)
 
 table(finalData[!finalData$study_name%in%"LomanNJ_2013", "STX2bt"], useNA="ifany")
-### HERE DETECtion NEG = 16362    POS = 57
+### HERE DETECtion NEG = 163621    POS = 58
 
 nrow(finalData[finalData$STX2bt & !finalData$study_name%in%"LomanNJ_2013", ])/
   nrow(finalData[!finalData$study_name%in%"LomanNJ_2013", ])*100
@@ -285,6 +419,15 @@ depth_model <- glm(STX2bt ~ number_bases,
                    data = finalData[finalData$disease%in%"healthy", ])
 
 summary(depth_model)
+
+tab_model(depth_model,
+          show.ci = TRUE,
+          show.se = TRUE,
+          show.aic = TRUE,
+          transform = "exp",
+          dv.labels = "Detection (STX2AB)",
+          pred.labels = c("(Intercept)", "Sequencing depth (number_bases)"),
+          file = "figures/depth_model.html")
 
 
 ## From LomanNJ_2013 depth at their 0.67% sensitivity
@@ -302,9 +445,6 @@ depth_model_adjusted$coefficients["(Intercept)"] <- new_intercept
 
 predict(depth_model_adjusted, newdata = ref_depth, type = "response")  # Should output 0.67
 
-zero_depth <- data.frame(number_bases = 0)
-predict(depth_model_adjusted, newdata = zero_depth, type = "response")  # Should output ZERO
-
 new_data <- data.frame(number_bases = seq(1e8, 4e10, length.out = 100))
 pred <- predict(depth_model_adjusted, newdata = new_data, type = "link", se.fit = TRUE)
 
@@ -317,10 +457,13 @@ new_data <- new_data %>%
     UL   = plogis(fit + 1.96 * se)   # CI upper bound
   )
 
-finalData[finalData$disease%in%"healthy", "pred_sensitivity"] <-
+finalData[, "pred_sensitivity"] <-
   predict(depth_model_adjusted,
-          newdata = finalData[finalData$disease%in%"healthy","number_bases"],
+          newdata = finalData[,"number_bases"],
           type="response")
+
+finalData_noSTEC <- subset(finalData, disease!="STEC")
+finalData_healthy <- subset(finalData, disease!="healthy")
 
 
 # 4. Plot
@@ -337,14 +480,15 @@ extrapolation_plot <-
   ylim(0.6, 1) +
   theme_minimal() +
   labs(x = "Sequencing Depth (Gigabases)", y = "Adjusted Detection Probability",
-       title = "Logistic model calibrated to 67% Sensitivity at 1.075Gb sequencing depth")
+       title = "Logistic model calibrated to 67% Sensitivity \n at 1.075Gb sequencing depth")
 
-ggsave("figures/detection_depht.png", extrapolation_plot, bg = "white")
+ggsave("figures/detection_depht.png", extrapolation_plot, bg = "white",
+       width = 4, height = 4)
 
 extrapolation_plot_studies <-
   extrapolation_plot +
   geom_jitter(
-    data = finalData, alpha = 0.2, width = 1000000, height = 0.01,
+    data = finalData, width = 1000000, height = 0.01, alpha=0.2,
     aes(x = number_bases, y = pred_sensitivity, color = study_name)
   ) +
   guides(
@@ -356,14 +500,16 @@ extrapolation_plot_studies <-
   theme(
     legend.position = c(0.98, 0.26),
     legend.justification = c("right", "bottom"),
-    legend.background = element_rect(fill = alpha("white", 0.6)),
-    legend.key.size = unit(0.4, "cm"),   # smaller boxes
-    legend.text = element_text(size = 7), # smaller labels
-    legend.title = element_text(size = 8)
+    legend.background = element_rect(fill = alpha("white", 0.15)),
+    legend.key.size = unit(0.1, "cm"),   # smaller boxes
+    legend.text = element_text(size = 2.2), # smaller labels
+    legend.title = element_text(size = 4)
   )
 
 
-ggsave("figures/detection_depht_studies.png", extrapolation_plot, bg = "white")
+ggsave("figures/detection_depht_studies.png", extrapolation_plot_studies,
+       bg = "white",
+       width = 4, height = 4)
 
 
 ###  A feeling for how much data is in an area
@@ -399,7 +545,7 @@ extrapolation_plot_studies_ellipse <-
   geom_path(data = ellipse, aes(x = x, y = y), color = "black", linetype = "dashed")
 
 ggsave("figures/detection_depht_studies_ellipse.png", extrapolation_plot_studies_ellipse,
-       bg = "white")
+       bg = "white", width = 4, height = 4)
 
 extrapolation_plot_confidence <-
   extrapolation_plot +
@@ -414,10 +560,9 @@ ggsave("figures/detection_depht_studies.png", extrapolation_plot_confidence,
        bg = "white")
 
 
-table(finalData$number_bases > 4e+10) ## no 100% sensitivity
-table(finalData$number_bases > 1.3e+10) ## 188 samples with 95% sensitivity at 13GB data
-
 table(finalData[!finalData$study_name%in%"LomanNJ_2013", "STX2bt"])
+
+table(finalData[!finalData$disease%in%"healthy", "STX2bt"])
 
 finalData$pred_sensitivity <- predict(depth_model_adjusted,
                                       newdata = finalData,
@@ -427,21 +572,39 @@ true_positives <- sum(finalData$STX2bt / finalData$pred_sensitivity)
 
 true_positives/nrow(finalData)*100
 
+calc_tp <- function(df) {
+  true_pos <- sum(df$STX2bt / df$pred_sensitivity)
+  perc <- true_pos / nrow(df) * 100
+  tibble(true_positives = true_pos, percent = perc)
+}
+
+results <- bind_rows(
+  overall = calc_tp(finalData),
+  no_STEC = calc_tp(filter(finalData, disease != "STEC")),
+  healthy = calc_tp(filter(finalData, disease == "healthy")),
+  .id = "subset"
+)
+
+results
+
 set.seed(123)
 boot_fn <- function(data, indices) {
   sample_data <- data[indices, ]
   obs_pos <- sum(sample_data$STX2bt)
   pred_sens <- predict(depth_model_adjusted, newdata = sample_data, type = "response")
   true_pos <- sum(sample_data$STX2bt / pred_sens)
-  true_prev <- true_pos / nrow(sample_data)
+  true_prev <- true_pos / nrow(sample_data) * 100
   return(true_prev)
 }
-boot_results <- boot(finalData, boot_fn, R = 1000)
+boot_results <- boot(finalData_healthy, boot_fn, R = 1000)
+
+boot_results <- boot(finalData_health, boot_fn, R = 1000)
 quantile(boot_results$t, c(0.025, 0.975))  # 95% CI
 
 boot_df <- data.frame(true_prevalence = boot_results$t)
 
-ggplot(boot_df, aes(x = true_prevalence)) +
+boot_all_plot <-
+  ggplot(boot_df, aes(x = true_prevalence)) +
   geom_histogram(aes(y = ..density..),
                  bins = 30,
                  fill = "skyblue",
@@ -457,7 +620,7 @@ ggplot(boot_df, aes(x = true_prevalence)) +
              color = "red",
              linewidth = 0.8) +
   labs(
-    x = "Prevalence of stx2AB",
+    x = "Prevalence of stx2AB in Percent",
     y = "Density",
     title = "Bootstrap Distribution of Prevalence Estimates",
     subtitle = "Red lines: Mean (solid) and 95% CI (dashed)"
@@ -465,47 +628,9 @@ ggplot(boot_df, aes(x = true_prevalence)) +
   theme_minimal()
 
 
-ggsave("figures/bootstrap_estimate.png")
+ggsave("figures/bootstrap_estimate.png", boot_all_plot, bg = "white",
+       widht =6, height = 6)
 
-
-disease_model<- glm(STX2bt ~ disease_group,
-                    data=finalData,
-                    family = binomial)
-
-summary(disease_model)
-
-
-west_model<- glm(STX2bt ~ non_westernized,
-                    data=subset(finalData, !disease%in%"STEC"),
-                    family = binomial)
-
-summary(west_model)
-
-table(subset(finalData, non_westernized == "yes")$disease,
-      subset(finalData, non_westernized == "yes")$country)
-
-tapply(finalData$age, finalData$non_westernized, fivenum, na.rm=TRUE)
-
-country_model<- glm(STX2bt ~ country,
-                 data=subset(finalData, !disease%in%"STEC"),
-                 family = binomial)
-
-summary(country_model)
-
-finalData$stunting <- finalData$disease%in%"STH"
-
-stunting_model <- glm(STX2bt ~ stunting,
-                       data=subset(finalData, !disease%in%"STEC" &
-                                     finalData$non_westernized == "yes"
-                       ),
-                       family = binomial)
-
-### nothing for stunting not even within non-westernized
-
-finalData %>%
-  dplyr::filter(DE2011 == "NO" &
-                STX2bt == TRUE) %>%
-  plot_heatmap(anno_cols = c("non_westernized", "disease_group"))
 
 # Summarise counts AND non_westernized together
 country_summary <- finalData %>%
@@ -515,6 +640,19 @@ country_summary <- finalData %>%
     non_westernized = any(non_westernized == "yes"),
     .groups = "drop"
   )
+country_counts <- finalData %>%
+  count(country, name = "n")
+
+# Summarise counts AND non_westernized together
+country_summary <- finalData %>%
+  group_by(country) %>%
+  summarise(
+    n_samples = n(),
+    non_westernized = any(non_westernized == "yes"),
+    .groups = "drop"
+  )
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
 
 # Join to world map
 world_data <- world %>%
@@ -547,3 +685,68 @@ country_plot_western <-
 
 ggsave("figures/country_plot_western.png", country_plot_western,
        bg = "white", width = 9, height = 4, dpi = 600)
+
+
+
+disease_model_scaled <- glm(STX2bt ~ disease_group + number_bases_billion,
+                            data = finalData_subset,
+                            family = binomial)
+
+summary(disease_model_scaled)
+
+
+or_table <- exp(cbind(
+  OR = coef(disease_model_scaled),
+  confint.default(disease_model_scaled)  # Wald CIs
+))
+round(or_table, 3)
+
+tab_model(
+  disease_model_scaled,
+  show.ci = FALSE,   # turn off profile CIs
+  show.se = TRUE,
+  transform = "exp",
+  dv.labels = "STX2 Detection (binary)",
+  # pred.labels = c("(Intercept)", "Non-westernized [yes]",
+  #                 "Sequencing depth (per 1Gb)"),
+  digits = 3,
+  file = "figures/disease_model_final.html",
+  CSS = list(
+    css.depvarhead = 'padding:10px;',   # header row
+    css.body = 'padding:8px 12px; line-height: 1.8;', # main body rows
+    css.tdata = 'border-spacing: 0 8px;',              # spacing between rows
+    css.firsttablecol = 'width: 200px; white-space: normal; word-break: keep-all;'  # <-- increase predictor column width
+  )
+)
+
+
+west_model_scaled <- glm(STX2bt ~ non_westernized + number_bases_billion,
+                         data = finalData_subset,
+                         family = binomial)
+
+summary(west_model_scaled)
+
+
+or_table <- exp(cbind(
+  OR = coef(west_model_scaled),
+  confint.default(west_model_scaled)  # Wald CIs
+))
+round(or_table, 3)
+
+tab_model(
+  west_model_scaled,
+  show.ci = FALSE,   # turn off profile CIs
+  show.se = TRUE,
+  transform = "exp",
+  dv.labels = "STX2 Detection (binary)",
+  pred.labels = c("(Intercept)", "Non-westernized [yes]",
+                  "Sequencing depth (per 1Gb)"),
+  digits = 3,
+  file = "figures/west_model_final.html",
+  CSS = list(
+    css.depvarhead = 'padding:10px;',   # header row
+    css.body = 'padding:8px 12px; line-height: 1.8;', # main body rows
+    css.tdata = 'border-spacing: 0 8px;'              # spacing between rows
+  )
+)
+
